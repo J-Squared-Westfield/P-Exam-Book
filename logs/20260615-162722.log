@@ -5,3 +5,10 @@ INFO    : Staging latest build located in `/Users/jwjohnson/Documents/P Exam Boo
 INFO    : 
 INFO    : Initializing project with Git.
 INFO    : Setting up name/email configuration for Git...
+ERROR   : EOF when reading a line
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
