@@ -1,0 +1,84 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->flags->set(tolType=>"absolute", tolerance=>0.001);
+
+$ans_small = Compute(-2.78585);
+$ans_large = Compute(0.78585);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the quadratic equation
+
+[```8(x+1)^2 - 3(x+1)^4 + 5 = 0\text{.}```]
+
+Give your answer to at least three decimal places.
+
+Smaller solution: [_]{$ans_small}{10}
+
+Larger solution: [_]{$ans_large}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We can make a substitution [`z = (x+1)^2\text{.}`]  Then, we have [`{8z - 3z^2 +5 = 0}\text{.}`]  We can re-write this as [`{3z^2 - 8z - 5 = 0.}`]
+
+We can use the quadratic formula:
+
+[``` z = \frac{8 \pm \sqrt{64 + 60}}{6} \approx -0.52259, 3.18926.```]
+
+Recall that [`z=(x+1)^2\text{.}`]  So, [`(x+1)^2 = -0.52259`] or [`(x+1)^2 = 3.18926.`] This first gives non-real solutions. Solving [`(x+1)^2 = 3.18926`] gives [`x \approx -2.78585`] or [`x \approx 0.78585.`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

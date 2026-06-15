@@ -1,0 +1,101 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$ans_f = Formula("3-2x");
+$ans_g = Formula("2x-3");
+
+$ans_h = Formula("-0.5x+1.5");
+
+$ans_r = Formula("0.5x+1.5");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[`f(x) = |3-2x|`] is not invertible.  Break the domain of \$f\$ into two components on which each component is invertible.  Find the inverse function for each invertible segment.
+
+On the restricted domain [`[1.5,\infty)\text{,}`] [`f(x)`] is equal to the function [`g(x) = `] [_]{$ans_g}{30}, and has an inverse function of [`g^{-1} = `] [_]{$ans_r}{30}.
+
+On the restricted domain [`(-\infty, 1.5)\text{,}`] [`f(x)`] is equal to the function [`h(x) = `] [_]{$ans_f}{30}, and has an inverse function of [`h^{-1} = `] [_]{$ans_h}{30}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+In general, for a function [`f(x)\text{,}`] [`|f(x)| = \pm f(x)\text{.}`] So, our two functions are [`3-2x`] and [`-(3-2x) = 2x-3\text{.}`] These are on the domains [`(-\infty,1.5)`] and [`[1.5,\infty)\text{,}`] respectively.
+
+To find the inverses:
+
+[```
+                            \begin{aligned}
+                                y & = 2x-3\\
+                                y+3 & = 2x\\
+                                \frac{1}{2}y + \frac{3}{2} & = x\\
+                                y & = \frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+                            \end{aligned}
+                        ```]
+
+and
+
+[```
+                            \begin{aligned}
+                                y & = 3-2x\\
+                                y-3 & = -2x\\
+                                -\frac{1}{2}y + \frac{3}{2} & = x\\
+                                y & = -\frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+                            \end{aligned}
+                        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

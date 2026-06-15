@@ -1,0 +1,13 @@
+INFO    : Building target web
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : Error loading /Users/jwjohnson/Documents/P Exam Book/source/chapter-1/chapter-1.ptx: Error reading file '/Users/jwjohnson/Documents/P Exam Book/source/chapter-1/chapter-1.ptx': failed to load "/Users/jwjohnson/Documents/P Exam Book/source/chapter-1/chapter-1.ptx": No such file or directory
+ERROR   : Error assembling source file: Error reading file '/Users/jwjohnson/Documents/P Exam Book/source/chapter-1/chapter-1.ptx': failed to load "/Users/jwjohnson/Documents/P Exam Book/source/chapter-1/chapter-1.ptx": No such file or directory
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

@@ -1,0 +1,13 @@
+<section xml:id="section-1-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Limits</title>
+    <p>
+       For the P exam, you will need to recall the basic algebraic workings of limits, particularly at infinity.  
+       Limits are also helpful in reviewing the definition of derivatives.  
+       The more advanced topics regarding limits usually seen in calculus will not be covered here such has various convergence tests as they are not needed for the P exam.  
+       We will cover a few dominance rules to provide some useful shortcuts.
+    </p>
+
+    <xi:include href="./subsection-1-3-1.ptx"/>
+    <xi:include href="./subsection-1-3-2.ptx"/>
+    <xi:include href="./subsection-1-3-3.ptx"/>
+</section>

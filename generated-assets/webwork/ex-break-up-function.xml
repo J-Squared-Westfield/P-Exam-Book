@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-break-up-function" assembly-id="ex-break-up-function">
+  <static seed="9">
+    <statement><p><m>f(x) = |3-2x|</m> is not invertible.  Break the domain of $f$ into two components on which each component is invertible.  Find the inverse function for each invertible segment.</p>
+<p>On the restricted domain <m>[1.5,\infty)\text{,}</m> <m>f(x)</m> is equal to the function <m>g(x) =</m> <fillin characters="30" name="AnSwEr0001"/>, and has an inverse function of <m>g^{-1} =</m> <fillin characters="30" name="AnSwEr0002"/>.</p>
+<p>On the restricted domain <m>(-\infty, 1.5)\text{,}</m> <m>f(x)</m> is equal to the function <m>h(x) =</m> <fillin characters="30" name="AnSwEr0003"/>, and has an inverse function of <m>h^{-1} =</m> <fillin characters="30" name="AnSwEr0004"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>2x-3</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0.5x+1.5</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>3-2x</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-0.5x+1.5</m>
+      </p>
+    </answer>
+    <solution><p>In general, for a function <m>f(x)\text{,}</m> <m>|f(x)| = \pm f(x)\text{.}</m> So, our two functions are <m>3-2x</m> and <m>-(3-2x) = 2x-3\text{.}</m> These are on the domains <m>(-\infty,1.5)</m> and <m>[1.5,\infty)\text{,}</m> respectively.</p>
+<p>To find the inverses:</p>
+<p><me>\begin{aligned}
+                                y \amp  = 2x-3\\
+                                y+3 \amp  = 2x\\
+                                \frac{1}{2}y + \frac{3}{2} \amp  = x\\
+                                y \amp  = \frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+                            \end{aligned}</me></p>
+<p>and</p>
+<p><me>\begin{aligned}
+                                y \amp  = 3-2x\\
+                                y-3 \amp  = -2x\\
+                                -\frac{1}{2}y + \frac{3}{2} \amp  = x\\
+                                y \amp  = -\frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+                            \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_2_13-Break_the_Domain.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$ans_f = Formula("3-2x");
+$ans_g = Formula("2x-3");
+
+$ans_h = Formula("-0.5x+1.5");
+
+$ans_r = Formula("0.5x+1.5");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[`f(x) = |3-2x|`] is not invertible.  Break the domain of \$f\$ into two components on which each component is invertible.  Find the inverse function for each invertible segment.
+
+On the restricted domain [`[1.5,\infty)\text{,}`] [`f(x)`] is equal to the function [`g(x) = `] [_]{$ans_g}{30}, and has an inverse function of [`g^{-1} = `] [_]{$ans_r}{30}.
+
+On the restricted domain [`(-\infty, 1.5)\text{,}`] [`f(x)`] is equal to the function [`h(x) = `] [_]{$ans_f}{30}, and has an inverse function of [`h^{-1} = `] [_]{$ans_h}{30}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+In general, for a function [`f(x)\text{,}`] [`|f(x)| = \pm f(x)\text{.}`] So, our two functions are [`3-2x`] and [`-(3-2x) = 2x-3\text{.}`] These are on the domains [`(-\infty,1.5)`] and [`[1.5,\infty)\text{,}`] respectively.
+
+To find the inverses:
+
+[```
+                            \begin{aligned}
+                                y & = 2x-3\\
+                                y+3 & = 2x\\
+                                \frac{1}{2}y + \frac{3}{2} & = x\\
+                                y & = \frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+                            \end{aligned}
+                        ```]
+
+and
+
+[```
+                            \begin{aligned}
+                                y & = 3-2x\\
+                                y-3 & = -2x\\
+                                -\frac{1}{2}y + \frac{3}{2} & = x\\
+                                y & = -\frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+                            \end{aligned}
+                        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

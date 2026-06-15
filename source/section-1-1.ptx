@@ -1,0 +1,38 @@
+<section xml:id="section-1-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Solving Quadratic Equations the 20th Century Way</title>
+
+  <p>
+    <alert>Do I really need to review quadratic equations?</alert>
+    If you are confident with your algebra and calculus skills, you may not need a refresher in quadratic equations.
+  </p>
+
+  <p>
+    Here is a good litmus test.
+    Can you solve the following by hand?
+    <md>5e^{x-1} - \frac{7}{3}e^{2x-2}-\frac{4}{3}=0</md>
+  </p>
+
+  <p>
+    If so, then you many be in a good place to move to the next section.  
+    If not, I recommend reviewing this section.
+  </p>
+  
+  <p> In an age with myriad phone apps that can solve transcendental equations
+    to high degrees of accuracy in nanoseconds, P Exam candidates need
+    to solve some equations by hand (with a little help from your TI-30XS
+    MultiView). We'll assume that a review of solving linear equations is
+    not necessary and move right into solving a quadratic equation. </p>
+
+    <definition xml:id="def-quad-eq">
+      <statement>
+        <p>
+          A <term>quadratic equation</term><idx>quadratic equation</idx> in variable <m>x</m> is an equation that can be written in the form
+          <m>ax^2 + bx + c = 0</m> where <m>a, b,</m> and <m>c</m> are real numbers.
+        </p>
+      </statement>
+    </definition>
+    <xi:include href="./subsection-1-1-1.ptx"/>
+    <xi:include href="./subsection-1-1-2.ptx"/>
+    <xi:include href="./subsection-1-1-3.ptx"/>  
+    <xi:include href="./subsection-1-1-4.ptx"/>
+</section>

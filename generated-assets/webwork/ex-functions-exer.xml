@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-functions-exer" assembly-id="ex-functions-exer">
+  <static seed="6">
+    <statement><p>Determine which of the following equations represent functions on their implied domains. Assume <m>x</m> is the input variable, and <m>y</m> is the output variable.</p>
+<p><ol form="checkboxes" marker="A" name="AnSwEr0001">
+<li>
+<p><m>x=e^{y-1}-8</m></p>
+</li>
+<li>
+<p><m>x = ay-b</m> for nonzero real numbers <m>a,b</m></p>
+</li>
+<li>
+<p><m>y = \sqrt{4-x^2}</m></p>
+</li>
+<li>
+<p><m>x^2 + y^2 = r</m> for <m>r&gt;0</m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{A, B, C}</m>
+      </p>
+    </answer>
+    <solution><p><m>x=ay-b</m> can be rearranged as <m>y = \frac{1}{a}x + \frac{b}{a}\text{.}</m> Since <m>a\ne 0\text{,}</m> this is simply a line, which is a function.</p>
+<p><m>y = \sqrt{4-x^2}</m> is already written in functional form. It can be seen that a single value for <m>x</m> with <m>-2\leq x \leq 2</m> will yield a single output value <m>y\text{.}</m> Graphically, this is the top half of a circle.</p>
+<p>Solving <m>x^2 + y^2 = r</m> for <m>y</m> yields <m>y = \pm \sqrt{r-x^2}\text{.}</m> This is not a function. For example, <m>x=0</m> would give <m>y = \sqrt{r}</m> or <m>-\sqrt{r}\text{.}</m> Graphically, this is a circle with radius <m>\sqrt{r}\text{.}</m></p>
+<p><m>x = e^{y-1}-8</m> can be rearranged as <m>y = \ln(x+8) + 1\text{.}</m> This is a logarithmic function.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_2_10-Are_they_functions.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserCheckboxList.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+loadMacros(
+"parserCheckboxList.pl",
+);
+
+$checks = CheckboxList(
+[
+    [
+    '\(x = ay-b\) for nonzero real numbers \(a,b\)',
+    '\(y = \sqrt{4-x^2}\)',
+    '\(x=e^{y-1}-8\)',
+    '\(x^2 + y^2 = r\) for \(r>0\)'
+    ],
+    'None of the above'
+],
+[
+    '\(x = ay-b\) for nonzero real numbers \(a,b\)',
+    '\(y = \sqrt{4-x^2}\)',
+    '\(x=e^{y-1}-8\)'
+],
+labels => "ABC",
+displayLabels => 1
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine which of the following equations represent functions on their implied domains. Assume [`x`] is the input variable, and [`y`] is the output variable.
+
+[_]{$checks}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`x=ay-b`] can be rearranged as [`y = \frac{1}{a}x + \frac{b}{a}\text{.}`] Since [`a\ne 0\text{,}`] this is simply a line, which is a function.
+
+[`y = \sqrt{4-x^2}`] is already written in functional form. It can be seen that a single value for [`x`] with [`-2\leq x \leq 2`] will yield a single output value [`y\text{.}`] Graphically, this is the top half of a circle.
+
+Solving [`x^2 + y^2 = r`] for [`y`] yields [`y = \pm \sqrt{r-x^2}\text{.}`] This is not a function. For example, [`x=0`] would give [`y = \sqrt{r}`] or [`-\sqrt{r}\text{.}`] Graphically, this is a circle with radius [`\sqrt{r}\text{.}`]
+
+[`x = e^{y-1}-8`] can be rearranged as [`y = \ln(x+8) + 1\text{.}`] This is a logarithmic function.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

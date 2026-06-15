@@ -1,0 +1,130 @@
+<subsection xml:id="subsection-1-1-2">
+    <title>Finding the Roots of a Quadratic Equation</title>
+
+    <p>
+        As you may recall from your algebra studies, there are a few ways to find the roots of a quadratic equation by hand.  
+        We will only review the universal method of finding roots: the <em>quadratic formula</em>.Quadratic formula}
+    </p>
+
+    <definition xml:id="def-quad-form">
+      <statement>
+        <p>
+            The solutions to a quadratic equation of the form <m>ax^2 + bx + c = 0</m> (if any exist) can be found with the <term>quadratic formula</term><idx><h>quadratic equation</h><h>quadratic formula</h></idx><idx>quadratic formula</idx>.  
+            <md>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.</md>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+        The value under the square root, <m>b^2 - 4ac</m>, is called the <term>discriminant</term>.  
+        The discriminant determines whether there will be two, one, or zero roots.  
+        (Note that we are only considering real-valued solutions.)  
+    </p>
+
+    <p>
+        <ul>
+            <li><p>If the discriminant is positive, there will be exactly two roots.</p></li>
+            <li><p>If the discriminant is zero, there will be exactly one root.</p></li>
+            <li><p>If the discriminant is negative, there will be no roots.</p></li>
+        </ul>
+    </p>
+
+    <example>
+        <title>Using the Quadratic Formula</title>
+        <statement>
+            <p>
+                Solve the following for <m>x</m>.
+                <ol>
+                    <li>
+                        <p>
+                            <md>2x^2 - 0.3x - 5.1 = 0</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>0.5x^2 + x + 0.5 = 0</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>-x^2 + 1.5x - 7 = 0</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>2x^2 - 3.2x + 1 = 10-0.4x</md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>-1.524</m> and <m>1.674</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>-1</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No real solutions
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>-1.534</m> and <m>2.934</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+       <solution>
+            <p>
+                <em>1.</em>
+                <md>
+                <mrow>x \amp= \frac{0.3 \pm \sqrt{(-0.3)^2 - 4(2)(-5.1)}}{2\cdot 2}</mrow>
+                <mrow>\amp= \frac{0.3 \pm \sqrt{40.89}}{4}</mrow>
+                <mrow>\amp\approx -1.524,\ 1.674.</mrow>
+                </md>
+            </p>
+
+            <p>
+                <em>2.</em>
+                <md>
+                <mrow>x \amp= \frac{-1 \pm \sqrt{(1)^2 - 4(0.5)(0.5)}}{2\cdot 0.5}</mrow>
+                <mrow>\amp= \frac{-1 \pm 0}{1}</mrow>
+                <mrow>\amp= -1.</mrow>
+                </md>
+            </p>
+
+            <p>
+                <em>3.</em>
+                <md>
+                <mrow>x \amp= \frac{-1.5 \pm \sqrt{(1.5)^2 - 4(-1)(-7)}}{2\cdot (-1)}</mrow>
+                <mrow>\amp= \frac{-1.5 \pm \sqrt{-25.75}}{-2}</mrow>
+                </md>
+                Since the discriminant is negative, there are no real solutions.
+            </p>
+
+            <p>
+                <em>4.</em>
+                First, put the equation into the form <m>ax^2 + bx + c = 0</m>.
+                We get <m>{2x^2 - 2.8x + 1 - 9 = 0}</m>.
+            </p>
+
+            <p>
+                <md>
+                <mrow>x \amp= \frac{2.8 \pm \sqrt{(-2.8)^2 - 4(2)(-9)}}{2(2)}</mrow>
+                <mrow>\amp= \frac{2.8 \pm \sqrt{79.84}}{4}</mrow>
+                <mrow>\amp\approx -1.534,\ 2.934.</mrow>
+                </md>
+            </p>
+        </solution>
+    </example>
+</subsection>

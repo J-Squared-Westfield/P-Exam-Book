@@ -1,0 +1,14 @@
+<chapter xml:id="chapter-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algebra and Calculus Review</title>
+
+  <introduction>
+    <p> If you have not studied single-variable calculus or are not currently studying calculus, stop reading and go do calculus first. </p>
+
+    
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="./section-1-1.ptx" />
+  <xi:include href="./section-1-2.ptx"/>
+  <xi:include href="./section-1-3.ptx"/>
+</chapter>

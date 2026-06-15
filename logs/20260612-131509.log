@@ -1,0 +1,13 @@
+INFO    : Building target web
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : Error loading /Users/jwjohnson/Documents/P Exam Book/source/subsection-1-2-1.ptx: Opening and ending tag mismatch: m line 101 and unparsable, line 101, column 65 (subsection-1-2-1.ptx, line 101)
+ERROR   : Error assembling source file: Opening and ending tag mismatch: m line 101 and unparsable, line 101, column 65 (subsection-1-2-1.ptx, line 101)
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

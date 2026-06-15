@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Inverse Functions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Probability for Future Actuaries">
+<meta property="book:author" content="Jesse Johnson, Ph.D.">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.2';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Probability for Future Actuaries</span> <span class="subtitle">Getting Ready for the P Exam</span></a></h1>
+<p class="byline">Jesse Johnson, Ph.D.</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="section-1-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-1-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-Preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-Introduction.html" class="internal"><span class="title">Introduction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Algebra and Calculus Review</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Solving Quadratic Equations the 20th Century Way</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Graphs of Quadratic Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-2" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Finding the Roots of a Quadratic Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-3" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Solving "Hidden" Quadratic Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-4" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-1-2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Inverse Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#subsection-1-2-1" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Fundamental Concepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#subsection-1-2-2" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Restricted Domains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#subsection-1-2-3" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-1" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Definition of a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-2" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Limits at Infinity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-3" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Limits at Infinity and Dominance</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-1-2">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inverse Functions</span>
+</h2>
+<div class="para" id="section-1-2-2">
+<em class="alert">Do I need to review inverse functions?</em> In a later section, we will determine the densities of functions of random variables. In doing so, we will need to work with the inverses of real- valued functions. In this section, we will <em class="emphasis">briefly</em> review inverse functions.<div class="autopermalink" data-description="Paragraph"><a href="#section-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-1-2-3">If you know how to take a non-invertible function like <span class="process-math">\(f(x) = x^2-2x-3\)</span> and break it into invervals on which it is invertible and find inverses on each interval, you may not need to review this section.<div class="autopermalink" data-description="Paragraph"><a href="#section-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsection-1-2-1">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental Concepts</span>
+</h3>
+<div class="para" id="subsection-1-2-1-2">Remember when you found out that most of the algebra you do in school was applying inverse functions to two sides of an equation and that solving <span class="process-math">\(x^2 = 4\)</span> wasn’t as straightforward as you thought? This section serves as a refresher on that idea.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-3">Recall that a <dfn class="terminology">function</dfn> is a set of ordered pairs <span class="process-math">\((x,y)\)</span> where the first coordinate comes from a <em class="emphasis">domain set</em> and the second comes from a <em class="emphasis">codomain set</em>, and for each <span class="process-math">\(x\)</span> in the domain set, there is <em class="emphasis">exactly one</em> <span class="process-math">\(y\)</span> in the range set so that <span class="process-math">\((x,y)\)</span> is in the function. More simply put, we can think of a function as a machine that turns inputs from a domain set into outputs in the range set. However, to be a function, each input has exactly one output.  For example, if some machine <span class="process-math">\(f(x)\)</span> had <span class="process-math">\(f(1) = 2\)</span> and <span class="process-math">\(f(1) = -2\text{,}\)</span> then <span class="process-math">\(f(x)\)</span> would not be a function. As another example, if we write the equation of a circle or radius 1 centered at the origin as <span class="process-math">\(y = \pm \sqrt{1-x^2}\text{,}\)</span> this also would not be a function (e.g.\ <span class="process-math">\(x=0\)</span> would yield both <span class="process-math">\(y=1\)</span> and <span class="process-math">\(y=-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-4">Graphically, we can tell if a curve on the Cartesian plane is a function using what is commonly called "the vertical-line test." Essentially, if it is possible to draw any vertical line that intersects your curve in more than one spot, the curve is not a function; otherwise, it is.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="function-graphs"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/functions.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Left: A function. Right: Not a function.<div class="autopermalink" data-description="Figure 1.2.1"><a href="#function-graphs" title="Copy heading and permalink for Figure 1.2.1" aria-label="Copy heading and permalink for Figure 1.2.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsection-1-2-1-6">When considering inverse functions, it is helpful to recall <dfn class="terminology">injective</dfn> or <dfn class="terminology">one-to-one functions.</dfn> A function <span class="process-math">\(f(x)\)</span> is one-to-one (or injective) if for any inputs <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the domain <span class="process-math">\(f(x) = f(y)\)</span> implies <span class="process-math">\(x=y\text{.}\)</span> Simply put, two different inputs must have two different outputs. For example, the function <span class="process-math">\(f(x) = 3x-1\)</span> is one-to-one, but the function <span class="process-math">\(g(y) = x^2\)</span> is not. (e.g. <span class="process-math">\(g(-1) = g(1) = 1\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-7">Graphically, we can tell if a function on the Cartesian plane is one-to-one by using what is called ``the horizontal-line test.’’  Like the vertical-line test, if it is possible to draw any horizontal line that intersections the function at more than one spot, the function is not one-to-one; otherwise, it is.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="one-to-one-graphs"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/one-to-one.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Left: A one-to-one function. Right: Not a one-to-one function.<div class="autopermalink" data-description="Figure 1.2.2"><a href="#one-to-one-graphs" title="Copy heading and permalink for Figure 1.2.2" aria-label="Copy heading and permalink for Figure 1.2.2">🔗</a></div></figcaption>
+</figure>
+<details id="ex-is-it-a-function" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Is It a Function?</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="ex-is-it-a-function-2-1">
+<div class="para">Determine if the following curves are functions. Consider <span class="process-math">\(x\)</span> the input variable and <span class="process-math">\(y\)</span> the output variable.</div>
+<ol class="decimal" id="ex-is-it-a-function-2-1-3">
+<li id="ex-is-it-a-function-2-1-3-1">
+<div class="para logical" id="ex-is-it-a-function-2-1-3-1-1">
+<div class="displaymath process-math" id="ex-is-it-a-function-2-1-3-1-1-1">
+\begin{equation*}
+x = y^2
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ex-is-it-a-function-2-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ex-is-it-a-function-2-1-3-2">
+<div class="para logical" id="ex-is-it-a-function-2-1-3-2-1">
+<div class="displaymath process-math" id="ex-is-it-a-function-2-1-3-2-1-1">
+\begin{equation*}
+\frac{x^2}{4} + \frac{y^2}{9} = 1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ex-is-it-a-function-2-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ex-is-it-a-function-2-1-3-3">
+<div class="para logical" id="ex-is-it-a-function-2-1-3-3-1">
+<div class="displaymath process-math" id="ex-is-it-a-function-2-1-3-3-1-1">
+\begin{equation*}
+x = \frac{y}{2} - 1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-2-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ex-is-it-a-function-2-1-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ex-is-it-a-function-2-1-3-4">
+<div class="para logical" id="ex-is-it-a-function-2-1-3-4-1">
+<div class="displaymath process-math" id="ex-is-it-a-function-2-1-3-4-1-1">
+\begin{equation*}
+e^y = \ln(x)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-2-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#ex-is-it-a-function-2-1-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-is-it-a-function-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="ex-is-it-a-function-3-1">
+<ol class="decimal" id="ex-is-it-a-function-3-1-1">
+<li id="ex-is-it-a-function-3-1-1-1">
+<div class="para" id="ex-is-it-a-function-3-1-1-1-1">Nope.  But <span class="process-math">\(x\)</span> is a function of <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ex-is-it-a-function-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ex-is-it-a-function-3-1-1-2">
+<div class="para" id="ex-is-it-a-function-3-1-1-2-1">Not this one either.<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ex-is-it-a-function-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ex-is-it-a-function-3-1-1-3">
+<div class="para" id="ex-is-it-a-function-3-1-1-3-1">Yep.<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ex-is-it-a-function-3-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ex-is-it-a-function-3-1-1-4">
+<div class="para" id="ex-is-it-a-function-3-1-1-4-1">It is exuding function realness.<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-3-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#ex-is-it-a-function-3-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.3.1"><a href="#ex-is-it-a-function-3" title="Copy heading and permalink for Answer 1.2.3.1" aria-label="Copy heading and permalink for Answer 1.2.3.1">🔗</a></div>
+</div></details>
+<details id="ex-is-it-a-function-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-is-it-a-function-4-1">This is not a function.  For example, if <span class="process-math">\(x = 4\text{,}\)</span> then <span class="process-math">\(y =2, -2\text{.}\)</span> (If <span class="process-math">\(x\)</span> were the output variable, then <span class="process-math">\(x\)</span> would be a function of <span class="process-math">\(y\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-is-it-a-function-4-2">This is not a function. It forms an ellipse if graphed. As an example, if <span class="process-math">\(x=1\text{,}\)</span> then <span class="process-math">\(y = 3\sqrt{1 - \frac{1}{4}} = \frac{3\sqrt{3}}{2}\)</span> or <span class="process-math">\(y = -\frac{3\sqrt{3}}{2}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-is-it-a-function-4-3">This is a function. If we solve for <span class="process-math">\(y\text{,}\)</span> we get <span class="process-math">\(y = 2x+2\text{,}\)</span> which is a line. This passes the vertical-line test.<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-is-it-a-function-4-4">This is a function. If we solve for <span class="process-math">\(y\text{,}\)</span> we get <span class="process-math">\(y = \ln(\ln(x))\text{,}\)</span> which is a function. (Here we need the fact that <span class="process-math">\(f(x) = \ln(x)\)</span> is a function, which can easily be seen from its graph.)<div class="autopermalink" data-description="Paragraph"><a href="#ex-is-it-a-function-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.3.1"><a href="#ex-is-it-a-function-4" title="Copy heading and permalink for Solution 1.2.3.1" aria-label="Copy heading and permalink for Solution 1.2.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 1.2.3: Is It a Function?"><a href="#ex-is-it-a-function" title="Copy heading and permalink for Example 1.2.3: Is It a Function?" aria-label="Copy heading and permalink for Example 1.2.3: Is It a Function?">🔗</a></div>
+</article></details>
+<details id="subsection-1-2-1-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Is It One-to-One?</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="subsection-1-2-1-10-2-1">
+<div class="para">Determine if the following functions are one-to-one on their domains.</div>
+<ol class="decimal" id="subsection-1-2-1-10-2-1-1">
+<li id="subsection-1-2-1-10-2-1-1-1">
+<div class="para logical" id="subsection-1-2-1-10-2-1-1-1-1">
+<div class="displaymath process-math" id="subsection-1-2-1-10-2-1-1-1-1-1">
+\begin{equation*}
+f(x) = x^3 - x + 1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsection-1-2-1-10-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-10-2-1-1-2">
+<div class="para logical" id="subsection-1-2-1-10-2-1-1-2-1">
+<div class="displaymath process-math" id="subsection-1-2-1-10-2-1-1-2-1-1">
+\begin{equation*}
+g(x) = \sin(x)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsection-1-2-1-10-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-10-2-1-1-3">
+<div class="para logical" id="subsection-1-2-1-10-2-1-1-3-1">
+<div class="displaymath process-math" id="subsection-1-2-1-10-2-1-1-3-1-1">
+\begin{equation*}
+h(x) = \ln(x+1)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsection-1-2-1-10-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-10-2-1-1-4">
+<div class="para logical" id="subsection-1-2-1-10-2-1-1-4-1">
+<div class="displaymath process-math" id="subsection-1-2-1-10-2-1-1-4-1-1">
+\begin{equation*}
+k(x) =7x-4
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsection-1-2-1-10-2-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsection-1-2-1-10-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="subsection-1-2-1-10-3-1">
+<ol class="decimal" id="subsection-1-2-1-10-3-1-1">
+<li id="subsection-1-2-1-10-3-1-1-1">
+<div class="para" id="subsection-1-2-1-10-3-1-1-1-1">Not a one-to-one winner.  Try again.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsection-1-2-1-10-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-10-3-1-1-2">
+<div class="para" id="subsection-1-2-1-10-3-1-1-2-1">Super not one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsection-1-2-1-10-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-10-3-1-1-3">
+<div class="para" id="subsection-1-2-1-10-3-1-1-3-1">One-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsection-1-2-1-10-3-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-10-3-1-1-4">
+<div class="para" id="subsection-1-2-1-10-3-1-1-4-1">Absolutely one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-3-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsection-1-2-1-10-3-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.4.1"><a href="#subsection-1-2-1-10-3" title="Copy heading and permalink for Answer 1.2.4.1" aria-label="Copy heading and permalink for Answer 1.2.4.1">🔗</a></div>
+</div></details>
+<details id="subsection-1-2-1-10-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsection-1-2-1-10-4-1">This is not one-to-one.  If we draw the graph, it fails the horizontal-line test.  We could also note that <span class="process-math">\(f(0) = f(1) = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-10-4-2">This is super non one-to-one.  As a sinusoidal wave, it gloriously fails the horizontal line test.  We could also note that <span class="process-math">\(g(0) = g(\pi) = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-10-4-3">This is one-to-one. A basic logarithmic curve passes the horizontal line test.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-10-4-4">This is one-to-one. It is a (non-horizontal) line, which passes the horizontal line test.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-10-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.4.1"><a href="#subsection-1-2-1-10-4" title="Copy heading and permalink for Solution 1.2.4.1" aria-label="Copy heading and permalink for Solution 1.2.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 1.2.4: Is It One-to-One?"><a href="#subsection-1-2-1-10" title="Copy heading and permalink for Example 1.2.4: Is It One-to-One?" aria-label="Copy heading and permalink for Example 1.2.4: Is It One-to-One?">🔗</a></div>
+</article></details>
+<div class="para" id="subsection-1-2-1-11">Finally, we move on to inverse functions.  Let <span class="process-math">\(f\)</span> be a function with input set <span class="process-math">\(A\)</span> and output set <span class="process-math">\(B\text{.}\)</span> Let <span class="process-math">\(g\)</span> be a function with input set <span class="process-math">\(B\)</span> and output set <span class="process-math">\(A\text{.}\)</span> If for any <span class="process-math">\(x\in A\)</span> and <span class="process-math">\(y\in B\text{,}\)</span> <span class="process-math">\(y = f(x)\)</span> precisely when <span class="process-math">\(g(y) = x\text{,}\)</span> we call <span class="process-math">\(g\)</span> the <dfn class="terminology">inverse function of f</dfn>. We usually denote the inverse function of <span class="process-math">\(f\)</span> as <span class="process-math">\(f^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-12">Here is an important fact. <em class="emphasis">Not all functions have inverses.</em> If a function has an inverse, we call it <dfn class="terminology">invertible</dfn>. Consider the function <span class="process-math">\(f(x) = x^2\text{.}\)</span>  We might think that <span class="process-math">\(g(x) = \sqrt{x}\)</span> is its inverse. However, it is not. At least, not exactly. Recall that an inverse <span class="process-math">\(f^{-1}\)</span> would have the requirement of being a function and <span class="process-math">\(f(x) = y\)</span> if and only if <span class="process-math">\(f^{-1}(y) = x\text{.}\)</span> Note that for <span class="process-math">\(f(x) = x^2\text{,}\)</span> we have <span class="process-math">\(f(-2) = f(2) = 4\text{.}\)</span> This would mean that an inverse of <span class="process-math">\(x^2\)</span> would have <span class="process-math">\(f^{-1}(4) = -2\)</span> and <span class="process-math">\(f^{-1}(4) = 2\text{.}\)</span> This would make <span class="process-math">\(f^{-1}\)</span> <em class="emphasis">not a function</em>. So, such an inverse does not exist. Hence, <span class="process-math">\(x^2\)</span> is not invertible.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-13">This brings up the question: when is a function invertible? It turns out, this is usually relatively easy. Recall that a one-to-one function is a function so that <span class="process-math">\(f(x_1) = f(x_2)\)</span> implies <span class="process-math">\(x_1 = x_2\text{.}\)</span> This would mean that for any potential inverse function <span class="process-math">\(f^{-1}\text{,}\)</span> <span class="process-math">\(f^{-1}(y)\)</span> would have a unique output. (Otherwise for those multiple outputs <span class="process-math">\(x_1, x_2\text{,}\)</span> we would have <span class="process-math">\(f(x_1) = f(x_2)\text{,}\)</span> which would make <span class="process-math">\(f\)</span> not one-to-one.) So, <span class="process-math">\(f^{-1}\)</span> actually is a function. From this, we make the following observation:<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="insight remark-like" id="subsection-1-2-1-14"><h4 class="heading">
+<span class="type">Insight</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsection-1-2-1-14-1">A function is invertible if and only if it is one-to-one on its domain.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Insight 1.2.5"><a href="#subsection-1-2-1-14" title="Copy heading and permalink for Insight 1.2.5" aria-label="Copy heading and permalink for Insight 1.2.5">🔗</a></div>
+</article>
+<div class="para" id="subsection-1-2-1-15">We proved one direction of the above observation in the preceding paragraph.  The proof that invert-ability implies the function is one-to-one is similar.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-16">Now onto finding inverse function. Suppose that <span class="process-math">\(f(x)\)</span> is an invertible function. We can find the inverse function of <span class="process-math">\(f\)</span> via the following general procedure:<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsection-1-2-1-17">
+<ul class="disc" id="subsection-1-2-1-17-1">
+<li id="subsection-1-2-1-17-1-1">
+<div class="para" id="subsection-1-2-1-17-1-1-1">Begin with the equation <span class="process-math">\(y = f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-17-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsection-1-2-1-17-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-17-1-2">
+<div class="para" id="subsection-1-2-1-17-1-2-1">Solve for <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-17-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsection-1-2-1-17-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsection-1-2-1-17-1-3">
+<div class="para" id="subsection-1-2-1-17-1-3-1">Swap the variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> The resulting equation is <span class="process-math">\(y = f^{-1}(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-17-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsection-1-2-1-17-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="finding-an-inverse" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding an Inverse.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="finding-an-inverse-2-1">Find the inverse function of <span class="process-math">\(f(x) = 2x + \dfrac{1}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="finding-an-inverse-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="finding-an-inverse-3-1">
+<div class="displaymath process-math" id="finding-an-inverse-3-1-1">
+\begin{equation*}
+f^{-1}(x) = \frac{1}{2}x - \frac{1}{6}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.6.1"><a href="#finding-an-inverse-3" title="Copy heading and permalink for Answer 1.2.6.1" aria-label="Copy heading and permalink for Answer 1.2.6.1">🔗</a></div>
+</div></details>
+<details id="finding-an-inverse-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="finding-an-inverse-4-1">
+<div class="displaymath process-math" id="finding-an-inverse-4-1-1">
+\begin{equation*}
+\begin{aligned}
+y &amp;= 2x + \frac{1}{3}\\
+y - \frac{1}{3} &amp; = 2x\\
+\frac{1}{2}y - \frac{1}{6} &amp; = x\\
+\frac{1}{2}x - \frac{1}{6} &amp; = y \text{(swap the variables)}\\
+f^{-1}(x) &amp; = \frac{1}{2}x - \frac{1}{6}
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.6.1"><a href="#finding-an-inverse-4" title="Copy heading and permalink for Solution 1.2.6.1" aria-label="Copy heading and permalink for Solution 1.2.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 1.2.6: Finding an Inverse"><a href="#finding-an-inverse" title="Copy heading and permalink for Example 1.2.6: Finding an Inverse" aria-label="Copy heading and permalink for Example 1.2.6: Finding an Inverse">🔗</a></div>
+</article></details>
+<div class="para" id="subsection-1-2-1-19">Unfortunately, this process can become difficult to do by hand for more complex functions. For example, finding the inverse of <span class="process-math">\(f(x) = x^3 + x\)</span> by hand is not particularly easy. You certainly won’t need to worry about this on the P exam.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-20">There is a strong connection between a function and its inverse via function composition. We should recall composition of functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-1-21">Let <span class="process-math">\(g\)</span> be a function from input set <span class="process-math">\(A\)</span> to output set <span class="process-math">\(B,\)</span> and let <span class="process-math">\(f\)</span> be a function from input set <span class="process-math">\(B\)</span> to output set <span class="process-math">\(C\text{.}\)</span> We call <span class="process-math">\(&gt;f(g(x))\)</span> or <span class="process-math">\(f\circ g\)</span> a <dfn class="terminology">&gt;composition function</dfn>, which has input set <span class="process-math">\(A\)</span> and output set <span class="process-math">\(C\)</span> so that if <span class="process-math">\(z=f(y)\)</span> and <span class="process-math">\(y=g(a)\text{,}\)</span> then <span class="process-math">\(f(g(x)) = f\circ g (x) = z\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="composition-of-functions" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Composition-of-Functions.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="composition-of-functions-2-1">Let <span class="process-math">\(f(x) = x^2 + 1, g(x) = \ln(5x),\)</span> and <span class="process-math">\(h(x) = 3x-2\)</span> on their respective domains. Determine each of the following and determine their implied domains and ranges.<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="composition-of-functions-2-2">
+<ol class="decimal" id="composition-of-functions-2-2-1">
+<li id="composition-of-functions-2-2-1-1">
+<div class="para logical" id="composition-of-functions-2-2-1-1-1">
+<div class="displaymath process-math" id="composition-of-functions-2-2-1-1-1-1">
+\begin{equation*}
+f \circ g
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#composition-of-functions-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="composition-of-functions-2-2-1-2">
+<div class="para logical" id="composition-of-functions-2-2-1-2-1">
+<div class="displaymath process-math" id="composition-of-functions-2-2-1-2-1-1">
+\begin{equation*}
+g\circ f
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#composition-of-functions-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="composition-of-functions-2-2-1-3">
+<div class="para logical" id="composition-of-functions-2-2-1-3-1">
+<div class="displaymath process-math" id="composition-of-functions-2-2-1-3-1-1">
+\begin{equation*}
+h\circ f
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#composition-of-functions-2-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="composition-of-functions-2-2-1-4">
+<div class="para logical" id="composition-of-functions-2-2-1-4-1">
+<div class="displaymath process-math" id="composition-of-functions-2-2-1-4-1-1">
+\begin{equation*}
+f\circ f
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#composition-of-functions-2-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="composition-of-functions-2-2-1-5">
+<div class="para logical" id="composition-of-functions-2-2-1-5-1">
+<div class="displaymath process-math" id="composition-of-functions-2-2-1-5-1-1">
+\begin{equation*}
+f\circ g\circ h
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#composition-of-functions-2-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="composition-of-functions-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="composition-of-functions-3-1">
+<ol class="decimal" id="composition-of-functions-3-1-1">
+<li id="composition-of-functions-3-1-1-1">
+<div class="para" id="composition-of-functions-3-1-1-1-1">
+<span class="process-math">\(f\circ g = \left[\ln(5x)\right]^2 + 1.\)</span> This has domain <span class="process-math">\((0,infty)\)</span> and range <span class="process-math">\([1,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#composition-of-functions-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="composition-of-functions-3-1-1-2">
+<div class="para" id="composition-of-functions-3-1-1-2-1">
+<span class="process-math">\(g\circ f = \ln\left[5(x^2+1)\right] = \ln(5x^2 +5)\text{.}\)</span> This has domain <span class="process-math">\((-\infty, \infty)\)</span> and range <span class="process-math">\([\ln(5),\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#composition-of-functions-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="composition-of-functions-3-1-1-3">
+<div class="para" id="composition-of-functions-3-1-1-3-1">
+<span class="process-math">\(h\circ f = 3(x^2+1) - 2 = 3x^2 + 1\text{.}\)</span> This has domain <span class="process-math">\((-\infty,\infty)\)</span> and range <span class="process-math">\([1,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#composition-of-functions-3-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="composition-of-functions-3-1-1-4">
+<div class="para" id="composition-of-functions-3-1-1-4-1">
+<span class="process-math">\(f\circ f = (x^2+1)^2 + 1 = x^4 + 2x^2 + 2\text{.}\)</span> This has domain <span class="process-math">\((-\infty,\infty)\)</span> and range <span class="process-math">\([2,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-3-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="composition-of-functions-3-1-1-4-2">
+<span class="process-math">\(f\circ g \circ h = \left[\ln(5(3x-2))\right]^2 + 1 = \left[\ln(15x-10)\right]^2 + 1\text{.}\)</span> This has domain <span class="process-math">\(\left(\frac{2}{3},\infty\right)\)</span> and range <span class="process-math">\([1,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-3-1-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#composition-of-functions-3-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#composition-of-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.7.1"><a href="#composition-of-functions-3" title="Copy heading and permalink for Solution 1.2.7.1" aria-label="Copy heading and permalink for Solution 1.2.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 1.2.7: Composition-of-Functions"><a href="#composition-of-functions" title="Copy heading and permalink for Example 1.2.7: Composition-of-Functions" aria-label="Copy heading and permalink for Example 1.2.7: Composition-of-Functions">🔗</a></div>
+</article></details>
+<div class="para" id="subsection-1-2-1-23">Note that <span class="process-math">\(f^{-1}\circ f(x) = f^{-1} (y) = x\text{.}\)</span> In a sense, the inverse function "undoes" the function. For example, consider <span class="process-math">\(f(x) = 3x-1\)</span> and <span class="process-math">\(f^{-1}(x) = \frac{1}{3}x + \frac{1}{3}\text{.}\)</span> These functions are inverse of each other. (We will review how to find inverse functions shortly.) Note that <span class="process-math">\(f\circ g(x) = 3\left(\frac{1}{3}x+\frac{1}{3}\right) - 1 = x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-1-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.1: Fundamental Concepts"><a href="#subsection-1-2-1" title="Copy heading and permalink for Subsection 1.2.1: Fundamental Concepts" aria-label="Copy heading and permalink for Subsection 1.2.1: Fundamental Concepts">🔗</a></div>
+</section>
+<section class="subsection" id="subsection-1-2-2">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Restricted Domains</span>
+</h3>
+<div class="para" id="subsection-1-2-2-2">Recall that <span class="process-math">\(&gt;(x) = x^2\)</span> is not invertible. However, the function <span class="process-math">\(&gt;\sqrt{x}\)</span> behaves like an inverse of it. For <em class="emphasis">non-negative values</em> of <span class="process-math">\(x\text{,}\)</span> we have <span class="process-math">\(&gt;\sqrt{x^2} = x\text{.}\)</span> This is not true for negative values of <span class="process-math">\(x\text{,}\)</span> however. But what if we only cared about the non-negative values of <span class="process-math">\(x\text{?}\)</span> Then, in a sense, <span class="process-math">\(&gt;x^2\)</span> is invertible. That is, <span class="process-math">\(&gt;x^2\)</span> is invertible on a <dfn class="terminology">restricted domain</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-2-2-3">Consider the highly-non one-to-one function <span class="process-math">\(\sin(x)\text{.}\)</span> Recall that it does, however, have a corresponding inverse function <span class="process-math">\(\sin^{-1}(x)\)</span> or <span class="process-math">\(\arcsin(x)\text{.}\)</span> How is this possible? We assume that <span class="process-math">\(\sin(x)\)</span> has a restricted domain over which it is one-to-one. Usually, we take that restricted domain as <span class="process-math">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sine-restricted"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/restricted-sine.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(\sin(x)\)</span> on a restricted domain.<div class="autopermalink" data-description="Figure 1.2.8"><a href="#sine-restricted" title="Copy heading and permalink for Figure 1.2.8" aria-label="Copy heading and permalink for Figure 1.2.8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsection-1-2-2-5">Let’s return to <span class="process-math">\(&gt;f(x) = x^2\text{.}\)</span> Can we find an inverse for of <span class="process-math">\(f\)</span> on the restricted domain of non-positive numbers. <span class="process-math">\(f^{-1}(x) = -\sqrt{x}\)</span> works. (E.g.\ <span class="process-math">\(f(-3) = 9\)</span> and <span class="process-math">\(f^{-1}(9) = -\sqrt{9} = -3\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="insight remark-like" id="subsection-1-2-2-6"><h4 class="heading">
+<span class="type">Insight</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsection-1-2-2-6-1">On the P exam, when determining densities of functions of random variables, if your function is not one-to-one, you may need to break up your function onto domains in which each segment is one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-2-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Insight 1.2.9"><a href="#subsection-1-2-2-6" title="Copy heading and permalink for Insight 1.2.9" aria-label="Copy heading and permalink for Insight 1.2.9">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.2.2: Restricted Domains"><a href="#subsection-1-2-2" title="Copy heading and permalink for Subsection 1.2.2: Restricted Domains" aria-label="Copy heading and permalink for Subsection 1.2.2: Restricted Domains">🔗</a></div>
+</section>
+<section class="subsection" id="subsection-1-2-3">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<details id="ex-functions-exer" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Are they functions?</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-functions-exer-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="6" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_2_10-Are_they_functions.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-functions-exer-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-functions-exer-1-1-1">Determine which of the following equations represent functions on their implied domains. Assume <span class="process-math">\(x\)</span> is the input variable, and <span class="process-math">\(y\)</span> is the output variable.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="extracted-ex-functions-exer-1-1-2">
+<ol class="upper-alpha ol-marker-1" id="extracted-ex-functions-exer-1-1-2-1">
+<li id="extracted-ex-functions-exer-1-1-2-1-1">
+<div class="para" id="extracted-ex-functions-exer-1-1-2-1-1-1">
+<span class="process-math">\(\displaystyle x=e^{y-1}-8\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.10.A"><a href="#extracted-ex-functions-exer-1-1-2-1-1" title="Copy heading and permalink for Item 1.2.10.A" aria-label="Copy heading and permalink for Item 1.2.10.A">🔗</a></div>
+</li>
+<li id="extracted-ex-functions-exer-1-1-2-1-2">
+<div class="para" id="extracted-ex-functions-exer-1-1-2-1-2-1">
+<span class="process-math">\(x = ay-b\)</span> for nonzero real numbers <span class="process-math">\(a,b\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.10.B"><a href="#extracted-ex-functions-exer-1-1-2-1-2" title="Copy heading and permalink for Item 1.2.10.B" aria-label="Copy heading and permalink for Item 1.2.10.B">🔗</a></div>
+</li>
+<li id="extracted-ex-functions-exer-1-1-2-1-3">
+<div class="para" id="extracted-ex-functions-exer-1-1-2-1-3-1">
+<span class="process-math">\(\displaystyle y = \sqrt{4-x^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.10.C"><a href="#extracted-ex-functions-exer-1-1-2-1-3" title="Copy heading and permalink for Item 1.2.10.C" aria-label="Copy heading and permalink for Item 1.2.10.C">🔗</a></div>
+</li>
+<li id="extracted-ex-functions-exer-1-1-2-1-4">
+<div class="para" id="extracted-ex-functions-exer-1-1-2-1-4-1">
+<span class="process-math">\(x^2 + y^2 = r\)</span> for <span class="process-math">\(r&gt;0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.10.D"><a href="#extracted-ex-functions-exer-1-1-2-1-4" title="Copy heading and permalink for Item 1.2.10.D" aria-label="Copy heading and permalink for Item 1.2.10.D">🔗</a></div>
+</li>
+<li id="extracted-ex-functions-exer-1-1-2-1-5">
+<div class="para" id="extracted-ex-functions-exer-1-1-2-1-5-1">None of the above<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.10.E"><a href="#extracted-ex-functions-exer-1-1-2-1-5" title="Copy heading and permalink for Item 1.2.10.E" aria-label="Copy heading and permalink for Item 1.2.10.E">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-functions-exer-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-functions-exer-1-2-1">
+<span class="process-math">\(\text{A, B, C}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.10.1"><a href="#extracted-ex-functions-exer-1-2" title="Copy heading and permalink for Answer 1.2.10.1" aria-label="Copy heading and permalink for Answer 1.2.10.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-functions-exer-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-functions-exer-1-3-1">
+<span class="process-math">\(x=ay-b\)</span> can be rearranged as <span class="process-math">\(y = \frac{1}{a}x + \frac{b}{a}\text{.}\)</span> Since <span class="process-math">\(a\ne 0\text{,}\)</span> this is simply a line, which is a function.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-functions-exer-1-3-2">
+<span class="process-math">\(y = \sqrt{4-x^2}\)</span> is already written in functional form. It can be seen that a single value for <span class="process-math">\(x\)</span> with <span class="process-math">\(-2\leq x \leq 2\)</span> will yield a single output value <span class="process-math">\(y\text{.}\)</span> Graphically, this is the top half of a circle.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-functions-exer-1-3-3">Solving <span class="process-math">\(x^2 + y^2 = r\)</span> for <span class="process-math">\(y\)</span> yields <span class="process-math">\(y = \pm \sqrt{r-x^2}\text{.}\)</span> This is not a function. For example, <span class="process-math">\(x=0\)</span> would give <span class="process-math">\(y = \sqrt{r}\)</span> or <span class="process-math">\(-\sqrt{r}\text{.}\)</span> Graphically, this is a circle with radius <span class="process-math">\(\sqrt{r}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-functions-exer-1-3-4">
+<span class="process-math">\(x = e^{y-1}-8\)</span> can be rearranged as <span class="process-math">\(y = \ln(x+8) + 1\text{.}\)</span> This is a logarithmic function.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-functions-exer-1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.10.1"><a href="#extracted-ex-functions-exer-1-3" title="Copy heading and permalink for Solution 1.2.10.1" aria-label="Copy heading and permalink for Solution 1.2.10.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.2.10: Are they functions?"><a href="#ex-functions-exer" title="Copy heading and permalink for Checkpoint 1.2.10: Are they functions?" aria-label="Copy heading and permalink for Checkpoint 1.2.10: Are they functions?">🔗</a></div>
+</article></details>
+<details id="ex-one-to-one-exer" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Are they One-to-One?</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-one-to-one-exer-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="7" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_2_11-Are_they_OnetoOne.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-one-to-one-exer-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-1">Determine which of the following functions are one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="extracted-ex-one-to-one-exer-1-1-2">
+<ol class="upper-alpha ol-marker-1" id="extracted-ex-one-to-one-exer-1-1-2-1">
+<li id="extracted-ex-one-to-one-exer-1-1-2-1-1">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-2-1-1-1">
+<span class="process-math">\(\displaystyle r(x) = |5-x|\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.11.A"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-1" title="Copy heading and permalink for Item 1.2.11.A" aria-label="Copy heading and permalink for Item 1.2.11.A">🔗</a></div>
+</li>
+<li id="extracted-ex-one-to-one-exer-1-1-2-1-2">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-2-1-2-1">
+<span class="process-math">\(\displaystyle h(x) = e^{x^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.11.B"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-2" title="Copy heading and permalink for Item 1.2.11.B" aria-label="Copy heading and permalink for Item 1.2.11.B">🔗</a></div>
+</li>
+<li id="extracted-ex-one-to-one-exer-1-1-2-1-3">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-2-1-3-1">
+<span class="process-math">\(\displaystyle k(x) = \ln(5x) + 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.11.C"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-3" title="Copy heading and permalink for Item 1.2.11.C" aria-label="Copy heading and permalink for Item 1.2.11.C">🔗</a></div>
+</li>
+<li id="extracted-ex-one-to-one-exer-1-1-2-1-4">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-2-1-4-1">
+<span class="process-math">\(\displaystyle f(x) = \sqrt[3]{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.11.D"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-4" title="Copy heading and permalink for Item 1.2.11.D" aria-label="Copy heading and permalink for Item 1.2.11.D">🔗</a></div>
+</li>
+<li id="extracted-ex-one-to-one-exer-1-1-2-1-5">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-2-1-5-1">
+<span class="process-math">\(g(x) = \sin(x)\)</span> on the restricted domain <span class="process-math">\([0,\pi]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.11.E"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-5" title="Copy heading and permalink for Item 1.2.11.E" aria-label="Copy heading and permalink for Item 1.2.11.E">🔗</a></div>
+</li>
+<li id="extracted-ex-one-to-one-exer-1-1-2-1-6">
+<div class="para" id="extracted-ex-one-to-one-exer-1-1-2-1-6-1">None of the above<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.11.F"><a href="#extracted-ex-one-to-one-exer-1-1-2-1-6" title="Copy heading and permalink for Item 1.2.11.F" aria-label="Copy heading and permalink for Item 1.2.11.F">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-one-to-one-exer-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-one-to-one-exer-1-2-1">
+<span class="process-math">\(\text{C, D}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.11.1"><a href="#extracted-ex-one-to-one-exer-1-2" title="Copy heading and permalink for Answer 1.2.11.1" aria-label="Copy heading and permalink for Answer 1.2.11.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-one-to-one-exer-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-one-to-one-exer-1-3-1">
+<span class="process-math">\(f(x) = \sqrt[3]{x}\)</span> is one-to-one. Power functions of the form <span class="process-math">\(x^p\)</span> or <span class="process-math">\(x^{\drac{1}{p}}\)</span> will be one-to-one when <span class="process-math">\(p\)</span> is odd.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-one-to-one-exer-1-3-2">
+<span class="process-math">\(g(x) = \sin(x)\)</span> is not one-to-one on the domain <span class="process-math">\([0,\pi]\text{.}\)</span> For example, <span class="process-math">\(g(0) \sin(0) = 0 = \sin(\pi) = g(\pi)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-one-to-one-exer-1-3-3">
+<span class="process-math">\(h(x) = e^{x^2}\)</span> is not one-to-one. For example, <span class="process-math">\(h(1) = h(-1) = e\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-one-to-one-exer-1-3-4">
+<span class="process-math">\(r(x) = |5-x|\)</span> is not one-to-one. For example, <span class="process-math">\(r(4) = r(6) = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-one-to-one-exer-1-3-5">
+<span class="process-math">\(k(x) = \ln(5x)+3\)</span> is one-to-one. It is a logarithmic function shifted up 3 units.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-one-to-one-exer-1-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.11.1"><a href="#extracted-ex-one-to-one-exer-1-3" title="Copy heading and permalink for Solution 1.2.11.1" aria-label="Copy heading and permalink for Solution 1.2.11.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.2.11: Are they One-to-One?"><a href="#ex-one-to-one-exer" title="Copy heading and permalink for Checkpoint 1.2.11: Are they One-to-One?" aria-label="Copy heading and permalink for Checkpoint 1.2.11: Are they One-to-One?">🔗</a></div>
+</article></details>
+<details id="ex-find-inverses" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Inverses.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-find-inverses-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="8" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_2_12-Find_the_Inverses.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-find-inverses-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-find-inverses-1-1-1">Determine the inverses of the following functions.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="extracted-ex-find-inverses-1-1-2">
+<ol class="lower-alpha ol-marker-2" id="extracted-ex-find-inverses-1-1-2-1">
+<li id="extracted-ex-find-inverses-1-1-2-1-1">
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-1-1">
+<span class="process-math">\(f(x)=\sqrt[3]{2x-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-1-2">
+<span class="process-math">\(f^{-1}(x)=\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.a"><a href="#extracted-ex-find-inverses-1-1-2-1-1" title="Copy heading and permalink for Item 1.2.12.a" aria-label="Copy heading and permalink for Item 1.2.12.a">🔗</a></div>
+</li>
+<li id="extracted-ex-find-inverses-1-1-2-1-2">
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-2-1">
+<span class="process-math">\(g(x)=3\ln(-4x)+1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-2-2">
+<span class="process-math">\(g^{-1}(x)=\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.b"><a href="#extracted-ex-find-inverses-1-1-2-1-2" title="Copy heading and permalink for Item 1.2.12.b" aria-label="Copy heading and permalink for Item 1.2.12.b">🔗</a></div>
+</li>
+<li id="extracted-ex-find-inverses-1-1-2-1-3">
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-3-1">
+<span class="process-math">\(h(x)=5^{x^3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-3-2">
+<span class="process-math">\(h^{-1}(x)=\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.c"><a href="#extracted-ex-find-inverses-1-1-2-1-3" title="Copy heading and permalink for Item 1.2.12.c" aria-label="Copy heading and permalink for Item 1.2.12.c">🔗</a></div>
+</li>
+<li id="extracted-ex-find-inverses-1-1-2-1-4">
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-4-1">
+<span class="process-math">\(r(x)=\frac{1}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-find-inverses-1-1-2-1-4-2">
+<span class="process-math">\(r^{-1}(x)=\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.d"><a href="#extracted-ex-find-inverses-1-1-2-1-4" title="Copy heading and permalink for Item 1.2.12.d" aria-label="Copy heading and permalink for Item 1.2.12.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-find-inverses-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-find-inverses-1-2-1">
+<span class="process-math">\(\frac{x^{3}+1}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.12.1"><a href="#extracted-ex-find-inverses-1-2" title="Copy heading and permalink for Answer 1.2.12.1" aria-label="Copy heading and permalink for Answer 1.2.12.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-find-inverses-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-find-inverses-1-3-1">
+<span class="process-math">\(\frac{-\exp\mathopen{}\left(\frac{x-1}{3}\right)}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.12.2"><a href="#extracted-ex-find-inverses-1-3" title="Copy heading and permalink for Answer 1.2.12.2" aria-label="Copy heading and permalink for Answer 1.2.12.2">🔗</a></div>
+</div></details>
+<details id="extracted-ex-find-inverses-1-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-find-inverses-1-4-1">
+<span class="process-math">\(\left(\frac{\ln\mathopen{}\left(x\right)}{1.60944}\right)^{0.333333}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.12.3"><a href="#extracted-ex-find-inverses-1-4" title="Copy heading and permalink for Answer 1.2.12.3" aria-label="Copy heading and permalink for Answer 1.2.12.3">🔗</a></div>
+</div></details>
+<details id="extracted-ex-find-inverses-1-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-find-inverses-1-5-1">
+<span class="process-math">\(\frac{1}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.12.4"><a href="#extracted-ex-find-inverses-1-5" title="Copy heading and permalink for Answer 1.2.12.4" aria-label="Copy heading and permalink for Answer 1.2.12.4">🔗</a></div>
+</div></details>
+<details id="extracted-ex-find-inverses-1-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-find-inverses-1-6-1">The inverse functions are:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-find-inverses-1-6-2">
+<ol class="lower-alpha ol-marker-2" id="extracted-ex-find-inverses-1-6-2-1">
+<li id="extracted-ex-find-inverses-1-6-2-1-1">
+<div class="para" id="extracted-ex-find-inverses-1-6-2-1-1-1"> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-find-inverses-1-6-2-1-1-2">
+<div class="displaymath process-math" id="extracted-ex-find-inverses-1-6-2-1-1-2-1">
+\begin{equation*}
+\begin{aligned}
+y \amp  = \sqrt[3]{2x-1}\\
+y^3 \amp  = 2x-1\\
+y^3 + 1 \amp  = 2x\\
+\frac{1}{2}y^3 + \frac{1}{2} \amp  x\\
+y \amp  = \frac{1}{2}x^3 + \frac{1}{2} \text{ (swap variables)}\\
+f^{-1} \amp  = \frac{1}{2}x^3 + \frac{1}{2}
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.a"><a href="#extracted-ex-find-inverses-1-6-2-1-1" title="Copy heading and permalink for Item 1.2.12.a" aria-label="Copy heading and permalink for Item 1.2.12.a">🔗</a></div>
+</li>
+<li id="extracted-ex-find-inverses-1-6-2-1-2">
+<div class="para" id="extracted-ex-find-inverses-1-6-2-1-2-1"> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-find-inverses-1-6-2-1-2-2">
+<div class="displaymath process-math" id="extracted-ex-find-inverses-1-6-2-1-2-2-1">
+\begin{equation*}
+\begin{aligned}
+y \amp  = 3ln(-4x)+1\\
+y-1 \amp  = 3\ln(-4x)\\
+\frac{1}{3}y-\frac{1}{3} \amp  = \ln(-4x)\\
+e^{\frac{1}{3}y - \frac{1}{3}} \amp  -4x\\
+-\frac{1}{4}e^{\frac{1}{3}y - \frac{1}{3}} \amp  = x\\
+y \amp  = -\frac{1}{4}e^{\frac{1}{3}x - \frac{1}{3}} \text{ (swap variables)}\\
+g^{-1}(x) \amp  = -\frac{1}{4}e^{\frac{1}{3}x - \frac{1}{3}}
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.b"><a href="#extracted-ex-find-inverses-1-6-2-1-2" title="Copy heading and permalink for Item 1.2.12.b" aria-label="Copy heading and permalink for Item 1.2.12.b">🔗</a></div>
+</li>
+<li id="extracted-ex-find-inverses-1-6-2-1-3">
+<div class="para" id="extracted-ex-find-inverses-1-6-2-1-3-1"> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-find-inverses-1-6-2-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-find-inverses-1-6-2-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+y \amp  = 5^{x^3}\\
+\ln(y) \amp  = \ln\left(5^{x^3}\right) = \ln(5)x^3\\
+\frac{\ln(y)}{\ln(5)} \amp  = x^3\\
+\sqrt[3]{\frac{\ln(y)}{\ln(5)}} \amp  = x\\
+y \amp  = \sqrt[3]{\frac{\ln(x)}{\ln(5)}} \text{ (swap variables)}\\
+h^{-1}(x) \amp  = \sqrt[3]{\frac{\ln(x)}{\ln(5)}}
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.c"><a href="#extracted-ex-find-inverses-1-6-2-1-3" title="Copy heading and permalink for Item 1.2.12.c" aria-label="Copy heading and permalink for Item 1.2.12.c">🔗</a></div>
+</li>
+<li id="extracted-ex-find-inverses-1-6-2-1-4">
+<div class="para" id="extracted-ex-find-inverses-1-6-2-1-4-1"> <div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-find-inverses-1-6-2-1-4-2">
+<div class="displaymath process-math" id="extracted-ex-find-inverses-1-6-2-1-4-2-1">
+\begin{equation*}
+\begin{aligned}
+y \amp  = \frac{1}{x}\\
+\frac{1}{y} \amp  = x\\
+y \amp  = \frac{1}{x} \text{ (swap variables)}\\
+r^{-1}(x) \amp  = \frac{1}{x}
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.2.12.d"><a href="#extracted-ex-find-inverses-1-6-2-1-4" title="Copy heading and permalink for Item 1.2.12.d" aria-label="Copy heading and permalink for Item 1.2.12.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-find-inverses-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.12.1"><a href="#extracted-ex-find-inverses-1-6" title="Copy heading and permalink for Solution 1.2.12.1" aria-label="Copy heading and permalink for Solution 1.2.12.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.2.12: Find the Inverses"><a href="#ex-find-inverses" title="Copy heading and permalink for Checkpoint 1.2.12: Find the Inverses" aria-label="Copy heading and permalink for Checkpoint 1.2.12: Find the Inverses">🔗</a></div>
+</article></details>
+<details id="ex-break-up-function" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Break the Domain.</span>
+</h4></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-break-up-function-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="9" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_2_13-Break_the_Domain.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-break-up-function-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-break-up-function-1-1-1">
+<span class="process-math">\(f(x) = |3-2x|\)</span> is not invertible.  Break the domain of $f$ into two components on which each component is invertible.  Find the inverse function for each invertible segment.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-break-up-function-1-1-2">On the restricted domain <span class="process-math">\([1.5,\infty)\text{,}\)</span> <span class="process-math">\(f(x)\)</span> is equal to the function <span class="process-math">\(g(x) =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and has an inverse function of <span class="process-math">\(g^{-1} =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-break-up-function-1-1-3">On the restricted domain <span class="process-math">\((-\infty, 1.5)\text{,}\)</span> <span class="process-math">\(f(x)\)</span> is equal to the function <span class="process-math">\(h(x) =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and has an inverse function of <span class="process-math">\(h^{-1} =\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-break-up-function-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-break-up-function-1-2-1">
+<span class="process-math">\(2x-3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.13.1"><a href="#extracted-ex-break-up-function-1-2" title="Copy heading and permalink for Answer 1.2.13.1" aria-label="Copy heading and permalink for Answer 1.2.13.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-break-up-function-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-break-up-function-1-3-1">
+<span class="process-math">\(0.5x+1.5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.13.2"><a href="#extracted-ex-break-up-function-1-3" title="Copy heading and permalink for Answer 1.2.13.2" aria-label="Copy heading and permalink for Answer 1.2.13.2">🔗</a></div>
+</div></details>
+<details id="extracted-ex-break-up-function-1-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-break-up-function-1-4-1">
+<span class="process-math">\(3-2x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.13.3"><a href="#extracted-ex-break-up-function-1-4" title="Copy heading and permalink for Answer 1.2.13.3" aria-label="Copy heading and permalink for Answer 1.2.13.3">🔗</a></div>
+</div></details>
+<details id="extracted-ex-break-up-function-1-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-break-up-function-1-5-1">
+<span class="process-math">\(-0.5x+1.5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.2.13.4"><a href="#extracted-ex-break-up-function-1-5" title="Copy heading and permalink for Answer 1.2.13.4" aria-label="Copy heading and permalink for Answer 1.2.13.4">🔗</a></div>
+</div></details>
+<details id="extracted-ex-break-up-function-1-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-break-up-function-1-6-1">In general, for a function <span class="process-math">\(f(x)\text{,}\)</span> <span class="process-math">\(|f(x)| = \pm f(x)\text{.}\)</span> So, our two functions are <span class="process-math">\(3-2x\)</span> and <span class="process-math">\(-(3-2x) = 2x-3\text{.}\)</span> These are on the domains <span class="process-math">\((-\infty,1.5)\)</span> and <span class="process-math">\([1.5,\infty)\text{,}\)</span> respectively.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-break-up-function-1-6-2">To find the inverses:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-break-up-function-1-6-3">
+<div class="displaymath process-math" id="extracted-ex-break-up-function-1-6-3-1">
+\begin{equation*}
+\begin{aligned}
+y \amp  = 2x-3\\
+y+3 \amp  = 2x\\
+\frac{1}{2}y + \frac{3}{2} \amp  = x\\
+y \amp  = \frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-break-up-function-1-6-4">and<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-break-up-function-1-6-5">
+<div class="displaymath process-math" id="extracted-ex-break-up-function-1-6-5-1">
+\begin{equation*}
+\begin{aligned}
+y \amp  = 3-2x\\
+y-3 \amp  = -2x\\
+-\frac{1}{2}y + \frac{3}{2} \amp  = x\\
+y \amp  = -\frac{1}{2}x + \frac{3}{2} \text{ (swap the variables)}\\
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-ex-break-up-function-1-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.2.13.1"><a href="#extracted-ex-break-up-function-1-6" title="Copy heading and permalink for Solution 1.2.13.1" aria-label="Copy heading and permalink for Solution 1.2.13.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.2.13: Break the Domain"><a href="#ex-break-up-function" title="Copy heading and permalink for Checkpoint 1.2.13: Break the Domain" aria-label="Copy heading and permalink for Checkpoint 1.2.13: Break the Domain">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 1.2.3: Exercises"><a href="#subsection-1-2-3" title="Copy heading and permalink for Subsection 1.2.3: Exercises" aria-label="Copy heading and permalink for Subsection 1.2.3: Exercises">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 1.2: Inverse Functions"><a href="#section-1-2" title="Copy heading and permalink for Section 1.2: Inverse Functions" aria-label="Copy heading and permalink for Section 1.2: Inverse Functions">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-1-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-1-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

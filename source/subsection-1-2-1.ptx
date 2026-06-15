@@ -1,0 +1,466 @@
+<subsection xml:id="subsection-1-2-1">
+    <title>Fundamental Concepts</title>
+    <p>
+        Remember when you found out that most of the algebra you do in school was applying inverse functions to two sides of an equation and that solving <m>x^2 = 4</m> wasn't as straightforward as you thought?
+        This section serves as a refresher on that idea.
+    </p>
+
+    <p>
+        Recall that a <term>function</term><idx>function</idx> is a set of ordered pairs <m>(x,y)</m> where the first coordinate comes from a <em>domain set</em> and the second comes from a <em>codomain set</em>, 
+        and for each <m>x</m> in the domain set, there is <em>exactly one</em> <m>y</m> in the range set so that
+        <m>(x,y)</m> is in the function.
+        More simply put, we can think of a function as a machine that turns inputs from a domain set into outputs in the range set.
+        However, to be a function, each input has exactly one output.  For example, if some machine <m>f(x)</m> had <m>f(1) = 2</m> and <m>f(1) = -2</m>, then <m>f(x)</m> would not be a function.
+        As another example, if we write the equation of a circle or radius 1 centered at the origin as <m>y = \pm \sqrt{1-x^2}</m>, this also would not be a function (e.g.\ <m>x=0</m> would yield both <m>y=1</m> and <m>y=-1</m>.
+    </p>
+
+    <p>
+        Graphically, we can tell if a curve on the Cartesian plane is a function using what is commonly called "the vertical-line test."  
+        Essentially, if it is possible to draw any vertical line that intersects your curve in more than one spot, the curve is not a function; otherwise, it is.  
+    </p>
+
+    <figure xml:id="function-graphs">
+        <caption>Left: A function. Right: Not a function. </caption>
+        <image width="80%" xml:id="functions">
+            <latex-image>
+        \begin{tikzpicture}
+            \begin{scope}[xshift=0cm]
+                \draw[&lt;->, thick] (-2,0)--(2,0);
+                \draw[&lt;->, thick] (0,-2.5)--(0,2.5);
+                \draw[domain=-1.5:1.5, smooth, variable=\x, blue, &lt;->, thick]
+                plot ({\x},{0.6*\x*\x*\x - 0.2*\x + 0.2});
+                \draw[dashed] (0.5,2.5)--(0.5,-2.5);
+                \node at (-0.2,2.3) {$y$};
+                \node at (1.8,-0.2) {$x$};
+                \node at (0,-3) {Totes a Function};
+            \end{scope}
+
+            \begin{scope}[xshift=6cm]
+                \draw[&lt;->, thick] (-2,0)--(2,0);
+                \draw[&lt;->, thick] (0,-2.5)--(0,2.5);
+                \draw[red, thick] plot[smooth cycle]
+                coordinates {(-1.5,.2) (1,1) (1.3,1) (0.4,0) (1.8,-1.3)};
+                \draw[dashed] (0.5,2.5)--(0.5,-2.5);
+                \node at (-0.2,2.3) {$y$};
+                \node at (1.8,-0.2) {$x$};
+                \node at (0,-3) {Loser Non-Function};
+            \end{scope}
+        \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+
+    <p>
+        When considering inverse functions, it is helpful to recall <term>injective</term> or <term>one-to-one functions.</term><idx>one-to-one</idx>  
+        A function <m>f(x)</m> is one-to-one (or injective) if for any inputs <m>x</m> and <m>y</m> in the domain <m>f(x) = f(y)</m> implies <m>x=y</m>.  
+        Simply put, two different inputs must have two different outputs.  
+        For example, the function <m>f(x) = 3x-1</m> is one-to-one, but the function <m>g(y) = x^2</m> is not.  
+        (e.g. <m>g(-1) = g(1) = 1</m>.)
+    </p>
+
+    <p>
+        Graphically, we can tell if a function on the Cartesian plane is one-to-one by using what is called ``the horizontal-line test.''  Like the vertical-line test, if it is possible to draw any horizontal line that intersections the function at more than one spot, the function is not one-to-one; otherwise, it is.
+    </p>
+
+    <figure xml:id="one-to-one-graphs">
+        <caption>Left: A one-to-one function. Right: Not a one-to-one function.</caption>
+        <image width="80%" xml:id="one-to-one">
+            <latex-image>
+            \begin{tikzpicture}
+                \begin{scope}[xshift=0cm]
+                \draw[&lt;->,thick] (-2,0)--(2,0);
+                \draw[&lt;->,thick] (0,-2.5)--(0,2.5);
+                \draw[domain=-1.5:1.5,smooth,variable=\x,blue,&lt;->,thick]
+                    plot ({\x},{0.7*exp(\x)-1});
+                \draw[dashed] (-2.5,0.5)--(2.5,0.5);
+                \draw (-0.2,2.3) node{$y$};
+                \draw (1.8,-0.2) node{$x$};
+                \draw (0,-3) node{Oh Yeah, One-to-one};
+                \end{scope}
+
+                \begin{scope}[xshift=6cm]
+                \draw[&lt;->,thick] (-2,0)--(2,0);
+                \draw[&lt;->,thick] (0,-2.5)--(0,2.5);
+                \draw[domain=-1.5:1.5,smooth,variable=\x,red,&lt;->,thick]
+                    plot ({\x},{0.8*\x*\x*\x - 0.6*\x + 0.2});
+                \draw[dashed] (-1.9,0.2)--(1.9,0.2);
+                \draw (-0.2,2.3) node{$y$};
+                \draw (1.8,-0.2) node{$x$};
+                \draw (0,-3) node{Not one-to-one};
+                \end{scope}
+            \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+
+    <example xml:id="ex-is-it-a-function">
+        <title>Is It a Function?</title>
+        <statement>
+            <p>
+                Determine if the following curves are functions.  
+                Consider <m>x</m> the input variable and <m>y</m> the output variable.
+                <ol>
+                    <li>
+                        <p>
+                            <md>x = y^2</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>\frac{x^2}{4} + \frac{y^2}{9} = 1</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>x = \frac{y}{2} - 1</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>e^y = \ln(x)</md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Nope.  But <m>x</m> is a function of <m>y</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Not this one either.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Yep.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It is exuding function realness.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+       <solution>
+            <p>
+                This is not a function.  For example, if <m>x = 4</m>, then <m>y =2, -2</m>.
+                (If <m>x</m> were the output variable, then <m>x</m> would be a function of <m>y</m>.)
+            </p>
+
+            <p>
+                This is not a function.
+                It forms an ellipse if graphed.
+                As an example, if <m>x=1</m>, then <m>y = 3\sqrt{1 - \frac{1}{4}} = \frac{3\sqrt{3}}{2}</m> or <m>y = -\frac{3\sqrt{3}}{2}.</m> 
+            </p>
+
+            <p>
+                This is a function.
+                If we solve for <m>y</m>, we get <m>y = 2x+2</m>, which is a line.
+                This passes the vertical-line test.
+            </p>
+
+            <p>
+                This is a function.  
+                If we solve for <m>y</m>, we get <m>y = \ln(\ln(x))</m>, which is a function.  
+                (Here we need the fact that <m>f(x) = \ln(x)</m> is a function, which can easily be seen from its graph.)
+            </p>
+        </solution>
+    </example>
+
+    <example>
+        <title>Is It One-to-One?</title>
+        <statement>
+            <p>
+                Determine if the following functions are one-to-one on their domains.
+                <ol>
+                    <li>
+                        <p>
+                            <md>f(x) = x^3 - x + 1</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>g(x) = \sin(x)</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>h(x) = \ln(x+1)</md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <md>k(x) =7x-4</md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Not a one-to-one winner.  Try again.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Super not one-to-one.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            One-to-one.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Absolutely one-to-one.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+       <solution>
+            <p>
+                This is not one-to-one.  If we draw the graph, it fails the horizontal-line test.  We could also note that <m>f(0) = f(1) = 1</m>.
+            </p>
+
+            <p>
+                This is super non one-to-one.  As a sinusoidal wave, it gloriously fails the horizontal line test.  We could also note that <m>g(0) = g(\pi) = 0</m>.
+            </p>
+
+            <p>
+                This is one-to-one.  
+                A basic logarithmic curve passes the horizontal line test.
+            </p>
+
+            <p>
+                This is one-to-one.  
+                It is a (non-horizontal) line, which passes the horizontal line test.
+            </p>
+        </solution>
+    </example>
+
+    <p>
+        Finally, we move on to inverse functions.  Let <m>f</m> be a function with input set <m>A</m> and output set <m>B</m>.  
+        Let <m>g</m> be a function with input set <m>B</m> and output set <m>A</m>.  
+        If for any <m>x\in A</m> and <m>y\in B</m>, <m>y = f(x)</m> precisely when <m>g(y) = x</m>, we call <m>g</m> the <term>inverse function of f</term><idx>Inverse function</idx>.
+        We usually denote the inverse function of <m>f</m> as <m>f^{-1}</m>.
+    </p>
+
+    <p>
+        Here is an important fact.  
+        <em>Not all functions have inverses.</em>  
+        If a function has an inverse, we call it <term>invertible</term><idx>Function!invertible</idx>.  
+        Consider the function <m>f(x) = x^2</m>.  We might think that <m>g(x) = \sqrt{x}</m> is its inverse.  
+        However, it is not.  
+        At least, not exactly.  
+        Recall that an inverse <m>f^{-1}</m> would have the requirement of being a function and <m>f(x) = y</m> if and only if <m>f^{-1}(y) = x</m>.  
+        Note that for <m>f(x) = x^2</m>, we have <m>f(-2) = f(2) = 4</m>.  
+        This would mean that an inverse of <m>x^2</m> would have <m>f^{-1}(4) = -2</m> and <m>f^{-1}(4) = 2</m>.  
+        This would make <m>f^{-1}</m> <em>not a function</em>.  
+        So, such an inverse does not exist.  
+        Hence, <m>x^2</m> is not invertible.
+    </p>
+
+    <p>
+        This brings up the question: when is a function invertible?  
+        It turns out, this is usually relatively easy.  
+        Recall that a one-to-one function is a function so that <m>f(x_1) = f(x_2)</m> implies <m>x_1 = x_2</m>.  
+        This would mean that for any potential inverse function <m>f^{-1}</m>, <m>f^{-1}(y)</m> would have a unique output. 
+        (Otherwise for those multiple outputs <m>x_1, x_2</m>, we would have <m>f(x_1) = f(x_2)</m>, which would make <m>f</m> not one-to-one.)  
+        So, <m>f^{-1}</m> actually is a function.  
+        From this, we make the following observation:
+    </p>
+
+    <insight>
+        <p>
+            A function is invertible if and only if it is one-to-one on its domain.
+        </p>
+    </insight>
+
+    <p>
+        We proved one direction of the above observation in the preceding paragraph.  The proof that invert-ability implies the function is one-to-one is similar.
+    </p>
+
+    <p>
+        Now onto finding inverse function.  
+        Suppose that <m>f(x)</m> is an invertible function.  
+        We can find the inverse function of <m>f</m> via the following general procedure:
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    Begin with the equation <m>y = f(x)</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Solve for <m>x</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Swap the variables <m>x</m> and <m>y</m>.
+                    The resulting equation is <m>y = f^{-1}(x)</m>.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <example xml:id="finding-an-inverse">
+        <title>Finding an Inverse</title>
+        <statement>
+            <p>
+                Find the inverse function of <m>f(x) = 2x + \dfrac{1}{3}</m>.
+            </p>
+        </statement>
+        
+        <answer>
+            <p>
+                <md>
+                    f^{-1}(x) = \frac{1}{2}x - \frac{1}{6}.
+                </md>
+                
+            </p>
+        </answer>
+
+        <solution>
+            <p>
+                <md>
+                    \begin{aligned}
+                        y &amp;= 2x + \frac{1}{3}\\
+                        y - \frac{1}{3} &amp; = 2x\\
+                        \frac{1}{2}y - \frac{1}{6} &amp; = x\\
+                        \frac{1}{2}x - \frac{1}{6} &amp; = y \text{(swap the variables)}\\
+                        f^{-1}(x) &amp; = \frac{1}{2}x - \frac{1}{6}
+                    \end{aligned}
+                </md>
+            </p>
+        </solution>
+    </example>
+
+    <p>
+        Unfortunately, this process can become difficult to do by hand for more complex functions.  
+        For example, finding the inverse of <m>f(x) = x^3 + x</m> by hand is not particularly easy.  
+        You certainly won't need to worry about this on the P exam.
+    </p>
+
+    <p>
+        There is a strong connection between a function and its inverse via function composition.
+        We should recall composition of functions. 
+    </p>
+
+    <p>
+        Let <m>g</m> be a function from input set <m>A</m> to output set <m>B,</m> and let <m>f</m> be a function from input set <m>B</m> to output set <m>C</m>.  
+        We call <m>>f(g(x))</m> or <m>f\circ g</m> a <term>>composition function</term><idx>composition of functions</idx>, 
+        which has input set <m>A</m> and output set <m>C</m> so that if <m>z=f(y)</m> and <m>y=g(a)</m>, 
+        then <m>f(g(x)) = f\circ g (x) = z</m>.
+    </p>
+
+    <example xml:id="composition-of-functions">
+        <title>Composition-of-Functions</title>
+        <statement>
+            <p>
+                Let <m>f(x) = x^2 + 1, g(x) = \ln(5x),</m> and <m>h(x) = 3x-2</m> on their respective domains.
+                Determine each of the following and determine their implied domains and ranges.
+            </p>
+
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <md>f \circ g</md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>g\circ f</md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>h\circ f</md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>f\circ f</md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>f\circ g\circ h</md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>f\circ g = \left[\ln(5x)\right]^2 + 1.</m>
+                            This has domain <m>(0,infty)</m> and range <m>[1,\infty)</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>g\circ f = \ln\left[5(x^2+1)\right] = \ln(5x^2 +5)</m>.
+                            This has domain <m>(-\infty, \infty)</m> and range <m>[\ln(5),\infty)</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>h\circ f = 3(x^2+1) - 2 = 3x^2 + 1</m>.
+                            This has domain <m>(-\infty,\infty)</m> and range <m>[1,\infty)</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m> f\circ f = (x^2+1)^2 + 1 = x^4 + 2x^2 + 2</m>.
+                            This has domain <m>(-\infty,\infty)</m> and range <m>[2,\infty)</m>.
+                        </p>
+
+                        <p>
+                            <m>f\circ g \circ h = \left[\ln(5(3x-2))\right]^2 + 1 = \left[\ln(15x-10)\right]^2 + 1</m>.
+                            This has domain <m>\left(\frac{2}{3},\infty\right)</m> and range <m>[1,\infty)</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
+
+    <p>
+         Note that <m>f^{-1}\circ f(x) = f^{-1} (y) = x</m>.  
+         In a sense, the inverse function "undoes" the function.  
+         For example, consider <m>f(x) = 3x-1</m> and <m>f^{-1}(x) = \frac{1}{3}x + \frac{1}{3}</m>.  
+         These functions are inverse of each other.   
+         (We will review how to find inverse functions shortly.)  
+         Note that <m>f\circ g(x) = 3\left(\frac{1}{3}x+\frac{1}{3}\right) - 1 = x</m>.
+    </p>
+</subsection>

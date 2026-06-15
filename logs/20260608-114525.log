@@ -1,0 +1,31 @@
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/Users/jwjohnson/Documents/P Exam Book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/jwjohnson/Documents/P Exam Book/source
+INFO    : verifying and expanding input directory: /Users/jwjohnson/Documents/P Exam Book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/jwjohnson/Documents/P Exam Book/generated-assets
+INFO    : verifying and expanding input directory: /Users/jwjohnson/Documents/P Exam Book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/jwjohnson/Documents/P Exam Book/assets
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/extract-pg.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/extract-pg.xsl
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/pretext-ww-problem-sets.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located at: pretext/book/chapter/section
+INFO    : *              located within: "section-1-1" (xml:id), "Solving Quadratic Equations the 20th Century Way" (title)
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/pretext-ww-problem-sets.xsl
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/support/pretext-pg-macros.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/support/pretext-pg-macros.xsl
+INFO    : validating, cleaning server URL: https://webwork-ptx.aimath.org
+INFO    : building representations of generated WeBWorK problem
+INFO    : sending ex-1-1 to server to save in /Users/jwjohnson/Documents/P Exam Book/generated-assets/webwork: origin is 'generated'
+INFO    : Removing temporary directory /var/folders/tk/zff0dh8543lcc33mm1dc6sb40000gn/T/ptx-qdzwzz73
+INFO    : Removing temporary directory /var/folders/tk/zff0dh8543lcc33mm1dc6sb40000gn/T/ptx-e8_9t5kd
+INFO    : Finished generating assets.
+
+INFO    : Finished generating assets successfully.
+
+INFO    : 

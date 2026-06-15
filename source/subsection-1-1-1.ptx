@@ -1,0 +1,49 @@
+<subsection xml:id="subsection-1-1-1">
+  <title>Graphs of Quadratic Equations</title>
+
+  <p> A quadratic equation, like any real-valued function, can be graphed on
+    the Cartesian plane. It turns out that figures called parabolas, which are
+    geometric curves defined by things called directrices and foci (don't
+    worry about it), are modeled by quadratic equations. Recall from your
+    algebra studies that a parabola is that U-shaped curve that can open
+    upward or downward. Here are some perfectly good parabolas below. 
+  </p>
+
+  <figure xml:id="quad-graphs">
+    <caption>Three parabolas.
+    <latex /></caption>
+    <image width="80%" xml:id="quads">
+    <latex-image>
+      \begin{tikzpicture}
+          \draw[&lt;->,thick](-5,0)--(5,0);
+          \draw[&lt;->, thick](0,-4)--(0,4);
+          \draw(-.3,3.8) node{$y$};
+          \draw(4.8,.3) node{$x$};
+          \draw[domain=.17:4.98,smooth,variable=\x,blue,&lt;->, thick] plot ({\x},{0.5*\x*\x - 3*\x + 4.5});
+          \draw[domain=-3.45:1.45,smooth,variable=\x,red,&lt;->, thick] plot ({\x},{-0.8*\x*\x - 1.6*\x });
+          \draw[domain=-3.412:-0.582,smooth,variable=\x,orange,&lt;->, thick] plot ({\x},{1.5*\x*\x + 6*\x + 7});
+          \node[rotate=-51, blue] at (2,1) {$f(x)$};
+          \node[rotate=59, red] at (-2.2,-1) {$g(x)$};
+          \node[rotate=76, orange] at (-1.1,3) {$h(x)$};
+          \filldraw[red](0,0) circle(2.1pt);
+          \filldraw[red](-2,0) circle(2.1pt);
+          \filldraw[blue](3,0) circle(2.1pt);
+        \end{tikzpicture}
+    </latex-image>
+    </image>
+  </figure>
+
+  <p>
+    Algebraically, whether a parabola opens upward or downward depends on the coefficient of the $x^2$ term in the parabola's equation.  
+    In the equation <m>y=ax^2+bx+c</m>, the parabola will open upward if $a>0$ and downward if $a&lt;0$.  
+    (If $a=0$, the we have a line rather than a parabola.)
+  </p>
+
+  <p>
+    For many parabolas, some points of interest include the points where the curve intersects the <m>x</m>-axis.  
+    For a quadratic equation <m>ax^2 + bx+c</m> representing such a parabola, the <m>x</m>-values of those points would be the solutions to <m>ax^2 + bx + c = 0</m>.
+    The solutions to such an equation are called the \textit{roots} of the equation. 
+    As can be seen in the above figure, not all quadratic equations have roots as not all parabolas intersect the $x$-axis.  
+    Further, some quadratic equations only have one root. 
+  </p>  
+</subsection>

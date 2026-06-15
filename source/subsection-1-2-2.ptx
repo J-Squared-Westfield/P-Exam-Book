@@ -1,0 +1,51 @@
+<subsection xml:id="subsection-1-2-2">
+    <title>Restricted Domains</title>
+    <p>
+        Recall that <m>>(x) = x^2</m> is not invertible.  
+        However, the function <m>>\sqrt{x}</m> behaves like an inverse of it.  
+        For <em>non-negative values</em> of <m>x</m>, we have <m>>\sqrt{x^2} = x</m>.  
+        This is not true for negative values of <m>x</m>, however.  
+        But what if we only cared about the non-negative values of <m>x</m>?  
+        Then, in a sense, <m>>x^2</m> is invertible.  
+        That is, <m>>x^2</m> is invertible on a <term>restricted domain</term><idx>restricted domain</idx>.  
+    </p>
+
+    <p>
+       Consider the highly-non one-to-one function <m>\sin(x)</m>.  
+       Recall that it does, however, have a corresponding inverse function <m>\sin^{-1}(x)</m> or <m>\arcsin(x)</m>.  
+       How is this possible?  
+       We assume that <m>\sin(x)</m> has a restricted domain over which it is one-to-one.  
+       Usually, we take that restricted domain as <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>. 
+    </p>
+
+    <figure xml:id="sine-restricted">
+        <caption><m>\sin(x)</m> on a restricted domain. </caption>
+        <image width="80%" xml:id="restricted-sine">
+            <latex-image>
+                \begin{tikzpicture}
+                    \draw[&lt;->,thick] (-4,0)--(7,0);
+                    \draw[&lt;->,thick] (0,-1.5)--(0,1.5);
+                    \draw[domain=-3.9:6.9,dashed,variable=\x,blue,&lt;->, thick] plot ({\x},{sin(\x r)});
+                    \draw[domain=-1.5708:1.5708,smooth,variable=\x, very thick] plot ({\x},{sin(\x r)});
+                    \draw[blue] (6.1,-.8) node {$\sin(x)$};
+                    \draw (2,1.2) node {$\sin(x)$ on $[-\pi/2, \pi/2]$};
+                    \draw(.5,1)--(.5,.7);
+                    \draw (1.5,-1.8) node {$\sin(x)$ on a restricted domain};
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+
+    <p>
+        Let's return to <m>>f(x) = x^2</m>.  
+        Can we find an inverse for of <m>f</m> on the restricted domain of non-positive numbers.  
+        <m>f^{-1}(x) = -\sqrt{x}</m> works.  
+        (E.g.\ <m>f(-3) = 9</m> and <m>f^{-1}(9) = -\sqrt{9} = -3</m>.)  
+    </p>
+
+    <insight>
+        <p>
+            On the P exam, when determining densities of functions of random variables, if your function is not one-to-one, you may need to break up your function onto domains in which each segment is one-to-one.
+        </p>
+    </insight>
+</subsection>

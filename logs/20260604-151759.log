@@ -1,0 +1,116 @@
+INFO    : Now preparing local server to preview your project directory `/Users/jwjohnson/Documents/P Exam Book`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : setting up PreTeXt web server ...
+INFO    : Added pretext web server entry 87de41480a 62192 8128 localhost
+
+INFO    : Server will soon be available at http://localhost:8128
+INFO    : Opening browser for target `web` at http://localhost:8128/output/web
+WARNING : Port 8128 could not be used.
+WARNING : Trying port 8129 instead.
+
+WARNING : Port 8129 could not be used.
+WARNING : Trying port 8130 instead.
+
+WARNING : Port 8130 could not be used.
+WARNING : Trying port 8131 instead.
+
+WARNING : Port 8131 could not be used.
+WARNING : Trying port 8132 instead.
+
+WARNING : Port 8132 could not be used.
+WARNING : Trying port 8133 instead.
+
+WARNING : Port 8133 could not be used.
+WARNING : Trying port 8134 instead.
+
+WARNING : Port 8134 could not be used.
+WARNING : Trying port 8135 instead.
+
+WARNING : Port 8135 could not be used.
+WARNING : Trying port 8136 instead.
+
+WARNING : Port 8136 could not be used.
+WARNING : Trying port 8137 instead.
+
+WARNING : Port 8137 could not be used.
+WARNING : Trying port 8138 instead.
+
+WARNING : Port 8138 could not be used.
+WARNING : Trying port 8139 instead.
+
+WARNING : Port 8139 could not be used.
+WARNING : Trying port 8140 instead.
+
+WARNING : Port 8140 could not be used.
+WARNING : Trying port 8141 instead.
+
+WARNING : Port 8141 could not be used.
+WARNING : Trying port 8142 instead.
+
+WARNING : Port 8142 could not be used.
+WARNING : Trying port 8143 instead.
+
+WARNING : Port 8143 could not be used.
+WARNING : Trying port 8144 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8144 localhost
+
+INFO    : Server will soon be available at http://localhost:8144
+INFO    : Opening browser for target `web` at http://localhost:8144/output/web
+WARNING : Port 8144 could not be used.
+WARNING : Trying port 8145 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8145 localhost
+
+INFO    : Server will soon be available at http://localhost:8145
+INFO    : Opening browser for target `web` at http://localhost:8145/output/web
+WARNING : Port 8145 could not be used.
+WARNING : Trying port 8146 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8146 localhost
+
+INFO    : Server will soon be available at http://localhost:8146
+INFO    : Opening browser for target `web` at http://localhost:8146/output/web
+WARNING : Port 8146 could not be used.
+WARNING : Trying port 8147 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8147 localhost
+
+INFO    : Server will soon be available at http://localhost:8147
+INFO    : Opening browser for target `web` at http://localhost:8147/output/web
+WARNING : Port 8147 could not be used.
+WARNING : Trying port 8148 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8148 localhost
+
+INFO    : Server will soon be available at http://localhost:8148
+INFO    : Opening browser for target `web` at http://localhost:8148/output/web
+WARNING : Port 8148 could not be used.
+WARNING : Trying port 8149 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8149 localhost
+
+INFO    : Server will soon be available at http://localhost:8149
+INFO    : Opening browser for target `web` at http://localhost:8149/output/web
+WARNING : Port 8149 could not be used.
+WARNING : Trying port 8150 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8150 localhost
+
+INFO    : Server will soon be available at http://localhost:8150
+INFO    : Opening browser for target `web` at http://localhost:8150/output/web
+WARNING : Port 8150 could not be used.
+WARNING : Trying port 8151 instead.
+
+INFO    : Added pretext web server entry 87de41480a 62192 8151 localhost
+
+INFO    : Server will soon be available at http://localhost:8151
+INFO    : Opening browser for target `web` at http://localhost:8151/output/web
+WARNING : Port 8151 could not be used.
+WARNING : Trying port 8152 instead.
+
+INFO    : There are 10 or more servers on file. Cleaning up ...

@@ -1,0 +1,17 @@
+<section xml:id="section-1-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Inverse Functions</title>
+    <p>
+        <alert>Do I need to review inverse functions?</alert>
+        In a later section, we will determine the densities of functions of random variables. 
+        In doing so, we will need to work with the inverses of real- valued functions. 
+        In this section, we will <em>briefly</em> review inverse functions.
+    </p>
+
+    <p>
+        If you know how to take a non-invertible function like <m>f(x) = x^2-2x-3</m> and break it into invervals on which it is invertible and find inverses on each interval, you may not need to review this section.
+    </p>
+
+    <xi:include href="./subsection-1-2-1.ptx"/>
+    <xi:include href="./subsection-1-2-2.ptx"/>
+    <xi:include href="./subsection-1-2-3.ptx"/>
+</section>

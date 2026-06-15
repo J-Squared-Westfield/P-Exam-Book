@@ -1,0 +1,146 @@
+<subsection xml:id="subsection-1-3-2">
+    <title>Limits at Infinity</title>
+    <p>
+        Most of the limits you will need to calculate on the P exam will be limits at infinity.  
+    </p>
+
+    <definition xml:id="def-">
+        <statement>
+            <p><idx>limit at infinity</idx>
+                <ul>
+                    <li>
+                        <p>
+                            <m>\lim_{x\rightarrow \infty} f(x) = L</m> if for every <m>\epsilon > 0</m>, there is some <m>x_0</m> so that for any <m>x</m>, <m>x>x_0</m> implies <m>L-\epsilon &lt; f(x) &lt; L+\epsilon.</m> 
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\lim_{x\rightarrow -\infty} f(x) = L</m> if for every <m>\epsilon > 0</m>, there is some <m>x_0</m> so that for any <m>x</m>, <m>x&lt;x_0</m> implies <m>L-\epsilon &lt; f(x) &lt; L+\epsilon.</m> 
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </definition>
+
+    <p>
+        If <m>\lim_{x\rightarrow \pm \infty} f(x)</m> and <m>\lim_{x\rightarrow \pm \infty} g(x)</m> exist and are finite, then the basic rules for limits carry over for limits at infinity.  
+        Here are some useful basic rules for limits at infinity.
+    </p>
+
+    <assemblage xml:id="assemblage-limits-at-infinity-rules">
+        <title>Common Rules for Limits at Infinity</title>
+        <p>
+            <ul>
+                <li>
+                    <p>For positive <m>n</m>, <m>\lim_{x\rightarrow \infty} x^n =  \infty</m> and <m>\lim_{x\rightarrow \infty} x^{-n} = \lim_{x\rightarrow \infty} \frac{1}{x^n} = 0</m>.</p>
+                </li>
+
+                <li>
+                    <p>For positive <m>n</m>, <m>\lim_{x\rightarrow -\infty} x^n =  -\infty</m> if <m>n</m> is odd and <m>\lim_{x\rightarrow -\infty} x^n =  \infty</m> if <m>n</m> is even.</p>
+                </li>
+
+                <li>
+                    <p>
+                        For <m>a>1</m>, <m>\lim_{x\rightarrow \infty} a^x = \infty</m> and <m>\lim_{x\rightarrow -\infty} a^x = 0.</m>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        For <m>0&lt;a&lt;1</m>, <m>\lim_{x\rightarrow \infty} a^x = 0</m> and <m>\lim_{x\rightarrow -\infty} a^x = \infty.</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </assemblage>
+
+    <example xml:id="ex-limits-at-inf">
+            <title>Limits at Infinity</title>
+            <statement>
+                <p>
+                    Find the following limits.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <md>
+                                    \lim_{x\rightarrow -\infty} e^{x^2 - 3x+1}
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <md>
+                                    \lim_{x\rightarrow \infty} \frac{5}{7x^2}
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <md>
+                                    \lim_{x\rightarrow \infty} 2^{-3x+1}
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <answer>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\infty</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>0</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>0</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </answer>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Since <m>x^6 - 1</m> tends toward infinity as <m>x</m> approaches <m>-\infty</m>, we have <m>e^{x^6-1}</m> tending toward <m>\infty</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <md>
+                                    \lim_{x\rightarrow \infty} \frac{5}{-7x^2} = -\frac{5}{7}\lim_{x\rightarrow \infty}{1}{x^2} = 0.
+                                </md>
+                                
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Since <m>-7x^2</m> tends toward <m>-\infty</m>, we have <m> \lim_{x\rightarrow \infty} 5^{-7x^2} = 0.</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+</subsection>

@@ -1,0 +1,141 @@
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <bibinfo>
+    <author>
+      <personname>Jesse Johnson, Ph.D.</personname>
+      <department>Department of Mathematics</department>
+      <institution>Westfield State University</institution>
+    </author>
+  </bibinfo>
+  <titlepage>
+    <titlepage-items></titlepage-items>
+  </titlepage>
+
+  <colophon>
+    <colophon-items></colophon-items>
+  </colophon>
+  <preface xml:id="sec-Preface">
+    <title>Preface</title>
+    <p>
+      The main goal of this text is to offer actuarial candidates a free resource both to learn some
+      probability theory and its applications and to study for the P/1 actuarial exam.  The actuarial
+      exams are themselves very expensive for many candidates.  Adding paid study materials on top of 
+      the exam fees can make the road to an actuarial credential overly-burdensome for many.  Hopefully,
+      users of this text will find it to be a valuable resource for both learning and studying.  
+    </p>
+  </preface>
+
+  <preface xml:id="sec-Introduction">
+    <title>Introduction</title>
+
+    <p>
+      Actuaries are experts in financial risk.  Their employers and clients look to them to help construct products that will be both competitive and profitable in a changing
+      and unpredictable world.  They are tasked with helping companies structure assets and liabilities so that these companies can meet their financial obligations efficiently
+      and predictably while also employing investment strategies with their capital.  The work of an actuary is important, modern, relevant, challenging, and rewarding.  In a very
+      broad view, much of the topics in which actuaries must be comfortable fall into two categories: probability theory and interest theory.  A common field for actuaries is life
+      insurance in which, for example, an actuary may need to determine the present value (interest theory) of a future benefit payment that will be paid at an unknown time (probability).
+      These two topics are so fundamental that the first two exams administered by the Society of Actuaries cover precisely these two topics.  All later exams expand on these fundamental tools
+      an introduce actuarial concepts that combine them to create some fascinating models.
+    </p>
+
+    <p>
+    In this text, we will examine the theory of probability with lens to its role as one of the main foundations of actuarial modeling.  The theory will help us develop the
+    mathematical language and tools to help define actuarial problems.  We will apply this theory to important concepts in the actuarial world.  The probability-theoretic concepts
+    we discuss will be driven by what is necessary and relevant to success in the actuarial world.  While there is so much more to explore in the world of probability, our focus
+    is to explore topics especially useful for actuaries.  
+    </p>
+
+    <p>
+      In a similar vein, this text will also be somewhat of a study guide intended to prepare readers for the P/1 actuarial exam.  In that sense, this text will always have a lens
+      toward procedural methods and the reasoning behind them.  We will not focus on mathematical proofs of each statement.  We will focus on intuition and practice.  Some exercises
+      ask you to explain or prove certain ideas or results.  However, this text is not just a review manual intended for candidates who have already taken an advanced probability theory
+      course.  We will explore most topics as though it is the reader's first journey into calculus-based probability.
+    </p>
+
+
+    <p>
+      After teaching actuarial exam-preparation courses for over a decade, I can say that there are some
+      key factors that contribute to success on the P/1 exam (and most of the other exams offered by the
+      Society of Actuaries).
+      <ul>
+        <li>
+          <p>
+            <term>Mathematical Preparation.</term>  The P/1 exam is not a mathematics exam in that it does not directly
+            test a candidate's knowledge of mathematical practice and theory.  For example, it would be
+            surprising to encounter a question that would require a long, drawn-out trigonometric-substitution
+            integral or a particularly tricky use of the Squeeze Theorem.  On the other hand, certain amounts of mathematical knowledge, familiarity,
+            and practice are assumed.  
+          </p>
+
+          <p>
+            Traditional mathematical topics up through a Precalculus course should be mastered.  Candidates should be very comfortable with algebraic
+            techniques, including equations involving transcendental functions such as <m>e^{ax}</m> and <m>log(x)</m>.  Candidates should also be comfortable
+            with the behavior of functions, such as shape, roots, and end-behavior.  Mid-exam is not the time to try to recall how to find the
+            roots of a quadratic function or how to solve an equation like <m>e^{4x^2 - 1}=10</m>.  If your algebra skills are a bit rusty, make sure to spend
+            this time before the exam to really internalize these preliminary topics.  While this text does review certain topics in algebra and precalculus, 
+            it is not meant to be a primary source.
+          </p>
+
+          <p>
+            Familiarity and comfort with single-variable calculus is assumed.  In a (American) semester-system, this would be up through a Calculus 2 course.  In a
+            (American) quarter system, this would be up through Calculus 3.  Other calculus-themed courses, such as a Calculus for Business <em>may</em>
+            provide adequate preparation for the purposes of studying probability, but this depends on the individual course.  Candidates should be familiar with
+            topics in limits, differentiation, integration, and series.  Now, the P/1 exam is not a calculus exam; do not worry about really tricky or time-consuming
+            integrals or needing to verify convergence of series with comparison tests.  However, you should be very comfortable with limits at infinity for basic functions,
+            applying differentiation and integration techniques (such as the chain rule or integration by parts), and working with series (particularly geometric series).
+            The first chapter in this book will provide a <em>brief</em> review of the needed calculus techniques for studying probability theory.
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p>
+            <term>Time.</term>  Learning the needed topics in probability theory to successfully prepare for the P/1 exam can easily be done in a semester's time.  However, 
+            learning is not enough to successfully prepare for an actuarial exam.  The P/1 exam focuses on both theory and applications of probability, and candidates must be able to quickly
+            and correctly read, understand, conceptualize, model, and answer each question.  This takes practice - lots of it.  The generally-agreed-upon study time for an 
+            actuarial exam is about 100 hours of study per hour on the exam.  As the P/1 exam is a three-hour exam, that means the recommended study time is 300 hours.  So, in 
+            a 15-week semester, this translates to 20 hours per week of studying, which is far above the standard for most courses.  Of course, this study time varies greatly with the amount of background preparation.  If you have
+            already seen calculus-based probability, you will not need to spend as much time learning the material.  If your calculus is a bit rusty or you have not explored probability theory
+            before, you will need to allocate more time to studying.  The 20-hours per week recommendation assumes that you are preparing for the exam in a structured 15-week time-frame.
+            Students who take a course in P/1 preparation often take more time after the term to practice.  If you are using this text outside of a structured course, then you can 
+            certainly allocate your time as needed.  No matter what, studying for the P/1 exam take a great deal of focused time.  You should ensure that you have your schedule organized
+            to incorporate the necessary time to learn and practice.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <term>A resource to answer questions.</term>  I have been teaching probability and P/1 exam preparation courses for a long time, and my students continue to come up with questions that I have never
+            heard before.  No matter how many examples and explanations I put into this text, it is impossible to explain topics in a way that will be perfectly clear to every reader ever.  So, it
+            is important that you have someone who can help with some additional information or support when you have a question that isn't covered in this text.  If you are using this text as part
+            of a college course, then definitely use your instructor as a resource.  Outside of a course, there are many online forums where candidates ask questions and look for guidance.
+            Don't go into the P/1 exam with burning questions about topics or exercises.  Actuaries certainly need to be self-motivated, but they should also be comfortable asking 
+            for guidance when needed.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Practice.</term>  I've already discussed time commitments for practicing, but practice means more than just solving a bunch of problems.  You should also practice for the P/1 exam 
+            in its entirety.  By that, I mean you need to practice being in the environment of the exam.  Maybe you can work on probability for an hour straight.  But can you work on 
+            probability for three hours straight?  You need to make sure you have the mental endurance to work on probability for three hours in one sitting.  The best preparation for this
+            endurance is to take practice exams after you've learned the material.  At least once per week, take a 30-question mock exam in once sitting.  This text has some practice exams you
+            are free to use.  Some other websites have a few practice exams available.
+          </p>
+
+          <p>
+            Another factor of the P/1 exam experience is the testing center environment.  Many of my students have reported getting horrible test anxiety for the first time in their lives
+            because of how different the environment is in these centers.  Can you comfortably work on probability for three hours with a camera pointed at you?  Will going through
+            a security screening right before the exam distract or disturb you?  Does not having your phone/keys in your pocket feel really weird?  Are you prepared to use only an approved calculator?  Before your exam, you will go through
+            a security screening in which you'll show your pockets, sleeves, and whatnot are empty.  You'll have your glasses examined.  You'll be wanded for certain items.  You will place all
+            your belongings in a locker.  During the exam, a camera will be pointed at you and recording.  
+          </p>
+
+          <p>
+            It is a good idea to practice in an environment that is as close to the real experience as possible.  Try practice exams with all your usual personal items in a separate room.  
+            Turn on your computer's webcam.  Make sure to use only #2 pencils and an approved calculator.  (I highly recommend the TI-30XS for this exam.)  Work on a practice exam in one
+            sitting.  Practicing efficient work in this environment will help reduce any added stress you may feel in the testing center.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </preface>
+</frontmatter>
