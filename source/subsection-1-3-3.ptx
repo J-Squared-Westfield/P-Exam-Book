@@ -15,7 +15,7 @@
                 <li>
                     <p>
                         Exponential functions "dominate" polynomial functions.  
-                        This means we have the following, where <m>>p(x)</m> is an <m>n</m>-degree polynomial and <m>a></m>$:
+                        This means we have the following, where <m>p(x)</m> is an <m>n</m>-degree polynomial and <m>a>0</m>$:
                         <md>
                              \lim_{x\rightarrow \infty} \frac{p(x)}{a^x} = 0 \text{ and } \lim_{x\rightarrow \infty} \frac{a^x}{p(x)} = \pm \infty.
                         </md>
@@ -40,7 +40,7 @@
 
                 <li>
                     <p>
-                        Exponential functions ``dominate'' logarithmic functions.  
+                        Exponential functions "dominate" logarithmic functions.  
                         We get similar results as above.
                     </p>
                 </li>
@@ -58,7 +58,7 @@
 
                 <li>
                     <p>
-                        If <m>p(x)</m> and <m>q(x)</m> are polynomials with equal degree, with leading-term coefficients <m>a</m> and <m>b</m>>, respectively, then
+                        If <m>p(x)</m> and <m>q(x)</m> are polynomials with equal degree, with leading-term coefficients <m>a</m> and <m>b</m>, respectively, then
                         <md>
                             \lim_{x\rightarrow \pm \infty} \frac{p(x)}{q(x)} = \pm \frac{a}{b}.
                         </md>

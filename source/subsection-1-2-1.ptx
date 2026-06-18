@@ -11,7 +11,7 @@
         <m>(x,y)</m> is in the function.
         More simply put, we can think of a function as a machine that turns inputs from a domain set into outputs in the range set.
         However, to be a function, each input has exactly one output.  For example, if some machine <m>f(x)</m> had <m>f(1) = 2</m> and <m>f(1) = -2</m>, then <m>f(x)</m> would not be a function.
-        As another example, if we write the equation of a circle or radius 1 centered at the origin as <m>y = \pm \sqrt{1-x^2}</m>, this also would not be a function (e.g.\ <m>x=0</m> would yield both <m>y=1</m> and <m>y=-1</m>.
+        As another example, if we write the equation of a circle or radius 1 centered at the origin as <m>y = \pm \sqrt{1-x^2}</m>, this also would not be a function (e.g. <m>x=0</m> would yield both <m>y=1</m> and <m>y=-1</m>.
     </p>
 
     <p>

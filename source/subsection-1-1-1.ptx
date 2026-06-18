@@ -35,7 +35,7 @@
 
   <p>
     Algebraically, whether a parabola opens upward or downward depends on the coefficient of the <m>x^2</m> term in the parabola's equation.  
-    In the equation <m>y=ax^2+bx+c</m>, the parabola will open upward if <m>a>0</m> and downward if <m>a&lt;0</m>.  
+    In the equation <m>{y=ax^2+bx+c}</m>, the parabola will open upward if <m>a>0</m> and downward if <m>a&lt;0</m>.  
     (If <m>a=0</m>, the we have a line rather than a parabola.)
   </p>
 

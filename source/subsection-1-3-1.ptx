@@ -105,7 +105,7 @@
 
                 <li>
                     <p>
-                        Suppose <m>\lim_{x\rightarrow L} h(x) = N.</m>  Then <m>\lim_{x\rightarrow a} h(f(x)) = \lim_{x\rightarrow L} h(x) = N</m>.
+                        Suppose <m>\lim_{x\rightarrow L} h(x) = N.</m>  Then <m>{\lim_{x\rightarrow a} h(f(x)) = \lim_{x\rightarrow L} h(x) = N}</m>.
                     </p>
                 </li>
             </ul>
@@ -248,7 +248,7 @@
     </definition>
 
     <p>
-        These definitions essentially mean that for $x$ values sufficiently close to <m>a</m> we have the function tending toward <m>\pm \infty</m>.
+        These definitions essentially mean that for <m>x</m> values sufficiently close to <m>a</m> we have the function tending toward <m>\pm \infty</m>.
     </p>
 
     <example xml:id="limits-ti-infinity">

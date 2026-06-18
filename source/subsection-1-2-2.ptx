@@ -1,13 +1,13 @@
 <subsection xml:id="subsection-1-2-2">
     <title>Restricted Domains</title>
     <p>
-        Recall that <m>>(x) = x^2</m> is not invertible.  
-        However, the function <m>>\sqrt{x}</m> behaves like an inverse of it.  
-        For <em>non-negative values</em> of <m>x</m>, we have <m>>\sqrt{x^2} = x</m>.  
+        Recall that <m>(x) = x^2</m> is not invertible.  
+        However, the function <m>\sqrt{x}</m> behaves like an inverse of it.  
+        For <em>non-negative values</em> of <m>x</m>, we have <m>\sqrt{x^2} = x</m>.  
         This is not true for negative values of <m>x</m>, however.  
         But what if we only cared about the non-negative values of <m>x</m>?  
         Then, in a sense, <m>>x^2</m> is invertible.  
-        That is, <m>>x^2</m> is invertible on a <term>restricted domain</term><idx>restricted domain</idx>.  
+        That is, <m>x^2</m> is invertible on a <term>restricted domain</term><idx>restricted domain</idx>.  
     </p>
 
     <p>
@@ -37,10 +37,10 @@
     </figure>
 
     <p>
-        Let's return to <m>>f(x) = x^2</m>.  
+        Let's return to <m>f(x) = x^2</m>.  
         Can we find an inverse for of <m>f</m> on the restricted domain of non-positive numbers.  
         <m>f^{-1}(x) = -\sqrt{x}</m> works.  
-        (E.g.\ <m>f(-3) = 9</m> and <m>f^{-1}(9) = -\sqrt{9} = -3</m>.)  
+        (E.g. <m>f(-3) = 9</m> and <m>f^{-1}(9) = -\sqrt{9} = -3</m>.)  
     </p>
 
     <insight>

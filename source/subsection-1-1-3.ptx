@@ -22,7 +22,7 @@
         Recall that <m>z=e^{-x}</m>.
         So, what we have found is that <m>e^{-x}=-1.4684</m> or <m>e^{-x}=1.1350</m>.
         Since <m>e^{-x}&gt;0</m>, we get
-        <m>e^{-x} = 1.1350</m> or <m>x = -0.1267</m>.
+        <m>{e^{-x} = 1.1350}</m> or <m>x = -0.1267</m>.
     </p>
     <example>
         <title>Solving a Hidden Quadratic</title>
@@ -51,6 +51,7 @@
             </p>
         </solution>
     </example>
+    
     <p>
         Note that in the previous example, using a calculator to get <m>\sin^{-1}(-0.686)</m> will likely yield <m>-0.75617</m>.  
         To get the proper <m>x</m>, value we use the fact that <m>\sin(-0.75617) = \sin(\pi + 0.75617) = \sin(3.898)</m>.
