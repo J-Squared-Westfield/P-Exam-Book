@@ -8,3 +8,5 @@ INFO    : Preparing to deploy from active `main` git branch.
 INFO    : Changes to project source since last commit detected.
 INFO    : Committing these changes to local Git repository.
 
+INFO    : Committing your latest build to the `gh-pages` branch.
+INFO    : 
