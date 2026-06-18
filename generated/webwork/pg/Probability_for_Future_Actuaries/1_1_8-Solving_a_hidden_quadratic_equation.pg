@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->flags->set(tolType=>"absolute", tolerance=>0.001);
+
+$ans_small = Compute(-0.24559);
+$ans_large = Compute(0.10696);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the quadratic equation
+
+[```4e^{5x} - 2e^{10x} = 1\text{.}```]
+
+Smaller solution: [_]{$ans_small}{10}
+
+Larger solution: [_]{$ans_large}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We can make a substitution [`t = e^{5x}\text{.}`]  Then, we have [`{4t - 2t^2 = 1}\text{.}`]  We can re-write this as [`{2t^2 - 4t + 1 = 0.}`]
+
+We can use the quadratic formula:
+
+[``` t = \frac{4 \pm \sqrt{16 - 8}}{4} \approx 0.29289, 1.70711.```]
+
+Recall that [`t=e^{5x}\text{.}`]  So, [`e^{5x} \approx 0.29289`] or [`e^{5x} \approx 1.70711.`] Solving gives [`x \approx -0.24559`] or [`x \approx 0.10696.`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-1-1-2" assembly-id="ex-1-1-2">
+  <static seed="2">
+    <statement><p>Solve the following equation. Enter your answer to at least three decimal places.</p>
+<p><me>2x - \sqrt{14 - x^2} = 2</me></p>
+<p>Solution: <fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2.42481</m>
+      </p>
+    </answer>
+    <solution><p>First, isolate the square root term:</p>
+<p><me>\begin{aligned}
+                    2x - \sqrt{14 - x^2} \amp = 2 \\
+                    -\sqrt{14 - x^2} \amp = 2 - 2x \\
+                    \sqrt{14 - x^2} \amp = 2x - 2
+                    \end{aligned}</me></p>
+<p>Now square both sides:</p>
+<p><me>\begin{aligned}
+                    14 - x^2 \amp = (2x - 2)^2 \\
+                    14 - x^2 \amp = (2^2)x^2 - 2(2)(2)x + 2^2 \\
+                    5x^2 - 8x - 10 \amp = 0
+                    \end{aligned}</me></p>
+<p>Solving the quadratic gives possible roots. <m>-0.825</m> and <m>2.425\text{.}</m> The smaller root turns out not to solve the original equation.  So, we have one solution. <m>2.425\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_1_7-Solving_a_radical_equation.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->flags->set(tolType=>"absolute", tolerance=>0.001);
+
+$a = list_random(2,3,4);
+$b = list_random(1..3);
+$c = list_random(12..16);
+
+$a2 = $a**2 + 1;
+$b2 = -2*$a*$b;
+$c2 = $b**2 - $c;
+
+$d = $b2**2 - 4*$a2*$c2;
+
+while ($d < 0) {
+$a = list_random(2,3,4);
+$b = list_random(1..3);
+$c = list_random(12..16);
+
+$a2 = $a**2 + 1;
+$b2 = -2*$a*$b;
+$c2 = $b**2 - $c;
+
+$d = $b2**2 - 4*$a2*$c2;
+}
+
+$r1 = (-$b2 + sqrt($d))/(2*$a2);
+$r2 = (-$b2 - sqrt($d))/(2*$a2);
+
+$smaller = min($r1, $r2);
+$larger = max($r1, $r2);
+
+# For the original radical equation, the larger root is the valid one.
+$ans = Compute($larger);
+
+$a_display = "$a";
+$b_display = "$b";
+$c_display = "$c";
+
+$b2_display = ($b2 < 0) ? "- " . abs($b2) : "+ " . $b2;
+$c2_display = ($c2 < 0) ? "- " . abs($c2) : "+ " . $c2;
+
+$larger_display = sprintf("%.3f", $larger);
+$smaller_display = sprintf("%.3f", $smaller);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the following equation. Enter your answer to at least three decimal places.
+
+[```
+                    [$a]x - \sqrt{[$c] - x^2} = [$b]
+                ```]
+
+Solution: [_]{$ans}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First, isolate the square root term:
+
+[```
+                    \begin{aligned}
+                    [$a]x - \sqrt{[$c] - x^2} &= [$b] \\
+                    -\sqrt{[$c] - x^2} &= [$b] - [$a]x \\
+                    \sqrt{[$c] - x^2} &= [$a]x - [$b]
+                    \end{aligned}
+                ```]
+
+Now square both sides:
+
+[```
+                    \begin{aligned}
+                    [$c] - x^2 &= ([$a]x - [$b])^2 \\
+                    [$c] - x^2 &= ([$a]^2)x^2 - 2([$a])([$b])x + [$b]^2 \\
+                    [$a2]x^2 [$b2_display]x [$c2_display] &= 0
+                    \end{aligned}
+                ```]
+
+Solving the quadratic gives possible roots. [`[$smaller_display]`] and [`[$larger_display]\text{.}`] The smaller root turns out not to solve the original equation.  So, we have one solution. [`[$larger_display]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

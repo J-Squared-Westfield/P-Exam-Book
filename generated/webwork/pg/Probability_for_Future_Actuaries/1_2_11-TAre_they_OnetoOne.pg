@@ -1,0 +1,99 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserCheckboxList.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+loadMacros(
+"parserCheckboxList.pl",
+);
+
+$checks = CheckboxList(
+[
+    [
+    '\(f(x) = \sqrt[3]{x}\)',
+    '\(g(x) = \sin(x)\) on the restricted domain \([0,\pi]\)',
+    '\(h(x) = e^{x^2}\)',
+    '\(r(x) = |5-x|\)',
+    '\(k(x) = \ln(5x) + 3\)'
+    ],
+    'None of the above'
+],
+[
+    '\(f(x) = \sqrt[3]{x}\)',
+    '\(k(x) = \ln(5x) + 3\)'
+],
+labels => "ABC",
+displayLabels => 1
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine which of the following functions are one-to-one.
+
+[_]{$checks}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`f(x) = \sqrt[3]{x}`] is one-to-one. Power functions of the form [`x^p`] or [`x^{\drac{1}{p}}`] will be one-to-one when [`p`] is odd.
+
+[`g(x) = \sin(x)`] is not one-to-one on the domain [`[0,\pi]\text{.}`] For example, [`g(0) \sin(0) = 0 = \sin(\pi) = g(\pi)\text{.}`]
+
+[`h(x) = e^{x^2}`] is not one-to-one. For example, [`h(1) = h(-1) = e\text{.}`]
+
+[`r(x) = |5-x|`] is not one-to-one. For example, [`r(4) = r(6) = 1\text{.}`]
+
+[`k(x) = \ln(5x)+3`] is one-to-one. It is a logarithmic function shifted up 3 units.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
