@@ -41,3 +41,7 @@ problem_start
 source_file = Probability_for_Future_Actuaries/1_2_13-Break_the_Domain.pg
 problem_id = 13
 problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_3_10-Find_the_Limits.pg
+problem_id = 10
+problem_end

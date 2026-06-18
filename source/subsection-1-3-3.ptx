@@ -71,4 +71,132 @@
             Note that in the above, the whether the limits are positive or negative depend on whether the polynomial limits tend to <m>\infty</m> or <m>-\infty</m>.
         </p>
     </assemblage>
+
+    <example xml:id="ex-dominance">
+        <title>Dominance Rules</title>
+        <statement>
+            <p>
+                Find the following limits:
+
+                <ol>
+                    <li>
+                        <p>
+                            <md>
+                                \lim_{x\rightarrow \infty} x^3 e^{-5x}
+                            </md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>
+                                \lim_{x\rightarrow -\infty} \frac{6-7x+5x^2}{8x^4+3x-\pi x + 1}
+                            </md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>
+                                \lim_{x\rightarrow 0} x^2 \ln(x)
+                            </md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>
+                                \lim_{x\rightarrow \infty} \frac{4^x}{\ln(x-2)}
+                            </md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <md>
+                                \lim_{x\rightarrow \infty} \frac{5-x^2-4x^3}{9x^3 - 4x}
+                            </md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        
+        <answer>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>0</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>0</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>0</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\infty</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>-\frac{4}{9}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <md>
+                                \lim_{x\rightarrow \infty} x^3 e^{-5x} = \lim_{x\rightarrow \infty} \frac{x^3}{e^{5x}} = 0
+                            </md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Since the degree of the denominator is larger, the limit is <m>0</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Polynomials always dominate logarithms.  
+                            So, this goes to <m>0</m> (because <m>x^2</m> tends to <m>0</m>).
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Exponentials always dominate logarithms.  
+                            So this tends to <m>\infty</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            The degrees of the polynomials are the same.  
+                            So, <md>lim_{x\rightarrow \infty} \frac{5-x^2-4x^3}{9x^3 - 4x} = -\frac{4}{9}.</md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
 </subsection>

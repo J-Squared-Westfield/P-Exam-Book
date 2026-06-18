@@ -34,16 +34,16 @@
   </figure>
 
   <p>
-    Algebraically, whether a parabola opens upward or downward depends on the coefficient of the $x^2$ term in the parabola's equation.  
-    In the equation <m>y=ax^2+bx+c</m>, the parabola will open upward if $a>0$ and downward if $a&lt;0$.  
-    (If $a=0$, the we have a line rather than a parabola.)
+    Algebraically, whether a parabola opens upward or downward depends on the coefficient of the <m>x^2</m> term in the parabola's equation.  
+    In the equation <m>y=ax^2+bx+c</m>, the parabola will open upward if <m>a>0</m> and downward if <m>a&lt;0</m>.  
+    (If <m>a=0</m>, the we have a line rather than a parabola.)
   </p>
 
   <p>
     For many parabolas, some points of interest include the points where the curve intersects the <m>x</m>-axis.  
     For a quadratic equation <m>ax^2 + bx+c</m> representing such a parabola, the <m>x</m>-values of those points would be the solutions to <m>ax^2 + bx + c = 0</m>.
-    The solutions to such an equation are called the \textit{roots} of the equation. 
-    As can be seen in the above figure, not all quadratic equations have roots as not all parabolas intersect the $x$-axis.  
+    The solutions to such an equation are called the <em>roots</em> of the equation. 
+    As can be seen in the above figure, not all quadratic equations have roots as not all parabolas intersect the <m>x</m>-axis.  
     Further, some quadratic equations only have one root. 
   </p>  
 </subsection>

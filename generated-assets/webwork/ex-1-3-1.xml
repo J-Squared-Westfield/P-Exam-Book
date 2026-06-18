@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-1-3-1" assembly-id="ex-1-3-1">
+  <static seed="10">
+    <statement><p>Find the following limits.  Enter <lq/>INF<rq/> or <lq/>-INF<rq/> for <m>\infty</m> or <m>-\infty\text{.}</m>  Round answers to at least three decimal places.</p>
+<p><ol label="a.">
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow 2} e^{-3x + 4} + \sqrt{x}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow \infty} x^2e^{-6x}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow 5} \frac{5}{(x-5)^4}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0003"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow -\infty} \frac{8 x^6 - 3x^2 + x + 3}{-12 x^6 + x^3 - 11x^2}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0004"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow \infty} x^n e^{-ax} \text{ where } n,a &gt; 0</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0005"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow -\infty} \frac{e^{7x}}{e^{4x}}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0006"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow \infty} \frac{\ln(x^5)-3 x}{x^3}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0007"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow \infty} 3^{-6x + 1}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0008"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow \infty} e^{\frac{1}{x^2}}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0009"/></p>
+</li>
+<li>
+<p><nbsp/></p>
+<p><me>\lim_{x\rightarrow -\infty} \frac{x-9x^3}{3x^2 - 3x + 1}</me></p>
+<p>Answer: <fillin characters="10" name="AnSwEr0010"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>1.54955</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\infty </m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-0.666667</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>1</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\infty </m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>The function is continuous at <m>x=2\text{.}</m> So, we can plug <m>2</m> in to get <m>e^{-3\cdot 2 + 4} + \sqrt{2} \approx 1.550</m></p>
+</li>
+<li>
+<p>Exponentials dominator polynomials. <m>\lim_{x\rightarrow} e^{-6x} 0.</m> So, the whole limit is <m>0\text{.}</m></p>
+</li>
+<li>
+<p>On both sides of <m>x=5\text{,}</m> the function grows to positive infinity as <m>x</m> approaches <m>8\text{.}</m> So, the limit is <m>\infinity\text{.}</m></p>
+</li>
+<li>
+<p>We have two polynomials of equal degres (6). So, the limit is the ratio of the leading coefficients: <m>\frac{8}{-[d2]} = -\frac{8}{[d2]}</m></p>
+</li>
+<li>
+<p>Exponentials dominate polynomials.  So, we look at <m>e^{-ax}\text{,}</m> which goes to <m>0\text{.}</m> So, the limit is <m>0\text{.}</m></p>
+</li>
+<li>
+<p>We can simplify the function as <m>e^{(7 - 4)x} = e^{[e3]x}\text{.}</m> As <m>x</m> approaches negative infinity, this approaches <m>0\text{.}</m></p>
+</li>
+<li>
+<p>The numerator has both logaritmic and polynomial elements. Since polynomials dominiate logarithms, we can think of the numerator as behaving like a polynomial of degree <m>1</m> at <m>\pm \infty\text{.}</m> The denominator is a higher-degree polynomial.  So, it dominates. Thus, the limit is <m>0\text{.}</m></p>
+</li>
+<li>
+<p>The exponent goes to <m>-\infty\text{.}</m> <m>3^y</m> approaches 0 as <m>y</m> goes to <m>-infty\text{.}</m> So, the limit is <m>0\text{.}</m></p>
+</li>
+<li>
+<p>The exponent goes to <m>0\text{.}</m> So, the limit is <m>e^0 = 1\text{.}</m></p>
+</li>
+<li>
+<p>The numerator dominates since it has higher degree. So, the limit will be positive or negative infinity. We need to determine which. The denominator is led by <m>3x^2\text{,}</m> which goes to positive infinity as <m>x</m> approaches negative infinity. The numerator is led by <m>-9x^3\text{,}</m> which goes to positive infinity as <m>x</m> approaches negative infinity. So, we have <m>\frac{\text{positive}}{\text{positive}} = \text{positive}\text{.}</m> So, the limit is <m>\infty\text{.}</m></p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_3_10-Find_the_Limits.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.3.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = list_random(3,4,5);
+$a2 = list_random(1..5);
+$b = list_random(2,3,4,5,6);
+$c = list_random(3,5,8);
+$d = list_random(5..9);
+$d2 = list_random(8..12);
+$f = list_random(6..11);
+$f2 = list_random(2..5);
+$f3 = Compute($f - $f2);
+$g = list_random(-2,-1, 1..3);
+$h = list_random(2..7);
+$j2 = list_random(5..9);
+$j3 = list_random(3..6);
+
+$ans_a_value = exp(-$a*2 + $a2) + sqrt(2);
+$ans_a = Compute($ans_a_value);
+$ans_a_rounded = sprintf("%.3f", $ans_a_value);
+$ans_b = Compute(0);
+$ans_c = Infinity;
+$ans_d = Compute(-$d/$d2);
+$ans_e = Compute(0);
+$ans_f = Compute(0);
+$ans_g = Compute(0);
+$ans_h = Compute(0);
+$ans_i = Compute(1);
+$ans_j = Infinity;
+$a_display = ($a == 1) ? "" : "$a";
+$b_display = ($b < 0) ? "- " . abs($b) : "+ " . $b;
+$c_display = ($c < 0) ? "- " . abs($c) : "+ " . $c;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the following limits.  Enter "INF" or "-INF" for [`\infty`] or [`-\infty\text{.}`]  Round answers to at least three decimal places.
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow 2} e^{-[$a]x + [$a2]} + \sqrt{x}
+                        ```]
+
+    Answer: [_]{$ans_a}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow \infty} x^2e^{-[$b]x}
+                        ```]
+
+    Answer: [_]{$ans_b}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow [$c]} \frac{5}{(x-[$c])^4}
+                        ```]
+
+    Answer: [_]{$ans_c}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow -\infty} \frac{[$d] x^6 - 3x^2 + x + 3}{-[$d2] x^6 + x^3 - 11x^2}
+                        ```]
+
+    Answer: [_]{$ans_d}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow \infty} x^n e^{-ax} \text{ where } n,a > 0
+                        ```]
+
+    Answer: [_]{$ans_e}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow -\infty} \frac{e^{[$f]x}}{e^{[$f2]x}}
+                        ```]
+
+    Answer: [_]{$ans_f}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow \infty} \frac{\ln(x^5)-[$g] x}{x^3}
+                        ```]
+
+    Answer: [_]{$ans_g}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow \infty} 3^{-[$h]x + 1}
+                        ```]
+
+    Answer: [_]{$ans_h}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow \infty} e^{\frac{1}{x^2}}
+                        ```]
+
+    Answer: [_]{$ans_i}{10}
+
+a.  [$NBSP]*
+
+    [```
+                            \lim_{x\rightarrow -\infty} \frac{x-[$j2]x^3}{[$j3]x^2 - 3x + 1}
+                        ```]
+
+    Answer: [_]{$ans_j}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The function is continuous at [`x=2\text{.}`] So, we can plug [`2`] in to get [`e^{-[$a]\cdot 2 + [$a2]} + \sqrt{2} \approx [$ans_a_rounded]`]
+
+a.  Exponentials dominator polynomials. [`\lim_{x\rightarrow} e^{-[$b]x} 0.`] So, the whole limit is [`0\text{.}`]
+
+a.  On both sides of [`x=[$c]\text{,}`] the function grows to positive infinity as [`x`] approaches [`[$d]\text{.}`] So, the limit is [`\infinity\text{.}`]
+
+a.  We have two polynomials of equal degres (6). So, the limit is the ratio of the leading coefficients: [`\frac{[$d]}{-[d2]} = -\frac{[$d]}{[d2]} `]
+
+a.  Exponentials dominate polynomials.  So, we look at [`e^{-ax}\text{,}`] which goes to [`0\text{.}`] So, the limit is [`0\text{.}`]
+
+a.  We can simplify the function as [`e^{([$f] - [$f2])x} = e^{[e3]x}\text{.}`] As [`x`] approaches negative infinity, this approaches [`0\text{.}`]
+
+a.  The numerator has both logaritmic and polynomial elements. Since polynomials dominiate logarithms, we can think of the numerator as behaving like a polynomial of degree [`1`] at [`\pm \infty\text{.}`] The denominator is a higher-degree polynomial.  So, it dominates. Thus, the limit is [`0\text{.}`]
+
+a.  The exponent goes to [`-\infty\text{.}`] [`3^y`] approaches 0 as [`y`] goes to [`-infty\text{.}`] So, the limit is [`0\text{.}`]
+
+a.  The exponent goes to [`0\text{.}`] So, the limit is [`e^0 = 1\text{.}`]
+
+a.  The numerator dominates since it has higher degree. So, the limit will be positive or negative infinity. We need to determine which. The denominator is led by [`[$j3]x^2\text{,}`] which goes to positive infinity as [`x`] approaches negative infinity. The numerator is led by [`-[$j2]x^3\text{,}`] which goes to positive infinity as [`x`] approaches negative infinity. So, we have [`\frac{\text{positive}}{\text{positive}} = \text{positive}\text{.}`] So, the limit is [`\infty\text{.}`]   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

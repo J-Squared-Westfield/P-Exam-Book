@@ -1,0 +1,56 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /Users/jwjohnson/Documents/P Exam Book/output/web.
+WARNING : Node.js must be installed to build CSS files.  Please install node.js and npm.
+ Will try to use prebuilt CSS files instead.
+WARNING : Cannot find npm.  Will try to use prebuilt CSS files instead.
+WARNING : Unable to install npm packages to build css files.  Non-default CSS themes require node.js and npm to be installed.  See https://pretextbook.org/doc/guide/html/node-and-npm.html
+WARNING : 
+INFO    : discovering source file's directory name: /Users/jwjohnson/Documents/P Exam Book/source
+INFO    : verifying and expanding input directory: /Users/jwjohnson/Documents/P Exam Book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/jwjohnson/Documents/P Exam Book/generated-assets
+INFO    : verifying and expanding input directory: /Users/jwjohnson/Documents/P Exam Book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/jwjohnson/Documents/P Exam Book/assets
+INFO    : discovering source file's directory name: /Users/jwjohnson/Documents/P Exam Book/source
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.1.2
+INFO    : Downloading Runestone Services, version 8.1.2
+INFO    : Extracting Runestone Services from archive file
+INFO    : Node.js not available. Relying on prebuilt default-modern.
+INFO    : Using prebuilt CSS theme: default-modern with options: {'options': {'primary-color': '#195684', 'secondary-color': '#932c1c'}, 'contrast-checks': {'primary-color': '#fff', 'secondary-color': '#fff', 'primary-color-dark': '#23241f'}}
+INFO    : converting /Users/jwjohnson/Documents/P Exam Book/source/main.ptx to HTML in /var/folders/tk/zff0dh8543lcc33mm1dc6sb40000gn/T/ptx-x3mb2yr1
+INFO    : XSL conversion of /Users/jwjohnson/Documents/P Exam Book/source/main.ptx by /Users/jwjohnson/.ptx/2.41.0/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located at: pretext/book/chapter/section
+INFO    : *              located within: "section-1-1" (xml:id), "Solving Quadratic Equations the 20th Century Way" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located at: pretext/book/chapter/section
+INFO    : *              located within: "section-1-2" (xml:id), "Inverse Functions" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located at: pretext/book/chapter/section
+INFO    : *              located within: "section-1-3" (xml:id), "Limits" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located at: pretext/book/chapter/section
+INFO    : *              located within: "section-1-4" (xml:id), "Derivatives" (title)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /Users/jwjohnson/.ptx/2.41.0/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /var/folders/tk/zff0dh8543lcc33mm1dc6sb40000gn/T/ptx-x3mb2yr1
+INFO    : Removing temporary directory /var/folders/tk/zff0dh8543lcc33mm1dc6sb40000gn/T/ptx-41zrqwtx
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 
