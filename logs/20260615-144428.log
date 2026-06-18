@@ -22,3 +22,69 @@ INFO    : Added pretext web server entry 87de41480a 76451 8204 localhost
 
 INFO    : Server will soon be available at http://localhost:8204
 INFO    : Opening browser for target `web` at http://localhost:8204/output/web
+WARNING : Port 8204 could not be used.
+WARNING : Trying port 8205 instead.
+
+WARNING : Port 8205 could not be used.
+WARNING : Trying port 8206 instead.
+
+WARNING : Port 8206 could not be used.
+WARNING : Trying port 8207 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8207 localhost
+
+INFO    : Server will soon be available at http://localhost:8207
+INFO    : Opening browser for target `web` at http://localhost:8207/output/web
+WARNING : Port 8207 could not be used.
+WARNING : Trying port 8208 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8208 localhost
+
+INFO    : Server will soon be available at http://localhost:8208
+INFO    : Opening browser for target `web` at http://localhost:8208/output/web
+WARNING : Port 8208 could not be used.
+WARNING : Trying port 8209 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8209 localhost
+
+INFO    : Server will soon be available at http://localhost:8209
+INFO    : Opening browser for target `web` at http://localhost:8209/output/web
+WARNING : Port 8209 could not be used.
+WARNING : Trying port 8210 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8210 localhost
+
+INFO    : Server will soon be available at http://localhost:8210
+INFO    : Opening browser for target `web` at http://localhost:8210/output/web
+WARNING : Port 8210 could not be used.
+WARNING : Trying port 8211 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8211 localhost
+
+INFO    : Server will soon be available at http://localhost:8211
+INFO    : Opening browser for target `web` at http://localhost:8211/output/web
+WARNING : Port 8211 could not be used.
+WARNING : Trying port 8212 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8212 localhost
+
+INFO    : Server will soon be available at http://localhost:8212
+INFO    : Opening browser for target `web` at http://localhost:8212/output/web
+WARNING : Port 8212 could not be used.
+WARNING : Trying port 8213 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8213 localhost
+
+INFO    : Server will soon be available at http://localhost:8213
+INFO    : Opening browser for target `web` at http://localhost:8213/output/web
+WARNING : Port 8213 could not be used.
+WARNING : Trying port 8214 instead.
+
+INFO    : Added pretext web server entry 87de41480a 76451 8214 localhost
+
+INFO    : Server will soon be available at http://localhost:8214
+INFO    : Opening browser for target `web` at http://localhost:8214/output/web
+WARNING : Port 8214 could not be used.
+WARNING : Trying port 8215 instead.
+
+INFO    : There are 10 or more servers on file. Cleaning up ...

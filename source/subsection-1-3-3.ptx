@@ -7,4 +7,68 @@
         For these kinds of limits (often called "indeterminate"), it is handy to have some rules established in calculus.  
         They can easily be proved using L'Hopital's rule.  
     </p>
+
+    <assemblage xml:id="assemblage-dominance">
+        <title>Dominance Rules</title>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Exponential functions "dominate" polynomial functions.  
+                        This means we have the following, where <m>>p(x)</m> is an <m>n</m>-degree polynomial and <m>a></m>$:
+                        <md>
+                             \lim_{x\rightarrow \infty} \frac{p(x)}{a^x} = 0 \text{ and } \lim_{x\rightarrow \infty} \frac{a^x}{p(x)} = \pm \infty.
+                        </md>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Polynomial functions "dominate" logarithmic functions.  
+                        This means we have the following, where <m>p(x)</m> is an <m>n</m>-degree polynomial and <m>\log(x)</m> is a generic logarithmic function:
+                        <md>
+                            \lim_{x\rightarrow \infty} \frac{p(x)}{\log(x)} = \pm \infty
+                        </md>
+
+                        and
+
+                        <md>
+                            \lim_{x\rightarrow \infty} \frac{\log(x)}{p(x)} = \pm \infty.
+                        </md>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Exponential functions ``dominate'' logarithmic functions.  
+                        We get similar results as above.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Higher-degree polynomials "dominate" lower-degree polynomials.  
+                        Let <m>p(x)</m> and <m>q(x)</m> be (non-constant) polynomial functions with <m>p(x)</m> with higher degree.  
+                        We have the following:
+                        <md>
+                            \lim_{x\rightarrow \pm \infty} \frac{p(x)}{q(x)} = \pm \infty \text{ and } \lim_{x\rightarrow \pm \infty} \frac{q(x)}{p(x)} = 0.
+                        </md>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        If <m>p(x)</m> and <m>q(x)</m> are polynomials with equal degree, with leading-term coefficients <m>a</m> and <m>b</m>>, respectively, then
+                        <md>
+                            \lim_{x\rightarrow \pm \infty} \frac{p(x)}{q(x)} = \pm \frac{a}{b}.
+                        </md>
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Note that in the above, the whether the limits are positive or negative depend on whether the polynomial limits tend to <m>\infty</m> or <m>-\infty</m>.
+        </p>
+    </assemblage>
 </subsection>
