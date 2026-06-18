@@ -609,7 +609,75 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para" id="subsection-1-3-3-2">Let’s consider <span class="process-math">\(\lim_{x\rightarrow \infty} \frac{x}{e^x}\text{.}\)</span> How might we go about finding this limit? We cannot use the basic rules given above. For these kinds of limits (often called "indeterminate"), it is handy to have some rules established in calculus. They can easily be proved using L’Hopital’s rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-1-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.3.3: Limits at Infinity and Dominance"><a href="#subsection-1-3-3" title="Copy heading and permalink for Subsection 1.3.3: Limits at Infinity and Dominance" aria-label="Copy heading and permalink for Subsection 1.3.3: Limits at Infinity and Dominance">🔗</a></div>
+<article class="assemblage assemblage-like" id="assemblage-dominance"><h4 class="heading"><span class="title">Dominance Rules.</span></h4>
+<div class="para logical" id="assemblage-dominance-2">
+<ul class="disc" id="assemblage-dominance-2-1">
+<li id="assemblage-dominance-2-1-1">
+<div class="para logical" id="assemblage-dominance-2-1-1-1">
+<div class="para">Exponential functions "dominate" polynomial functions. This means we have the following, where <span class="process-math">\(&gt;p(x)\)</span> is an <span class="process-math">\(n\)</span>-degree polynomial and <span class="process-math">\(a&gt;\)</span>$:</div>
+<div class="displaymath process-math" id="assemblage-dominance-2-1-1-1-4">
+\begin{equation*}
+\lim_{x\rightarrow \infty} \frac{p(x)}{a^x} = 0 \text{ and } \lim_{x\rightarrow \infty} \frac{a^x}{p(x)} = \pm \infty.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-dominance-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-dominance-2-1-2">
+<div class="para logical" id="assemblage-dominance-2-1-2-1">
+<div class="para">Polynomial functions "dominate" logarithmic functions. This means we have the following, where <span class="process-math">\(p(x)\)</span> is an <span class="process-math">\(n\)</span>-degree polynomial and <span class="process-math">\(\log(x)\)</span> is a generic logarithmic function:</div>
+<div class="displaymath process-math" id="assemblage-dominance-2-1-2-1-4">
+\begin{equation*}
+\lim_{x\rightarrow \infty} \frac{p(x)}{\log(x)} = \pm \infty
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" id="assemblage-dominance-2-1-2-1-5">
+\begin{equation*}
+\lim_{x\rightarrow \infty} \frac{\log(x)}{p(x)} = \pm \infty.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-dominance-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-dominance-2-1-3">
+<div class="para" id="assemblage-dominance-2-1-3-1">Exponential functions ``dominate’’ logarithmic functions. We get similar results as above.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-dominance-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-dominance-2-1-4">
+<div class="para logical" id="assemblage-dominance-2-1-4-1">
+<div class="para">Higher-degree polynomials "dominate" lower-degree polynomials. Let <span class="process-math">\(p(x)\)</span> and <span class="process-math">\(q(x)\)</span> be (non-constant) polynomial functions with <span class="process-math">\(p(x)\)</span> with higher degree. We have the following:</div>
+<div class="displaymath process-math" id="assemblage-dominance-2-1-4-1-4">
+\begin{equation*}
+\lim_{x\rightarrow \pm \infty} \frac{p(x)}{q(x)} = \pm \infty$ and $\displaystyle \lim_{x\rightarrow \pm \infty} \frac{q(x)}{p(x)} = 0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-dominance-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-dominance-2-1-5">
+<div class="para logical" id="assemblage-dominance-2-1-5-1">
+<div class="para">If <span class="process-math">\(p(x)\)</span> and <span class="process-math">\(q(x)\)</span> are polynomials with equal degree, with leading-term coefficients <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span>&gt;, respectively, then</div>
+<div class="displaymath process-math" id="assemblage-dominance-2-1-5-1-5">
+\begin{equation*}
+\lim_{x\rightarrow \pm \infty} \frac{p(x)}{q(x)} = \pm \frac{a}{b}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-dominance-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="assemblage-dominance-3">Note that in the above, the whether the limits are positive or negative depend on whether the polynomial limits tend to <span class="process-math">\(\infty\)</span> or <span class="process-math">\(-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#assemblage-dominance-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Dominance Rules"><a href="#assemblage-dominance" title="Copy heading and permalink for Assemblage: Dominance Rules" aria-label="Copy heading and permalink for Assemblage: Dominance Rules">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 1.3.3: Limits at Infinity and Dominance"><a href="#subsection-1-3-3" title="Copy heading and permalink for Subsection 1.3.3: Limits at Infinity and Dominance" aria-label="Copy heading and permalink for Subsection 1.3.3: Limits at Infinity and Dominance">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 1.3: Limits"><a href="#section-1-3" title="Copy heading and permalink for Section 1.3: Limits" aria-label="Copy heading and permalink for Section 1.3: Limits">🔗</a></div>
 </section>
 </div>
