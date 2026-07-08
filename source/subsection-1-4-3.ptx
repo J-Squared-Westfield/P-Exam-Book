@@ -1,6 +1,499 @@
 <subsection xml:id="subsection-1-4-3">
     <title>Exercises</title>
-    <p>
-        Hi
-    </p>
+    <exercise xml:id="ex-derivative-1">
+    <title>Find the Derivative 1</title>
+        <webwork>
+            <pg-code>
+                Context("Numeric");
+                Context()->variables->are(x=>"Real");
+                $a = list_random(3..9);
+                $b = list_random(2..4);
+                $b2 = Compute($b-1);
+                $c = Compute($a*$b);
+                $ans = Formula("exp(-x)*($c*x^$b2 - $a*x^$b)");
+            </pg-code>
+
+            <statement>
+                <p>
+                    Find the derivative of <m><var name="$a"/>x^{<var name = "$b"/>} e^{-x}</m>.
+                </p>
+
+                <p>
+                    <m>f'(x)=</m> <var name="$ans" width="50"/>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Using the product rule and noting from the mini-chain rule that <m>\frac{d}{dx} e^{-x} = -e^{-x}</m>,
+                    <md>
+                        \begin{aligned}
+                            \frac{d}{dx} \left(<var name ="$a"/>x^{<var name ="$b"/>} e^{-x}\right) &amp;= \left(\frac{d}{dx} <var name ="$a"/>x^{<var name ="$b"/>}\right)\cdot e^{-x} + <var name ="$a"/>x^{<var name ="$b"/>}\cdot \left(\frac{d}{dx} e^{-x}\right)\\
+                            &amp;= <var name ="$c"/>x^{<var name ="$b2"/>} e^{-x} + <var name ="$a"/>x^{<var name ="$b"/>}\left(-e^{-x}\right)\\
+                            &amp;=e^{-x}\left(<var name ="$c"/>x^{<var name ="$b2"/>} - <var name ="$a"/>x^{<var name ="$b"/>}\right).
+                        \end{aligned}
+                    </md>
+                </p>
+            </solution>
+        </webwork>
+    </exercise>
+
+   <exercise xml:id="ex-derivative-2">
+  <title>Find the Derivative 2</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$a = list_random(2..6);
+$b = list_random(1..5);
+
+$ans = Formula("exp(x^2 - $a*x + $b)*(2*x - $a)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>e^{x^2-<var name="$a"/>x+<var name="$b"/>}</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="40"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the chain rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}e^{x^2-<var name="$a"/>x+<var name="$b"/>}
+          &amp;= e^{x^2-<var name="$a"/>x+<var name="$b"/>}
+          \left(2x-<var name="$a"/>\right).
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-3">
+  <title>Find the Derivative 3</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$ans = Formula("atan(x) + x/(1+x^2)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>x\arctan(x)</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="40"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the product rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(x\arctan(x)\right)
+          &amp;= 1\cdot \arctan(x) + x\cdot \frac{1}{1+x^2}\\
+          &amp;= \arctan(x)+\frac{x}{1+x^2}.
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-4">
+  <title>Find the Derivative 4</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$a = list_random(3..9);
+$b = list_random(2..7);
+
+$ans = Formula("-$a*cos($b-x)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m><var name="$a"/>\sin(<var name="$b"/>-x)</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="40"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the chain rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(<var name="$a"/>\sin(<var name="$b"/>-x)\right)
+          &amp;= <var name="$a"/>\cos(<var name="$b"/>-x)(-1)\\
+          &amp;= -<var name="$a"/>\cos(<var name="$b"/>-x).
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-5">
+  <title>Find the Derivative 5</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$c = list_random(4..9);
+$p = list_random(2..5);
+$a = list_random(2..7);
+$b = list_random(1..5);
+$cp = $c*$p;
+
+$ans = Formula("-$cp*x^(-$p-1) - $a/($a*x+$b)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>\frac{<var name="$c"/>}{x^{<var name="$p"/>}}-\ln(<var name="$a"/>x+<var name="$b"/>)</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="40"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Rewrite the first term using a negative exponent and use the chain rule on the logarithm:
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(<var name="$c"/>x^{-<var name="$p"/>}-\ln(<var name="$a"/>x+<var name="$b"/>)\right)
+          &amp;= -<var name="$cp"/>x^{-<var name="$p"/>-1}
+          -\frac{<var name="$a"/>}{<var name="$a"/>x+<var name="$b"/>}.
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-6">
+  <title>Find the Derivative 6</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real", q=>"Real");
+
+$ans = Formula("q^x*ln(q)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>q^x</m>, where <m>q</m> is a constant with <m>0&lt;q&lt;1</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="40"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        For a positive constant base <m>q</m>,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}q^x &amp;= q^x\ln(q).
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-7">
+  <title>Find the Derivative 7</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$a = list_random(1..4);
+$b = list_random(1..5);
+$c = list_random(2..6);
+
+$ans = Formula("((x^2+$b*x-$c) - (x-$a)*(2*x+$b))/(x^2+$b*x-$c)^2");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>\frac{x-<var name="$a"/>}{x^2+<var name="$b"/>x-<var name="$c"/>}</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="50"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the quotient rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(\frac{x-<var name="$a"/>}{x^2+<var name="$b"/>x-<var name="$c"/>}\right)
+          &amp;= \frac{(x^2+<var name="$b"/>x-<var name="$c"/>)
+          -(x-<var name="$a"/>)(2x+<var name="$b"/>)}
+          {(x^2+<var name="$b"/>x-<var name="$c"/>)^2}.
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-8">
+  <title>Find the Derivative 8</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$a = list_random(2..9);
+
+$ans = Compute(1);
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>x-<var name="$a"/></m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="10"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        The derivative of <m>x</m> is <m>1</m>, and the derivative of a constant is <m>0</m>. Therefore,
+        <m>f'(x)=1</m>.
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-9">
+  <title>Find the Derivative 9</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real", a=>"Real", n=>"Real");
+
+$ans = Formula("n*a*exp(a*x)*exp(-n*(exp(a*x)-1))");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>1-e^{-n(e^{ax}-1)}</m>, where <m>a</m> and <m>n</m> are positive constants.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="50"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the chain rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-n(e^{ax}-1)}\right)
+          &amp;= -e^{-n(e^{ax}-1)}\left(-n ae^{ax}\right)\\
+          &amp;= nae^{ax}e^{-n(e^{ax}-1)}.
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-10">
+  <title>Find the Derivative 10</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real", t=>"Real");
+
+$ans = Formula("exp(-x/t)/t");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>1-e^{-x/t}</m>, where <m>t</m> is a positive constant.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="40"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the chain rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-x/t}\right)
+          &amp;= -e^{-x/t}\left(-\frac{1}{t}\right)\\
+          &amp;= \frac{1}{t}e^{-x/t}.
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-11">
+  <title>Find the Derivative 11</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(x=>"Real", L=>"Real", k=>"Real");
+
+$ans = Formula("k*x^(k-1)*exp(-(x/L)^k)/(L^k)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Find the derivative of <m>1-e^{-(x/L)^k}</m>, where <m>L</m> and <m>k</m> are constants with <m>L>0</m> and <m>k>1</m>.
+      </p>
+      <p>
+        <m>f'(x)=</m> <var name="$ans" width="50"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Using the chain rule,
+        <md>
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-(x/L)^k}\right)
+          &amp;= -e^{-(x/L)^k}\left(-k(x/L)^{k-1}\frac{1}{L}\right)\\
+          &amp;= \frac{k}{L}(x/L)^{k-1}e^{-(x/L)^k}.
+          \end{aligned}
+        </md>
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+<exercise xml:id="ex-derivative-12">
+  <title>Find the Derivative 12</title>
+  <webwork>
+    <pg-code><![CDATA[
+Context("Numeric");
+Context()->variables->are(a=>"Real", b=>"Real", c=>"Real");
+
+$ans_x = Formula("-b/(2*a)");
+$ans_y = Formula("c - b^2/(4*a)");
+    ]]></pg-code>
+
+    <statement>
+      <p>
+        Suppose <m>f(x)=ax^2+bx+c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are constants and <m>a\neq 0</m>.
+        Find the point where the tangent line is horizontal.
+      </p>
+      <p>
+        <m>x=</m> <var name="$ans_x" width="25"/>
+      </p>
+      <p>
+        <m>y=</m> <var name="$ans_y" width="25"/>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        A horizontal tangent line occurs where the derivative is <m>0</m>.
+        <md>
+          \begin{aligned}
+          f'(x) &amp;= 2ax+b\\
+          0 &amp;= 2ax+b\\
+          x &amp;= -\frac{b}{2a}.
+          \end{aligned}
+        </md>
+        Substituting this into <m>f(x)</m> gives
+        <md>
+          \begin{aligned}
+          y &amp;= a\left(-\frac{b}{2a}\right)^2+b\left(-\frac{b}{2a}\right)+c\\
+          &amp;= c-\frac{b^2}{4a}.
+          \end{aligned}
+        </md>
+        Therefore, the point is <m>\left(-\frac{b}{2a}, c-\frac{b^2}{4a}\right)</m>.
+      </p>
+    </solution>
+  </webwork>
+</exercise>
+
+
+    <exercise xml:id="ex-derivative-13">
+        <title>Find the Derivative 13</title>
+        <webwork>
+            <pg-code><![CDATA[
+        loadMacros(
+        "parserCheckboxList.pl",
+        );
+
+        $checks = CheckboxList(
+        [
+            '\(x<m\)',
+            '\(x>m\)',
+            '\(x=m\)',
+            'all real \(x\)'
+        ],
+        [
+            '\(x<m\)'
+        ],
+        labels => "ABC",
+        displayLabels => 1
+        );
+            ]]></pg-code>
+
+            <statement>
+            <p>
+                Let <m>g(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}</m>, where <m>s>0</m>.
+                Find the range of <m>x</m> values for which <m>g'(x)</m> is positive.
+            </p>
+            <p>
+                <var name="$checks" form="checkboxes"/>
+            </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The constant factor <m>\frac{1}{s\sqrt{2\pi}}</m> is positive. Differentiating the exponential part gives
+                    <md>
+                    \begin{aligned}
+                    g'(x)
+                    &amp;= \frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}
+                    \left(-\frac{x-m}{s^2}\right).
+                    \end{aligned}
+                    </md>
+                    The exponential factor is always positive, so the sign of <m>g'(x)</m> is determined by
+                    <m>-(x-m)</m>. Therefore, <m>g'(x)>0</m> when <m>x&lt;m</m>.
+                </p>
+            </solution>
+        </webwork>
+    </exercise>
 </subsection>

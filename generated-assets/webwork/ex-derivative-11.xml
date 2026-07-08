@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-11" assembly-id="ex-derivative-11">
+  <static seed="21">
+    <statement><p>Find the derivative of <m>1-e^{-(x/L)^k}\text{,}</m> where <m>L</m> and <m>k</m> are constants with <m>L&gt;0</m> and <m>k&gt;1\text{.}</m></p>
+<p><m>f'(x)=</m> <fillin characters="50" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{kx^{k-1}\exp\mathopen{}\left(-\left(\frac{x}{L}\right)^{k}\right)}{L^{k}}</m>
+      </p>
+    </answer>
+    <solution><p>Using the chain rule,</p>
+<p><me>\begin{aligned}
+          \frac{d}{dx}\left(1-e^{-(x/L)^k}\right)
+          \amp = -e^{-(x/L)^k}\left(-k(x/L)^{k-1}\frac{1}{L}\right)\\
+          \amp = \frac{k}{L}(x/L)^{k-1}e^{-(x/L)^k}.
+          \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_18-Find_the_Derivative_11.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", L=>"Real", k=>"Real");
+
+$ans = Formula("k*x^(k-1)*exp(-(x/L)^k)/(L^k)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`1-e^{-(x/L)^k}\text{,}`] where [`L`] and [`k`] are constants with [`L>0`] and [`k>1\text{.}`]
+
+[`f'(x)=`] [_]{$ans}{50}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the chain rule,
+
+[```
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-(x/L)^k}\right)
+          &= -e^{-(x/L)^k}\left(-k(x/L)^{k-1}\frac{1}{L}\right)\\
+          &= \frac{k}{L}(x/L)^{k-1}e^{-(x/L)^k}.
+          \end{aligned}
+        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Derivatives",
-  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   The Derivative  The average velocity of an object over a time interval is defined as its change in its position divided by . That is, . If a function models movement of an object, then the average rate of change of that object over a time interval is given by , where is the total change in the function. So, if the time interval is from to , then the average rate of change in is given by . Graphically, if we draw a line through the points and , then its slope, is the average rate of change of the function from to . We call such a line a secant line .   Average rate of change as slope of the secant line      Average rates of change are fine, but a more interesting concept is the {instantaneous velocity of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let > be the starting time and let $h$ be some time interval (so ending time is ). Then we can change our average rate of change function to . When , then the average rate of change is approximately the instantaneous rate of change. Of course, we can't have , but we can make as small as we would like - the smaller the better. (You smell that? That's the impending arrival of limits.)  We can find the instantaneous velocity of a object by taking the limit as approaches of our average rate of change function, assuming that limit exists. This limit is called the derivative Derivative of at . It is denoted by .    The derivative of at is provided that the limit exists.    Graphically, the derivative is the slope of the line that locally intersects the function $f(x)$ at only the point . That is, it is the limit of the secant lines as $b$ approaches . We call this line the tangent line . This is visualized below.   Average rate of change as slope of the secant line      Suppose we would like to find the instantaneous rate of change of a function at multiple points. It would be handy to have a function that could give us these values rather than calculating the derivative at several points. Fortunately, such a function exists and is called the derivative function . derivative function     The derivative function of is provided that the limit exits.    Just for the sake of completion, we will find the derivative function of using the limit definition.   Derivative of   Find the derivative function of , using the limit definition of a derivative.         There. We did an example. Now let's never use the limit definition to calculate a derivative again. The important thing to take away from this section is that the derivative represents the rate of change of a function at a specified point.   Derivative of   Explain why the derivative of does not exist at .    Consider secant lines for to the left and right of . Take a secant line from to for . The slope of this secant line is . (Note that since .) So, all secant lines to the left of will have slope .  Take a secant line from to with . The slope of this secant line is . So, all secant lines to the right of will have slope .  Now consider the full limit of the slope of secant lines at . To the left, the limit is simply . To the right, the limit is . Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at .      Derivative Shortcuts  Fortunately, there are algebraic shortcuts for finding the derivative function of any elementary function. We give a list of those rules below. First, recall the notation . This is an operator meaning \"the derivative of .\"\"   Derivative Shortcut Rules     For any constant , .    For any constant , .    For any real number , .    For any , .     .     .     .     .     .     .    Constant Rule: .    Sum Rule: .    Chain Rule: .    Product Rule: .    Quotient Rule: .    \"Mini Chain Rule\": .      Pay attention to the last rule, that I like to call the \"mini chain rule.\" Many students pick this up after doing a number of derivative examples, but I find it helpful to see it explicitly. If you have a function that is a composition of functions, but the inside function is linear, then the derivative is simply the derivative of the outside function, with the inside function plugged in, times the slope of the linear function. For example, the derivative os is .    Find the derivative functions of the following functions.                                    Applying the chain rule to , we get     Applying the chain rule to and noticing that , we get .    Applying the chain rule to , we get .    Applying the chain rule to yields its derivative as . Then, we use the product rule to get .    We will need to use the chain rule for to get its derivative of . Then applying the quotient rule yields .       Fortunately, you will not need to calculate derivatives that are as complicated as the preceding ones on the P exam.    Exercises  Hi   "
+  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   The Derivative  The average velocity of an object over a time interval is defined as its change in its position divided by . That is, . If a function models movement of an object, then the average rate of change of that object over a time interval is given by , where is the total change in the function. So, if the time interval is from to , then the average rate of change in is given by . Graphically, if we draw a line through the points and , then its slope, is the average rate of change of the function from to . We call such a line a secant line .   Average rate of change as slope of the secant line      Average rates of change are fine, but a more interesting concept is the {instantaneous velocity of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let > be the starting time and let $h$ be some time interval (so ending time is ). Then we can change our average rate of change function to . When , then the average rate of change is approximately the instantaneous rate of change. Of course, we can't have , but we can make as small as we would like - the smaller the better. (You smell that? That's the impending arrival of limits.)  We can find the instantaneous velocity of a object by taking the limit as approaches of our average rate of change function, assuming that limit exists. This limit is called the derivative Derivative of at . It is denoted by .    The derivative of at is provided that the limit exists.    Graphically, the derivative is the slope of the line that locally intersects the function $f(x)$ at only the point . That is, it is the limit of the secant lines as $b$ approaches . We call this line the tangent line . This is visualized below.   Average rate of change as slope of the secant line      Suppose we would like to find the instantaneous rate of change of a function at multiple points. It would be handy to have a function that could give us these values rather than calculating the derivative at several points. Fortunately, such a function exists and is called the derivative function . derivative function     The derivative function of is provided that the limit exits.    Just for the sake of completion, we will find the derivative function of using the limit definition.   Derivative of   Find the derivative function of , using the limit definition of a derivative.         There. We did an example. Now let's never use the limit definition to calculate a derivative again. The important thing to take away from this section is that the derivative represents the rate of change of a function at a specified point.   Derivative of   Explain why the derivative of does not exist at .    Consider secant lines for to the left and right of . Take a secant line from to for . The slope of this secant line is . (Note that since .) So, all secant lines to the left of will have slope .  Take a secant line from to with . The slope of this secant line is . So, all secant lines to the right of will have slope .  Now consider the full limit of the slope of secant lines at . To the left, the limit is simply . To the right, the limit is . Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at .      Derivative Shortcuts  Fortunately, there are algebraic shortcuts for finding the derivative function of any elementary function. We give a list of those rules below. First, recall the notation . This is an operator meaning \"the derivative of .\"\"   Derivative Shortcut Rules     For any constant , .    For any constant , .    For any real number , .    For any , .     .     .     .     .     .     .    Constant Rule: .    Sum Rule: .    Chain Rule: .    Product Rule: .    Quotient Rule: .    \"Mini Chain Rule\": .      Pay attention to the last rule, that I like to call the \"mini chain rule.\" Many students pick this up after doing a number of derivative examples, but I find it helpful to see it explicitly. If you have a function that is a composition of functions, but the inside function is linear, then the derivative is simply the derivative of the outside function, with the inside function plugged in, times the slope of the linear function. For example, the derivative of is .    Find the derivative functions of the following functions.                                    Applying the chain rule to , we get     Applying the chain rule to and noticing that , we get .    Applying the chain rule to , we get .    Applying the chain rule to yields its derivative as . Then, we use the product rule to get .    We will need to use the chain rule for to get its derivative of . Then applying the quotient rule yields .       Fortunately, you will not need to calculate derivatives that are as complicated as the preceding ones on the P exam.    Exercises   Find the Derivative 1    Find the derivative of          Using the product rule and noting from the mini-chain rule that          Find the Derivative 2    Find the derivative of          Using the chain rule,          Find the Derivative 3    Find the derivative of          Using the product rule,          Find the Derivative 4    Find the derivative of          Using the chain rule,          Find the Derivative 5    Find the derivative of          Rewrite the first term using a negative exponent and use the chain rule on the logarithm:          Find the Derivative 6    Find the derivative of where is a constant with          For a positive constant base          Find the Derivative 7    Find the derivative of          Using the quotient rule,          Find the Derivative 8    Find the derivative of          The derivative of is and the derivative of a constant is Therefore,         Find the Derivative 9    Find the derivative of where and are positive constants.          Using the chain rule,          Find the Derivative 10    Find the derivative of where is a positive constant.          Using the chain rule,          Find the Derivative 11    Find the derivative of where and are constants with and          Using the chain rule,          Find the Derivative 12    Suppose where  and are constants and Find the point where the tangent line is horizontal.                 A horizontal tangent line occurs where the derivative is   Substituting this into gives   Therefore, the point is         Find the Derivative 13    Let where Find the range of values for which is positive.             all real          The constant factor is positive. Differentiating the exponential part gives   The exponential factor is always positive, so the sign of is determined by Therefore, when         "
 },
 {
   "id": "ARC-graph",
@@ -512,6 +512,132 @@ var ptx_lunr_docs = [
   "number": "1.4.7",
   "title": "",
   "body": "  Find the derivative functions of the following functions.                                    Applying the chain rule to , we get     Applying the chain rule to and noticing that , we get .    Applying the chain rule to , we get .    Applying the chain rule to yields its derivative as . Then, we use the product rule to get .    We will need to use the chain rule for to get its derivative of . Then applying the quotient rule yields .      "
+},
+{
+  "id": "ex-derivative-1",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-1",
+  "type": "Checkpoint",
+  "number": "1.4.8",
+  "title": "Find the Derivative 1.",
+  "body": " Find the Derivative 1    Find the derivative of          Using the product rule and noting from the mini-chain rule that        "
+},
+{
+  "id": "ex-derivative-2",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-2",
+  "type": "Checkpoint",
+  "number": "1.4.9",
+  "title": "Find the Derivative 2.",
+  "body": " Find the Derivative 2    Find the derivative of          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-3",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-3",
+  "type": "Checkpoint",
+  "number": "1.4.10",
+  "title": "Find the Derivative 3.",
+  "body": " Find the Derivative 3    Find the derivative of          Using the product rule,        "
+},
+{
+  "id": "ex-derivative-4",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-4",
+  "type": "Checkpoint",
+  "number": "1.4.11",
+  "title": "Find the Derivative 4.",
+  "body": " Find the Derivative 4    Find the derivative of          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-5",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-5",
+  "type": "Checkpoint",
+  "number": "1.4.12",
+  "title": "Find the Derivative 5.",
+  "body": " Find the Derivative 5    Find the derivative of          Rewrite the first term using a negative exponent and use the chain rule on the logarithm:        "
+},
+{
+  "id": "ex-derivative-6",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-6",
+  "type": "Checkpoint",
+  "number": "1.4.13",
+  "title": "Find the Derivative 6.",
+  "body": " Find the Derivative 6    Find the derivative of where is a constant with          For a positive constant base        "
+},
+{
+  "id": "ex-derivative-7",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-7",
+  "type": "Checkpoint",
+  "number": "1.4.14",
+  "title": "Find the Derivative 7.",
+  "body": " Find the Derivative 7    Find the derivative of          Using the quotient rule,        "
+},
+{
+  "id": "ex-derivative-8",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-8",
+  "type": "Checkpoint",
+  "number": "1.4.15",
+  "title": "Find the Derivative 8.",
+  "body": " Find the Derivative 8    Find the derivative of          The derivative of is and the derivative of a constant is Therefore,       "
+},
+{
+  "id": "ex-derivative-9",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-9",
+  "type": "Checkpoint",
+  "number": "1.4.16",
+  "title": "Find the Derivative 9.",
+  "body": " Find the Derivative 9    Find the derivative of where and are positive constants.          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-10",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-10",
+  "type": "Checkpoint",
+  "number": "1.4.17",
+  "title": "Find the Derivative 10.",
+  "body": " Find the Derivative 10    Find the derivative of where is a positive constant.          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-11",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-11",
+  "type": "Checkpoint",
+  "number": "1.4.18",
+  "title": "Find the Derivative 11.",
+  "body": " Find the Derivative 11    Find the derivative of where and are constants with and          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-12",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-12",
+  "type": "Checkpoint",
+  "number": "1.4.19",
+  "title": "Find the Derivative 12.",
+  "body": " Find the Derivative 12    Suppose where  and are constants and Find the point where the tangent line is horizontal.                 A horizontal tangent line occurs where the derivative is   Substituting this into gives   Therefore, the point is       "
+},
+{
+  "id": "ex-derivative-13",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-13",
+  "type": "Checkpoint",
+  "number": "1.4.20",
+  "title": "Find the Derivative 13.",
+  "body": " Find the Derivative 13    Let where Find the range of values for which is positive.             all real          The constant factor is positive. Differentiating the exponential part gives   The exponential factor is always positive, so the sign of is determined by Therefore, when       "
+},
+{
+  "id": "section-1-5",
+  "level": "1",
+  "url": "section-1-5.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Optimization",
+  "body": " Optimization  Optimization optimization is application of derivatives in a Calculus 1 course. Fortunately, complex optimization problems are not part of the P exam. You will however, need to recall the basics of optimizing a function. Our review of optimization will be far less formal than in a calculus course.   Optimizing a Function  Consider the graph below:   "
 },
 {
   "id": "backmatter-2",

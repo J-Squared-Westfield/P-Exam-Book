@@ -1,0 +1,12 @@
+<section xml:id="section-1-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Optimization</title>
+    <p>
+        Optimization<idx>optimization</idx> is <em> application </em> of derivatives in a Calculus 1 course.  
+        Fortunately, complex optimization problems are not part of the P exam.  
+        You will however, need to recall the basics of optimizing a function.  
+        Our review of optimization will be far less formal than in a calculus course.
+    </p>
+
+    <xi:include href="./subsection-1-5-1.ptx"/>
+
+</section>

@@ -1,0 +1,83 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+$a = list_random(3..9);
+$b = list_random(2..4);
+$b2 = Compute($b-1);
+$c = Compute($a*$b);
+$ans = Formula("exp(-x)*($c*x^$b2 - $a*x^$b)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`[$a]x^{[$b]} e^{-x}\text{.}`]
+
+[`f'(x)=`] [_]{$ans}{50}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the product rule and noting from the mini-chain rule that [`\frac{d}{dx} e^{-x} = -e^{-x}\text{,}`]
+
+[```
+                        \begin{aligned}
+                            \frac{d}{dx} \left([$a]x^{[$b]} e^{-x}\right) &= \left(\frac{d}{dx} [$a]x^{[$b]}\right)\cdot e^{-x} + [$a]x^{[$b]}\cdot \left(\frac{d}{dx} e^{-x}\right)\\
+                            &= [$c]x^{[$b2]} e^{-x} + [$a]x^{[$b]}\left(-e^{-x}\right)\\
+                            &=e^{-x}\left([$c]x^{[$b2]} - [$a]x^{[$b]}\right).
+                        \end{aligned}
+                    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

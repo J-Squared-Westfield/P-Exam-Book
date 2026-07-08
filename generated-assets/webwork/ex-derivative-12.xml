@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-12" assembly-id="ex-derivative-12">
+  <static seed="22">
+    <statement><p>Suppose <m>f(x)=ax^2+bx+c\text{,}</m> where <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> are constants and <m>a\neq 0\text{.}</m> Find the point where the tangent line is horizontal.</p>
+<p><m>x=</m> <fillin characters="25" name="AnSwEr0001"/></p>
+<p><m>y=</m> <fillin characters="25" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{-b}{2a}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>c-\frac{b^{2}}{4a}</m>
+      </p>
+    </answer>
+    <solution><p>A horizontal tangent line occurs where the derivative is <m>0\text{.}</m></p>
+<p><me>\begin{aligned}
+          f'(x) \amp = 2ax+b\\
+          0 \amp = 2ax+b\\
+          x \amp = -\frac{b}{2a}.
+          \end{aligned}</me></p>
+<p>Substituting this into <m>f(x)</m> gives</p>
+<p><me>\begin{aligned}
+          y \amp = a\left(-\frac{b}{2a}\right)^2+b\left(-\frac{b}{2a}\right)+c\\
+          \amp = c-\frac{b^2}{4a}.
+          \end{aligned}</me></p>
+<p>Therefore, the point is <m>\left(-\frac{b}{2a}, c-\frac{b^2}{4a}\right)\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_19-Find_the_Derivative_12.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(a=>"Real", b=>"Real", c=>"Real");
+
+$ans_x = Formula("-b/(2*a)");
+$ans_y = Formula("c - b^2/(4*a)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose [`f(x)=ax^2+bx+c\text{,}`] where [`a\text{,}`] [`b\text{,}`] and [`c`] are constants and [`a\neq 0\text{.}`] Find the point where the tangent line is horizontal.
+
+[`x=`] [_]{$ans_x}{25}
+
+[`y=`] [_]{$ans_y}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+A horizontal tangent line occurs where the derivative is [`0\text{.}`]
+
+[```
+          \begin{aligned}
+          f'(x) &= 2ax+b\\
+          0 &= 2ax+b\\
+          x &= -\frac{b}{2a}.
+          \end{aligned}
+        ```]
+
+Substituting this into [`f(x)`] gives
+
+[```
+          \begin{aligned}
+          y &= a\left(-\frac{b}{2a}\right)^2+b\left(-\frac{b}{2a}\right)+c\\
+          &= c-\frac{b^2}{4a}.
+          \end{aligned}
+        ```]
+
+Therefore, the point is [`\left(-\frac{b}{2a}, c-\frac{b^2}{4a}\right)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

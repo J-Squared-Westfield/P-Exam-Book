@@ -1,0 +1,96 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserCheckboxList.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+loadMacros(
+"parserCheckboxList.pl",
+);
+
+$checks = CheckboxList(
+[
+    '\(x<m\)',
+    '\(x>m\)',
+    '\(x=m\)',
+    'all real \(x\)'
+],
+[
+    '\(x<m\)'
+],
+labels => "ABC",
+displayLabels => 1
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`g(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}\text{,}`] where [`s>0\text{.}`] Find the range of [`x`] values for which [`g'(x)`] is positive.
+
+[_]{$checks}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The constant factor [`\frac{1}{s\sqrt{2\pi}}`] is positive. Differentiating the exponential part gives
+
+[```
+                    \begin{aligned}
+                    g'(x)
+                    &= \frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}
+                    \left(-\frac{x-m}{s^2}\right).
+                    \end{aligned}
+                    ```]
+
+The exponential factor is always positive, so the sign of [`g'(x)`] is determined by [`-(x-m)\text{.}`] Therefore, [`g'(x)>0`] when [`x<m\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

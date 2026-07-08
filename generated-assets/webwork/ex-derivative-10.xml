@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-10" assembly-id="ex-derivative-10">
+  <static seed="20">
+    <statement><p>Find the derivative of <m>1-e^{-x/t}\text{,}</m> where <m>t</m> is a positive constant.</p>
+<p><m>f'(x)=</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{\exp\mathopen{}\left(\frac{-x}{t}\right)}{t}</m>
+      </p>
+    </answer>
+    <solution><p>Using the chain rule,</p>
+<p><me>\begin{aligned}
+          \frac{d}{dx}\left(1-e^{-x/t}\right)
+          \amp = -e^{-x/t}\left(-\frac{1}{t}\right)\\
+          \amp = \frac{1}{t}e^{-x/t}.
+          \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_17-Find_the_Derivative_10.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", t=>"Real");
+
+$ans = Formula("exp(-x/t)/t");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`1-e^{-x/t}\text{,}`] where [`t`] is a positive constant.
+
+[`f'(x)=`] [_]{$ans}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the chain rule,
+
+[```
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-x/t}\right)
+          &= -e^{-x/t}\left(-\frac{1}{t}\right)\\
+          &= \frac{1}{t}e^{-x/t}.
+          \end{aligned}
+        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

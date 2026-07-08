@@ -115,7 +115,7 @@
         Many students pick this up after doing a number of derivative examples, but I find it helpful to see it explicitly.
         If you have a function that is a composition of functions, but the inside function is linear, then the derivative is simply
         the derivative of the outside function, with the inside function plugged in, times the slope of the linear function.
-        For example, the derivative of <m>{\sin(-2x+7)}</m> is <m>\cos(-2x+7) \cdot (-2) = -2\cos(-2x+7)}</m>.
+        For example, the derivative of <m>{\sin(-2x+7)}</m> is <m>\cos(-2x+7) \cdot (-2) = -2\cos(-2x+7)</m>.
     </p>
     
     <example xml:id="ex-derivative-shortcuts">

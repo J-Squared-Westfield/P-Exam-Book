@@ -1,0 +1,80 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", L=>"Real", k=>"Real");
+
+$ans = Formula("k*x^(k-1)*exp(-(x/L)^k)/(L^k)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`1-e^{-(x/L)^k}\text{,}`] where [`L`] and [`k`] are constants with [`L>0`] and [`k>1\text{.}`]
+
+[`f'(x)=`] [_]{$ans}{50}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the chain rule,
+
+[```
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-(x/L)^k}\right)
+          &= -e^{-(x/L)^k}\left(-k(x/L)^{k-1}\frac{1}{L}\right)\\
+          &= \frac{k}{L}(x/L)^{k-1}e^{-(x/L)^k}.
+          \end{aligned}
+        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
