@@ -325,7 +325,7 @@ a.  The exponent goes to [`-\infty\text{.}`] [`3^y`] approaches 0 as [`y`] goes 
 
 a.  The exponent goes to [`0\text{.}`] So, the limit is [`e^0 = 1\text{.}`]
 
-a.  The numerator dominates since it has higher degree. So, the limit will be positive or negative infinity. We need to determine which. The denominator is led by [`[$j3]x^2\text{,}`] which goes to positive infinity as [`x`] approaches negative infinity. The numerator is led by [`-[$j2]x^3\text{,}`] which goes to positive infinity as [`x`] approaches negative infinity. So, we have [`\frac{\text{positive}}{\text{positive}} = \text{positive}\text{.}`] So, the limit is [`\infty\text{.}`]   
+a.  The numerator dominates since it has higher degree. So, the limit will be positive or negative infinity. We need to determine which. The denominator is led by [`[$j3]x^2\text{,}`] which goes to positive infinity as [`x`] approaches negative infinity. The numerator is led by [`-[$j2]x^3\text{,}`] which goes to positive infinity as [`x`] approaches negative infinity. So, we have [`\frac{\text{positive}}{\text{positive}} = \text{positive}\text{.}`] So, the limit is [`\infty\text{.}`]
 
 END_PGML_SOLUTION
 
