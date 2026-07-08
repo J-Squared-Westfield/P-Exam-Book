@@ -62,4 +62,126 @@
             </p>
         </statement>
     </definition>
+
+    <p>
+        Graphically, the derivative is the slope of the line that locally intersects the function $f(x)$ at only the point <m>(a,f(a))</m>.  
+        That is, it is the limit of the secant lines as $b$ approaches <m>a</m>.  
+        We call this line the <em>tangent line</em>.  
+        This is visualized below.
+    </p>
+
+    <figure xml:id="derivative-function-graph">
+        <caption>Average rate of change as slope of the secant line</caption>
+        <image width="80%" xml:id="derivative-graph">
+            <latex-image>
+                \begin{tikzpicture}
+                    \draw[&lt;->,thick] (-5,0)--(5,0);
+                    \draw[&lt;->,thick] (0,-5)--(0,5);
+                    \draw[domain=-2.1:4.1,smooth,variable=\x,blue,&lt;->, thick] plot ({\x},{0.25*\x*\x*\x -0.75*\x*\x - 0.25*\x + 1});
+                    \draw[blue] (3.6,4) node{$f(x)$};
+                    \draw[red] (-4.7,-3.38825)--(4.7,3.16825);
+                    \filldraw (-1.5,-1.15625) circle (2.5pt) node[anchor = east]{$(a,f(a))$};
+                    \filldraw (3.7,2.47075) circle(2.5pt);
+                    \filldraw (2.861,0) circle(2.5pt);
+                    \draw[orange] (-4.7,-2)--(4.7,0.4876);
+                    \node[rotate=16] at (1,-0.75) {\small{nope}};
+                    \node[rotate=36] at (2.4,1.9) {\small{not even close}};
+                    \filldraw (0,1) circle (2.5pt);
+                    \draw[purple] (-4.104,-4.9)--(2.78,5);
+                    \node[rotate=54] at (1.4,3.5) {\small{getting closer}};
+                    \filldraw (-0.7,.72175) circle(2.5pt);
+                    \draw[green] (-3.052,-4.8)--(1.037,4.8);
+                    \node[rotate=65] at (0.3,3.7) {\small{almost there}};
+                    \draw[thick,red] (-2.488,-4.8)--(0.11525,4.8);
+                    \draw (-2,3) node{\small{Oh, yeah! That's}};
+                    \draw (-2.02,2.7) node{\small{the tangent line.}};
+                    \draw[red](-.75,3)--(-.5,3);
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+
+    <p>
+        Suppose we would like to find the instantaneous rate of change of a function at multiple points.  
+        It would be handy to have a function that could give us these values rather than calculating the derivative at several points.  
+        Fortunately, such a function exists and is called the <term>derivative function</term>.<idx>derivative function</idx>
+    </p>
+
+    <definition xml:id="def-derivative-function">
+        <statement>
+            <p>
+                The <term>derivative function of <m>f(x)</m></term>
+                is
+                <md>{f'(x) = \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h}},</md>
+                provided that the limit exits.     
+            </p>
+        </statement>
+    </definition>
+
+    <p>
+        Just for the sake of completion, we will find the derivative function of <m>f(x) = x^3 - 4x</m> using the limit definition.
+    </p>
+
+    <example xml:id="ex-derivative-function">
+        <title>Derivative of <m>f(x) = x^3 - 4x</m></title>
+        <statement>
+            <p>
+                Find the derivative function of <m>{f(x) = x^3 - 4x}</m>, using the limit definition of a derivative.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    \begin{aligned}
+                        f'(x) &amp;= \lim_{h\rightarrow 0} \frac{(x+h)^3 - 4(x+h) - (x^3 - 4x)}{h}\\
+                        &amp;= \lim_{h\rightarrow 0} \frac{x^3 + 3x^2 h + 3xh^2 + h^3 - 4x - 4h - x^3 + 4x}{h}\\
+                        &amp;= \lim_{h\rightarrow 0} \frac{3x^2 h + 3xh^2 + h^3 - 4h}{h}\\
+                        &amp;= \lim_{h\rightarrow 0} \frac{h(3x^2 - 4 + 3xh + h^2)}{h}\\
+                        &amp;= \lim_{h\rightarrow 0} 3x^2 - 4 + 3xh + h^2\\
+                        &amp;= 3x^2 - 4 + 0 + 0\\
+                        &amp;= 3x^2 - 4\\
+                    \end{aligned}
+                </md>
+            </p>
+        </solution>
+    </example>
+
+    <p>
+        There.  
+        We did an example.  
+        Now let's never use the limit definition to calculate a derivative again.  
+        The important thing to take away from this section is that the derivative represents the rate of change of a function at a specified point.
+    </p>
+
+    <example xml:id="ex-abs-x">
+        <title>Derivative of <m>|x|</m></title>
+        <statement>
+            <p>
+                Explain why the derivative of <m>f(x) = |x|</m> does not exist at <m>x=0</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Consider secant lines for <m>|x|</m> to the left and right of <m>x=0</m>.
+                Take a secant line from <m>x=a</m> to <m>x=0</m> for <m>a&lt; 0</m>.
+                The slope of this secant line is <m>{\frac{f(0)-f(a)}{0-a} = \frac{0 - |a|}{-a} = \frac{-(-a)}{-a} = -1}</m>.
+                (Note that <m>|a| = -a</m> since <m>a&lt; 0</m>.)
+                So, all secant lines to the left of <m>x = 0</m> will have slope <m>-1</m>.
+            </p>
+
+            <p>
+                Take a secant line from <m>x=0</m> to <m>x=b</m> with <m>b>0</m>.
+                The slope of this secant line is <m>{\frac{f(b)-f(0)}{b-0} = \frac{|b| - 0}{b} = \frac{b}{b} = 1}</m>.
+                So, all secant lines to the right of <m>x = 0</m> will have slope <m>1</m>.
+            </p>
+
+            <p>
+                Now consider the full limit of the slope of secant lines at <m>x=0</m>.
+                To the left, the limit is simply <m>-1</m>.  
+                To the right, the limit is <m>1</m>.
+                Since the left and right limits are not equal, the limit does not exist.
+                So, the derivative cannot exist at <m>x=0</m>.
+            </p>
+        </solution>
+    </example>
 </subsection>

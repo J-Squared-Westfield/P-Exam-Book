@@ -1,0 +1,120 @@
+<subsection xml:id="subsection-1-4-2">
+    <title>Derivative Shortcuts</title>
+    <p>
+        Fortunately, there are algebraic shortcuts for finding the derivative function of any elementary function.  
+        We give a list of those rules below.  
+        First, recall the notation <m>\displaystyle \frac{d}{dx} f(x)</m>.  
+        This is an operator meaning "the derivative of <m>f(x)</m>.""
+    </p>
+
+    <assemblage xml:id="assemblage-derivative-shortcuts">
+        <title>Derivative Shortcut Rules</title>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        For any constant <m>c</m>, <m>\displaystyle \frac{d}{dx} c = 0</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        For any constant <m>c</m>, <m>\displaystyle \frac{d}{dx} cx = c</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        For any real number <m>n</m>, <m>\displaystyle \frac{d}{dx} x^n = nx^{n-1}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        For any <m>a>0</m>, <m>\displaystyle \frac{d}{dx} a^x = a^x \ln(a)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>\displaystyle \frac{d}{dx} e^x = e^x</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>\displaystyle \frac{d}{dx} \log_a(x) = \frac{1}{\ln(a) x}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>\displaystyle \frac{d}{dx} \ln(x) = \frac{1}{x}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>\displaystyle \frac{d}{dx} \sin(x) = \cos(x)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>\displaystyle \frac{d}{dx} \cos(x) = -\sin(x)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>\displaystyle \frac{d}{dx} \arctan(x) = \frac{1}{1+x^2}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Constant Rule: <m>\displaystyle \frac{d}{dx} c\cdot f(x) = c\cdot f'(x)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Sum Rule: <m>\displaystyle \frac{d}{dx} [f(x) \pm g(x)] = f'(x) \pm g'(x)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Chain Rule: <m>\displaystyle \frac{d}{dx} f(g(x)) = f'(g(x))\cdot g'(x)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Product Rule: <m>\displaystyle {\frac{d}{dx} \left(f(x)\cdot g(x)\right) = f(x)\cdot g'(x) + f'(x) \cdot g(x)}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Quotient Rule: <m>\displaystyle {\frac{d}{dx} \left(\frac{f(x)}{g(x)}\right) = \frac{g(x)\cdot f'(x) - f(x)\cdot g'(x)}{[g(x)]^2}}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        "Mini Chain Rule": <m>\displaystyle \frac{d}{dx} f(ax+b) = a\cdot f'(ax+b)</m>.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </assemblage>
+
+    <p>
+        Pay attention to the last rule, that I like to call the "mini chain rule."
+        Many students pick this up after doing a number of derivative examples, but I find it helpful to see it explicitly.
+        If you have a function that is a composition of functions, but the inside function is linear, then the derivative is simply
+        the derivative of the outside function, with the inside function plugged in, times the slope of the linear function.
+        For example, the derivative os <m>{\sin(-2x+7)</m> is <m>\cos(-2x+7) \cdot (-2) = -2\cos(-2x+7)}</m>.
+    </p>
+</subsection>

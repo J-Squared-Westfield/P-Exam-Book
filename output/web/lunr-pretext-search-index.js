@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Derivatives",
-  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   The Derivative  The average velocity of an object over a time interval is defined as its change in its position divided by . That is, . If a function models movement of an object, then the average rate of change of that object over a time interval is given by , where is the total change in the function. So, if the time interval is from to , then the average rate of change in is given by . Graphically, if we draw a line through the points and , then its slope, is the average rate of change of the function from to . We call such a line a secant line .   Average rate of change as slope of the secant line      Average rates of change are fine, but a more interesting concept is the {instantaneous velocity of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let > be the starting time and let $h$ be some time interval (so ending time is ). Then we can change our average rate of change function to . When , then the average rate of change is approximately the instantaneous rate of change. Of course, we can't have , but we can make as small as we would like - the smaller the better. (You smell that? That's the impending arrival of limits.)  We can find the instantaneous velocity of a object by taking the limit as approaches of our average rate of change function, assuming that limit exists. This limit is called the derivative Derivative of at . It is denoted by .    The derivative of at is provided that the limit exists.     "
+  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   The Derivative  The average velocity of an object over a time interval is defined as its change in its position divided by . That is, . If a function models movement of an object, then the average rate of change of that object over a time interval is given by , where is the total change in the function. So, if the time interval is from to , then the average rate of change in is given by . Graphically, if we draw a line through the points and , then its slope, is the average rate of change of the function from to . We call such a line a secant line .   Average rate of change as slope of the secant line      Average rates of change are fine, but a more interesting concept is the {instantaneous velocity of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let > be the starting time and let $h$ be some time interval (so ending time is ). Then we can change our average rate of change function to . When , then the average rate of change is approximately the instantaneous rate of change. Of course, we can't have , but we can make as small as we would like - the smaller the better. (You smell that? That's the impending arrival of limits.)  We can find the instantaneous velocity of a object by taking the limit as approaches of our average rate of change function, assuming that limit exists. This limit is called the derivative Derivative of at . It is denoted by .    The derivative of at is provided that the limit exists.    Graphically, the derivative is the slope of the line that locally intersects the function $f(x)$ at only the point . That is, it is the limit of the secant lines as $b$ approaches . We call this line the tangent line . This is visualized below.   Average rate of change as slope of the secant line      Suppose we would like to find the instantaneous rate of change of a function at multiple points. It would be handy to have a function that could give us these values rather than calculating the derivative at several points. Fortunately, such a function exists and is called the derivative function . derivative function     The derivative function of is provided that the limit exits.    Just for the sake of completion, we will find the derivative function of using the limit definition.   Derivative of   Find the derivative function of , using the limit definition of a derivative.         There. We did an example. Now let's never use the limit definition to calculate a derivative again. The important thing to take away from this section is that the derivative represents the rate of change of a function at a specified point.   Derivative of   Explain why the derivative of does not exist at .    Consider secant lines for to the left and right of . Take a secant line from to for . The slope of this secant line is . (Note that since .) So, all secant lines to the left of will have slope .  Take a secant line from to with . The slope of this secant line is . So, all secant lines to the right of will have slope .  Now consider the full limit of the slope of secant lines at . To the left, the limit is simply . To the right, the limit is . Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at .      Derivative Shortcuts  Fortunately, there are algebraic shortcuts for finding the derivative function of any elementary function. We give a list of those rules below. First, recall the notation . This is an operator meaning \"the derivative of .\"\"   Derivative Shortcut Rules     For any constant , .    For any constant , .    For any real number , .    For any , .     .     .     .     .     .     .    Constant Rule: .    Sum Rule: .    Chain Rule: .    Product Rule: .    Quotient Rule: .    \"Mini Chain Rule\": .       "
 },
 {
   "id": "ARC-graph",
@@ -458,6 +458,51 @@ var ptx_lunr_docs = [
   "number": "1.4.2",
   "title": "",
   "body": "  The derivative of at is provided that the limit exists.   "
+},
+{
+  "id": "derivative-function-graph",
+  "level": "2",
+  "url": "section-1-4.html#derivative-function-graph",
+  "type": "Figure",
+  "number": "1.4.3",
+  "title": "",
+  "body": " Average rate of change as slope of the secant line     "
+},
+{
+  "id": "subsection-1-4-1-9",
+  "level": "2",
+  "url": "section-1-4.html#subsection-1-4-1-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "derivative function "
+},
+{
+  "id": "def-derivative-function",
+  "level": "2",
+  "url": "section-1-4.html#def-derivative-function",
+  "type": "Definition",
+  "number": "1.4.4",
+  "title": "",
+  "body": "  The derivative function of is provided that the limit exits.   "
+},
+{
+  "id": "ex-derivative-function",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-function",
+  "type": "Example",
+  "number": "1.4.5",
+  "title": "Derivative of <span class=\"process-math\">\\(f(x) = x^3 - 4x\\)<\/span>.",
+  "body": " Derivative of   Find the derivative function of , using the limit definition of a derivative.        "
+},
+{
+  "id": "ex-abs-x",
+  "level": "2",
+  "url": "section-1-4.html#ex-abs-x",
+  "type": "Example",
+  "number": "1.4.6",
+  "title": "Derivative of <span class=\"process-math\">\\(|x|\\)<\/span>.",
+  "body": " Derivative of   Explain why the derivative of does not exist at .    Consider secant lines for to the left and right of . Take a secant line from to for . The slope of this secant line is . (Note that since .) So, all secant lines to the left of will have slope .  Take a secant line from to with . The slope of this secant line is . So, all secant lines to the right of will have slope .  Now consider the full limit of the slope of secant lines at . To the left, the limit is simply . To the right, the limit is . Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at .   "
 },
 {
   "id": "backmatter-2",
