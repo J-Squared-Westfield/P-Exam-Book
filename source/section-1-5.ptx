@@ -8,5 +8,6 @@
     </p>
 
     <xi:include href="./subsection-1-5-1.ptx"/>
+    <xi:include href="./subsection-1-5-2.ptx"/>
 
 </section>

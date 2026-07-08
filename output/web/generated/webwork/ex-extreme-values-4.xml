@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-extreme-values-4" assembly-id="ex-extreme-values-4">
+  <static seed="27">
+    <statement><p>Let <m>f(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}</m> on <m>(-\infty,\infty)\text{,}</m> where <m>s&gt;0</m> and <m>m</m> are constants. Find the minimum and maximum values of <m>f(x)\text{,}</m> if they exist.</p>
+<p>Which statement about the minimum value is correct? <p><ol form="checkboxes" marker="A" name="AnSwEr0001">
+<li>
+<p>A minimum value exists and is <m>0</m>.</p>
+</li>
+<li>
+<p>No minimum value exists.</p>
+</li>
+<li>
+<p>A minimum value exists at <m>x=m</m>.</p>
+</li>
+</ol></p>
+<p>Maximum value: <fillin characters="35" name="AnSwEr0002"/></p>
+</p></statement>
+    <answer>
+      <p>
+        <m>\text{B}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\frac{1}{s\sqrt{2\pi }}</m>
+      </p>
+    </answer>
+    <solution><p><m>\frac{1}{s\sqrt{2\pi}}</m> is a constant. The derivative of <m>e^{-\frac{(x-m)^2}{2s^2}}</m> is</p>
+<p><me>\begin{aligned}
+                        \frac{d}{dx}e^{-\frac{(x-m)^2}{2s^2}}
+                        \amp = e^{-\frac{(x-m)^2}{2s^2}}\left(-\frac{1}{2s^2}\right)\left(2(x-m)\right)\\
+                        \amp = -\frac{(x-m)}{s^2}e^{-\frac{(x-m)^2}{2s^2}}.
+                        \end{aligned}</me></p>
+<p>Setting this equal to zero, we find the critical point <m>x=m\text{.}</m></p>
+<p>Plugging in give <m>\displaystyle f(m) = \frac{1}{s\sqrt{2\pi}}\text{.}</m> This is the maximum value.</p>
+<p>As <m>x\to\infty</m> or <m>x\to -\infty\text{,}</m> the function approaches <m>0\text{,}</m> but it never equals <m>0\text{.}</m> Therefore, no minimum value exists.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_5_7-Minimum_and_Maximum_Values_2.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserCheckboxList.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", m=>"Real", s=>"Real");
+
+$ans_max = Formula("1/(s*sqrt(2*pi))");
+
+loadMacros(
+"parserCheckboxList.pl",
+);
+
+$min_check = CheckboxList(
+[
+    'A minimum value exists and is \(0\).',
+    'No minimum value exists.',
+    'A minimum value exists at \(x=m\).'
+],
+[
+    'No minimum value exists.'
+],
+labels => "ABC",
+displayLabels => 1
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}`] on [`(-\infty,\infty)\text{,}`] where [`s>0`] and [`m`] are constants. Find the minimum and maximum values of [`f(x)\text{,}`] if they exist.
+
+Which statement about the minimum value is correct? [_]{$min_check}{5}
+
+Maximum value: [_]{$ans_max}{35}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\frac{1}{s\sqrt{2\pi}}`] is a constant. The derivative of [`e^{-\frac{(x-m)^2}{2s^2}}`] is
+
+[```
+                        \begin{aligned}
+                        \frac{d}{dx}e^{-\frac{(x-m)^2}{2s^2}}
+                        &= e^{-\frac{(x-m)^2}{2s^2}}\left(-\frac{1}{2s^2}\right)\left(2(x-m)\right)\\
+                        &= -\frac{(x-m)}{s^2}e^{-\frac{(x-m)^2}{2s^2}}.
+                        \end{aligned}
+                    ```]
+
+Setting this equal to zero, we find the critical point [`x=m\text{.}`]
+
+Plugging in give [`\displaystyle f(m) = \frac{1}{s\sqrt{2\pi}}\text{.}`] This is the maximum value.
+
+As [`x\to\infty`] or [`x\to -\infty\text{,}`] the function approaches [`0\text{,}`] but it never equals [`0\text{.}`] Therefore, no minimum value exists.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

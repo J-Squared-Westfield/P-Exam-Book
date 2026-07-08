@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-extreme-values-5" assembly-id="ex-extreme-values-5">
+  <static seed="28">
+    <statement><p>Find the minimum and maximum values of <m>f(x)=\frac{1}{10}(x-3)^2+2</m> on <m>[0,10]\text{.}</m></p>
+<p>Minimum value: <fillin characters="15" name="AnSwEr0001"/></p>
+<p>Maximum value: <fillin characters="15" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>6.9</m>
+      </p>
+    </answer>
+    <solution><p>The function is written in vertex form. Since the coefficient of the squared term is positive, the minimum occurs at the vertex:</p>
+<p><me>\begin{aligned}
+                    x \amp = 3,\\
+                    f(3) \amp = 2.
+                    \end{aligned}</me></p>
+<p>To find the maximum on the closed interval, compare the endpoint values:</p>
+<p><me>\begin{aligned}
+                    f(0) \amp = 2.9,\\
+                    f(10) \amp = 6.9.
+                    \end{aligned}</me></p>
+<p>Therefore, the maximum value is <m>6.9\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_5_8-Minimum_and_Maximum_Values_3.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+
+$h = list_random(3..6);
+$k = list_random(1..4);
+$L = 10;
+
+$left_value = ($h**2)/10 + $k;
+$right_value = (($L-$h)**2)/10 + $k;
+
+$max_value = ($left_value > $right_value) ? $left_value : $right_value;
+$min_value = $k;
+
+$ans_min = Compute($min_value);
+$ans_max = Compute($max_value);
+
+$left_rounded = sprintf("%.1f", $left_value);
+$right_rounded = sprintf("%.1f", $right_value);
+$max_rounded = sprintf("%.1f", $max_value);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the minimum and maximum values of [`f(x)=\frac{1}{10}(x-[$h])^2+[$k]`] on [`[0,10]\text{.}`]
+
+Minimum value: [_]{$ans_min}{15}
+
+Maximum value: [_]{$ans_max}{15}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The function is written in vertex form. Since the coefficient of the squared term is positive, the minimum occurs at the vertex:
+
+[```
+                    \begin{aligned}
+                    x &= [$h],\\
+                    f([$h]) &= [$k].
+                    \end{aligned}
+                    ```]
+
+To find the maximum on the closed interval, compare the endpoint values:
+
+[```
+                    \begin{aligned}
+                    f(0) &= [$left_rounded],\\
+                    f(10) &= [$right_rounded].
+                    \end{aligned}
+                    ```]
+
+Therefore, the maximum value is [`[$max_rounded]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

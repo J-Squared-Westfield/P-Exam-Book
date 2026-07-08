@@ -1,0 +1,12 @@
+<section xml:id="section-1-6" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Integrals and Area</title>
+    <p>
+        We now move onto a complementary topic to derivatives - integrals.  For the P exam, integrals are much more common.  
+        It is important to have a good foundation for the concept of integration
+        along with strong computation skills.
+        We will briefly review integration and the Fundamental Theorem of Calculus.
+        We will review integration rules in the next section.
+    </p>
+
+    <xi:include href="./subsection-1-6-1.ptx"/>
+</section>

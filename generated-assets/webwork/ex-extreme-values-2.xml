@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-extreme-values-2" assembly-id="ex-extreme-values-2">
+  <static seed="25">
+    <statement><p>A density function is given by <m>f(x)=\frac{1}{5}e^{-x/5}</m> for <m>x\geq 0\text{.}</m> The mode is defined as the <m>x</m> value that maximizes <m>f(x)\text{.}</m> Find the mode of <m>f(x)\text{.}</m></p>
+<p>Mode: <fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <solution><p>Since</p>
+<p><me>\begin{aligned}
+                    f'(x)
+                    \amp = -\frac{1}{5^2}e^{-x/5},
+                    \end{aligned}</me></p>
+<p>the derivative is always negative for <m>x\geq 0\text{.}</m> Therefore, the density is decreasing on its domain, so its maximum occurs at the left endpoint. The mode is <m>x=0\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_5_5-Mode_of_a_Density_Function_1.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+
+$l = list_random(2..6);
+
+$ans = Compute(0);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A density function is given by [`f(x)=\frac{1}{[$l]}e^{-x/[$l]}`] for [`x\geq 0\text{.}`] The mode is defined as the [`x`] value that maximizes [`f(x)\text{.}`] Find the mode of [`f(x)\text{.}`]
+
+Mode: [_]{$ans}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since
+
+[```
+                    \begin{aligned}
+                    f'(x)
+                    &= -\frac{1}{[$l]^2}e^{-x/[$l]},
+                    \end{aligned}
+                    ```]
+
+the derivative is always negative for [`x\geq 0\text{.}`] Therefore, the density is decreasing on its domain, so its maximum occurs at the left endpoint. The mode is [`x=0\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

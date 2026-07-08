@@ -1,0 +1,81 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+
+$l = list_random(2..6);
+
+$ans = Compute(0);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A density function is given by [`f(x)=\frac{1}{[$l]}e^{-x/[$l]}`] for [`x\geq 0\text{.}`] The mode is defined as the [`x`] value that maximizes [`f(x)\text{.}`] Find the mode of [`f(x)\text{.}`]
+
+Mode: [_]{$ans}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since
+
+[```
+                    \begin{aligned}
+                    f'(x)
+                    &= -\frac{1}{[$l]^2}e^{-x/[$l]},
+                    \end{aligned}
+                    ```]
+
+the derivative is always negative for [`x\geq 0\text{.}`] Therefore, the density is decreasing on its domain, so its maximum occurs at the left endpoint. The mode is [`x=0\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

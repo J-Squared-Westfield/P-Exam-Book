@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-extreme-values-6" assembly-id="ex-extreme-values-6">
+  <static seed="29">
+    <statement><p>A density function is given by <m>f(x)=\frac{1}{k!t^k}x^{k-1}e^{-x/t}\text{,}</m> where <m>x&gt;0</m> and <m>k,t&gt;1</m> are constants. Find the mode of <m>f(x)\text{.}</m></p>
+<p>Mode: <fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>t\mathopen{}\left(k-1\right)</m>
+      </p>
+    </answer>
+    <solution><p>The constant factor <m>\frac{1}{k!t^k}</m> is positive, so it does not affect where the maximum occurs. Differentiate the part depending on <m>x\text{:}</m></p>
+<p><me>\begin{aligned}
+                    \frac{d}{dx}\left(x^{k-1}e^{-x/t}\right)
+                    \amp = (k-1)x^{k-2}e^{-x/t}+x^{k-1}\left(-\frac{1}{t}e^{-x/t}\right)\\
+                    \amp = x^{k-2}e^{-x/t}\left((k-1)-\frac{x}{t}\right).
+                    \end{aligned}</me></p>
+<p>Since <m>x^{k-2}e^{-x/t}</m> is positive for <m>x&gt;0\text{,}</m> the critical point occurs when</p>
+<p><me>\begin{aligned}
+                    (k-1)-\frac{x}{t} \amp = 0\\
+                    x \amp = t(k-1).
+                    \end{aligned}</me></p>
+<p>The function increases before this point and decreases after it, so the mode is <m>x=t(k-1)\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_5_9-Mode_of_a_Density_Function_3.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", k=>"Real", t=>"Real");
+
+$ans = Formula("t*(k-1)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A density function is given by [`f(x)=\frac{1}{k!t^k}x^{k-1}e^{-x/t}\text{,}`] where [`x>0`] and [`k,t>1`] are constants. Find the mode of [`f(x)\text{.}`]
+
+Mode: [_]{$ans}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The constant factor [`\frac{1}{k!t^k}`] is positive, so it does not affect where the maximum occurs. Differentiate the part depending on [`x\text{:}`]
+
+[```
+                    \begin{aligned}
+                    \frac{d}{dx}\left(x^{k-1}e^{-x/t}\right)
+                    &= (k-1)x^{k-2}e^{-x/t}+x^{k-1}\left(-\frac{1}{t}e^{-x/t}\right)\\
+                    &= x^{k-2}e^{-x/t}\left((k-1)-\frac{x}{t}\right).
+                    \end{aligned}
+                    ```]
+
+Since [`x^{k-2}e^{-x/t}`] is positive for [`x>0\text{,}`] the critical point occurs when
+
+[```
+                    \begin{aligned}
+                    (k-1)-\frac{x}{t} &= 0\\
+                    x &= t(k-1).
+                    \end{aligned}
+                    ```]
+
+The function increases before this point and decreases after it, so the mode is [`x=t(k-1)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

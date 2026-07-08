@@ -97,3 +97,27 @@ problem_start
 source_file = Probability_for_Future_Actuaries/1_4_20-Find_the_Derivative_13.pg
 problem_id = 20
 problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_5_4-Minimum_and_Maximum_Values_1.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_5_5-Mode_of_a_Density_Function_1.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_5_6-Mode_of_a_Density_Function_2.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_5_7-Minimum_and_Maximum_Values_2.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_5_8-Minimum_and_Maximum_Values_3.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Probability_for_Future_Actuaries/1_5_9-Mode_of_a_Density_Function_3.pg
+problem_id = 9
+problem_end
