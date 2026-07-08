@@ -1,6 +1,65 @@
 <subsection xml:id="subsection-1-4-1">
-    <title>Definition of a Limit</title>
+    <title>The Derivative</title>
     <p>
-        Hi
+        The average velocity of an object over a time interval <m>\Delta t</m> is defined as its change in its position <m>\Delta s</m> divided by <m>\Delta t</m>.  
+        That is, <m>\displaystyle v_{avg} = \frac{\Delta s}{\Delta t}</m>.  If a function <m>f(x)</m> models movement of an object, 
+        then the average rate of change of that object over a time interval <m>\Delta x</m> is given by <m>\displaystyle ARC = \frac{\Delta f}{\Delta x}</m>, 
+        where <m>\Delta f</m> is the total change in the function.  
+        So, if the time interval is from <m>x=a</m> to <m>x=b</m>, 
+        then the average rate of change in <m>f(x)</m> is given by <m>\displaystyle ARC_{[a,b]} = \frac{f(b) - f(a)}{b-a}</m>.  
+        Graphically, if we draw a line through the points <m>(a,f(a))</m> and <m>(b,f(b))</m>, 
+        then its slope, <m>\displaystyle \frac{f(b)-f(a)}{b-a}</m> is the average rate of change of the function from <m>x=a</m> to <m>x=b</m>.  
+        We call such a line a <em>secant line</em>.  
     </p>
+
+    <figure xml:id="ARC-graph">
+        <caption>Average rate of change as slope of the secant line</caption>
+        <image width="80%" xml:id="secant-line">
+            <latex-image>
+                \begin{tikzpicture}
+                    \draw[&lt;->,thick] (-5,0)--(5,0);
+                    \draw[&lt;->,thick] (0,-5)--(0,5);
+                    \draw[domain=-2.1:4.1,smooth,variable=\x,blue,&lt;->, thick] plot ({\x},{0.25*\x*\x*\x -0.75*\x*\x - 0.25*\x + 1});
+                    \draw[blue] (3.6,4) node{$f(x)$};
+                    \draw (-1.5,0.2)--(-1.5,-0.2);
+                    \filldraw (-1.5,-1.15625) circle (2.5pt) node[anchor = east]{$(a,f(a))$};
+                    \draw (3.7,-0.2)--(3.7,0.2);
+                    \filldraw (3.7,2.47075) circle(2.5pt) node[anchor=south east]{$(b,f(b))$};
+                    \draw (3.7,-0.4) node{$b$};
+                    \draw (-1.5,0.4) node{$a$};
+                    \draw[thick,red] (-4.7,-3.38825)--(4.7,3.16825);
+                    \draw (2,-2) node{$ARC_{[a,b]} = $ slope};
+                    \draw (3.23,-2.7) node{$\displaystyle = \frac{f(b)-f(a)}{b-a}$};
+                    \draw[red,->] (1.2,-1.5)--(-.65,-.7);
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+
+    <p>
+        Average rates of change are fine, but a more interesting concept is the <em>{instantaneous velocity</em> of an object - the velocity of an object at a singular point in time.  
+        We can approximate instantaneous velocity by taking very small time intervals.  
+        Let <m>a</m>> be the starting time and let $h$ be some time interval (so ending time is <m>a+h</m>).  
+        Then we can change our average rate of change function to <m>{\displaystyle ARC_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}}</m>.  
+        When <m>h\approx 0</m>, then the average rate of change is approximately the instantaneous rate of change.  
+        Of course, we can't have <m>h=0</m>, but we can make <m>h</m> as small as we would like - the smaller the better.  
+        (You smell that?  
+        That's the impending arrival of limits.)
+    </p>
+
+    <p>
+        We can find the instantaneous velocity of a object by taking the limit as <m>h</m> approaches <m>0</m> of our average rate of change function, assuming that limit exists.  
+        This limit is called the <term>derivative</term><idx>Derivative</idx> of <m>>f(x)</m> at <m>x=a</m>.  
+        It is denoted by <alert><m>f'(a)</m></alert>.
+    </p>
+    
+    <definition xml:id="def-derivative">
+        <statement>
+            <p>
+                The <term>derivative of <m>f(x)</m> at <m>x=a</m></term> is
+                <md>f'(a) = \lim_{h\rightarrow 0} \frac{f(a+h)-f(a)}{h},</md>
+                provided that the limit exists.
+            </p>
+        </statement>
+    </definition>
 </subsection>

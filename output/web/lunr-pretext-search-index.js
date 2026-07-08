@@ -430,7 +430,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Derivatives",
-  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   Definition of a Limit  Hi   "
+  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   The Derivative  The average velocity of an object over a time interval is defined as its change in its position divided by . That is, . If a function models movement of an object, then the average rate of change of that object over a time interval is given by , where is the total change in the function. So, if the time interval is from to , then the average rate of change in is given by . Graphically, if we draw a line through the points and , then its slope, is the average rate of change of the function from to . We call such a line a secant line .   Average rate of change as slope of the secant line      Average rates of change are fine, but a more interesting concept is the {instantaneous velocity of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let > be the starting time and let $h$ be some time interval (so ending time is ). Then we can change our average rate of change function to . When , then the average rate of change is approximately the instantaneous rate of change. Of course, we can't have , but we can make as small as we would like - the smaller the better. (You smell that? That's the impending arrival of limits.)  We can find the instantaneous velocity of a object by taking the limit as approaches of our average rate of change function, assuming that limit exists. This limit is called the derivative Derivative of at . It is denoted by .    The derivative of at is provided that the limit exists.     "
+},
+{
+  "id": "ARC-graph",
+  "level": "2",
+  "url": "section-1-4.html#ARC-graph",
+  "type": "Figure",
+  "number": "1.4.1",
+  "title": "",
+  "body": " Average rate of change as slope of the secant line     "
+},
+{
+  "id": "subsection-1-4-1-5",
+  "level": "2",
+  "url": "section-1-4.html#subsection-1-4-1-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "derivative "
+},
+{
+  "id": "def-derivative",
+  "level": "2",
+  "url": "section-1-4.html#def-derivative",
+  "type": "Definition",
+  "number": "1.4.2",
+  "title": "",
+  "body": "  The derivative of at is provided that the limit exists.   "
 },
 {
   "id": "backmatter-2",
