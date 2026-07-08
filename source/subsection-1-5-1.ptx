@@ -3,4 +3,201 @@
     <p>
         Consider the graph below:
     </p>
+
+    <figure xml:id="extrema-graph">
+        <caption>Local extrema of a function</caption>
+        <image width="80%" xml:id="local-extrema-graph">
+            <latex-image>
+                \begin{tikzpicture}
+                    \draw[&lt;->,thick] (-5,0)--(5,0);
+                    \draw[&lt;->,thick] (.2,-5)--(.2,5);
+                    \draw[domain=-1.5:0.8,smooth,variable=\x,blue,thick] plot ({\x},{0.25*\x*\x*\x -0.75*\x*\x - 0.25*\x + 1});
+                    \draw[thick,blue] (0.8,0.448)--(2,-3)--(3.7,2.47075);
+                    \draw[blue] (-2.6,2) node{$f(x)$ on a closed interval};
+                    \filldraw (-1.5,-1.15625) circle (2.5pt);
+                    \filldraw (3.7,2.47075) circle(2.5pt);
+                    \filldraw (-.155,1.02) circle(2.5pt);
+                    \filldraw (0.8,0.448) circle(2.5pt);
+                    \filldraw (2,-3) circle(2.5pt);
+                    \draw(0.8,-.2)--(0.8,.2);
+                    \draw(0.8,-.4) node{$c$};
+                    \draw(-1.5,-.2)--(-1.5,.2);
+                    \draw(-1.5,.4) node{$a$};
+                    \draw(-.155,-.2)--(-.155,.2);
+                    \draw(-.155,.4) node{$b$};
+                    \draw(2,-.2)--(2,.2);
+                    \draw(2,.4) node{$d$};
+                    \draw(3.7,-.2)--(3.7,.2);
+                    \draw(3.7,.4) node{$e$};
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+
+    <p>
+        The graph represents a function <m>f(x)</m> on a closed interval <m>[a,b]</m>.  
+        We would like to determine the numerical values of "local extrema" - the points that are larger or smaller than all other points around them.  
+        Graphically, we see that there are local minimum at <m>x=a</m> and <m>x=d</m> and local maximums at <m>x=b</m> and <m>x=e</m>.  
+        We will also be interested in the "global extrema" - the points that are larger or smaller than all other points on the function.  
+        We see that a global maximum occurs at $x=e$ and a global minimum occurs at <m>x=d</m>.  
+    </p>
+
+    <p>
+        The process of finding such extrema analytically (and by hand) requires the use of derivatives.  
+        Consider the point at <m>x=b</m>.  
+        If we drew a tangent line to <m>f(x)</m> at that point, the line would have slope <m>0</m>.  
+        This means that <m>f'(b) = 0</m>.  
+        Local minimums and maximums <em>can</em> occur at "bottoms of valleys" and "tops of hills,"" which are points at which <m>f'(x) = 0</m>.  
+        Thus, finding where a function's derivative is equal to zero gives some candidates for local extrema.  
+    </p>
+
+    <p>
+        Consider the point at <m>x=d</m>.  
+        Here, the derivative does not exist.  
+        These "sharp points" can also yield local extrema.  
+        Hence, finding where a function's derivative does not exist gives more candidates for the local extrema.  
+        Be warned that points at which the derivative is zero or does not exist do not always yield local extrema.  
+    </p>
+
+    <p>
+        Take the point at <m>x=c</m> in the graph above.  
+        The derivative does not exist at that point (slopes change suddenly), but it is not a local minimum or maximum.  
+    </p>  
+
+    <p>    
+        Finally, if the function is on a closed interval, we can have local extrema at the endpoints (but not always).  
+    </p>
+
+    <p>
+        Once we identify the points where local extrema <em>could</em> occur, 
+        we need to determine if we in fact do have local minimums or maximums.  
+        We could employ one of the tests (first-derivative or second-derivative) 
+        or check numerically.  
+        If one of these points is the largest or smallest values on the entire function, 
+        then we have that those points are the global extrema.
+    </p>
+
+    <assemblage xml:id="assemblage-optimization">
+        <title>Optimization Steps</title>
+        <p>
+            To find the local extrema of a continuous function <m>f(x)</m>:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Find the derivative function <m>f'(x)</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Find the values for which <m>f'(x)</m> is zero or does not exist.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Determine if these values represent local minimums or maximums (or neither).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        If on a closed interval, check if the endpoints are local extrema.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </assemblage>
+
+    <example xml:id="ex-optimize">
+        <title>Finding Local Extrema</title>
+        <statement>
+            <p>
+                Find the local extrema and global extrema on the function <m>\displaystyle {f(x) = \frac{2}{3} x^3 - 2x^2 - 6x}</m> on the closed interval <m>[-4,4]</m>.
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                First, we find where <m>f'(x)</m> is zero or does not exist.  
+                <m>{f'(x) = 2x^2 - 4x - 6}</m>. 
+                This is a quadratic function, which always exists.  
+                So, we just solve <m>{2x^2 - 4x - 6 = 0}</m>.  
+                Using the quadratic formula gives <m>{x = -1}</m> and <m>x=3</m>.
+            </p>
+
+            <p>
+                So, we have four points that could be minimums or maximums: 
+                <m>x=-4, -1, 3, 4</m> (we must include the endpoints).
+            </p>
+
+            <p>
+                While not formal, any easy way to check if the points at 
+                <m>x=-1</m> and <m>x=3</m> are extrema are to compare their function values with nearby <m>x</m> values.  
+                For example, <m>f(-1.1) = 3.29</m>, <m>f(-0.9) = 3.29</m>, 
+                and <m>f(-1) = 3.33</m>.  
+                So, we have a local maximum at <m>(-1, 3.33)</m>.  
+                In a similar fashion, we can find that we have a local minimum  at <m>(3,-18)</m>.
+            </p>
+
+            <p>
+                At <m>x=4</m>, we can see that smaller <m>x</m> values yield smaller function values.  
+                For example <m>f(4)=-13.33>-14.27 =f(3.9)</m>.  
+                So, we will have a local maximum at <m>(4,-13.33)</m>.  
+                Similarly, we can get that we have a local minimum at <m>(-4,-50.67)</m>.
+            </p>
+
+            <p>
+                Lastly, we just compare the four function values at are points.  
+                We see that we have a global maximum at <m>(-1,3.33)</m> and a global minimum at <m>(-4,-50.67)</m>.
+            </p>
+        </solution>
+    </example>
+
+    <example xml:id="ex-optimize-2">
+        <title>Finding Global Extrema</title>
+        <statement>
+            <p>
+                Find the maximum and minimum values of the function 
+                <m>{\displaystyle g(x) = xe^{-2x}}</m> for <m>{x\geq 0}</m>, if any exist.
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                First, we find <m>g'(x)</m>. 
+                Using the product rule, we have <m>\displaystyle g'(x)</m> 
+            </p> 
+
+            <p> 
+                <m>{\displaystyle = x\left(\frac{d}{dx}e^{-2x}\right) + e^{-2x}\left(\frac{d}{dx}x\right)} {= x\left(-2e^{-2x}\right) + e^{-2x}(1) = e^{-2x}(1-2x)}</m>. 
+                First, note that this always exists. 
+                So, we just solve <m>\displaystyle e^{-2x}(1-2x) = 0</m>. 
+                Notice that <m>e^{-2x}\ne 0</m>. 
+                So, solving <m>1-2x=0</m> for <m>x=0.5</m> yields our only solution.
+            </p> 
+
+            <p>
+                We have <m>g(0.5) = 0.184</m> and values around <m>x=0.5</m> yield smaller function values (e.g. <m>g(0.4) = 0.180</m>). 
+                So, we can conclude that we have a maximum at <m>(0.5,0.184)</m>.
+            </p> 
+
+            <p>
+                We can also get that the endpoint <m>x=0</m> yields a minimum at <m>(0,0)</m>.
+            </p> 
+            
+            <p>
+                However, we need to determine the behavior of <m>g(x)</m> as <m>x</m> goes to infinity. 
+                (It may rise above our proposed maximum at <m>x=0.5</m> or proposed minimum at <m>x=0</m>.) 
+                For <m>x>0</m>, we see that <m>g(x) >0</m>. 
+                Hence, our point at <m>(0,0)</m> is a global minimum. 
+                Further, <m>\displaystyle \lim_{x\rightarrow \infty}xe^{-2x}= 0</m>, which means the function tends towards <m>0</m>. 
+                So, our point at <m>(0.5,0.184)</m> is a global minimum. 
+                (We could have also noted that <m>g'(x)&#x3C;0</m> for <m>x>0.5</m>, which means <m>g(x)</m> decreases after our maximum at <m>x=0.5</m>.)
+            </p>
+        </solution>
+    </example>
 </subsection>
