@@ -727,7 +727,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "Integrals and Area",
-  "body": " Integrals and Area  We now move onto a complementary topic to derivatives - integrals. For the P exam, integrals are much more common. It is important to have a good foundation for the concept of integration along with strong computation skills. We will briefly review integration and the Fundamental Theorem of Calculus. We will review integration rules in the next section.   Definitions  Hi   "
+  "body": " Integrals and Area  We now move onto a complementary topic to derivatives - integrals. For the P exam, integrals are much more common. It is important to have a good foundation for the concept of integration along with strong computation skills. We will briefly review integration and the Fundamental Theorem of Calculus. We will review integration rules in the next section.   Definitions  Hi. K   "
 },
 {
   "id": "backmatter-2",
