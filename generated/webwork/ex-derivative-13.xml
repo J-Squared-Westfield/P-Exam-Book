@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-13" assembly-id="ex-derivative-13">
+  <static seed="23">
+    <statement><p>Let <m>g(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}\text{,}</m> where <m>s&gt;0\text{.}</m> Find the range of <m>x</m> values for which <m>g'(x)</m> is positive.</p>
+<p><ol form="checkboxes" marker="A" name="AnSwEr0001">
+<li>
+<p><m>x&lt;m</m></p>
+</li>
+<li>
+<p><m>x&gt;m</m></p>
+</li>
+<li>
+<p><m>x=m</m></p>
+</li>
+<li>
+<p>all real <m>x</m></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{A}</m>
+      </p>
+    </answer>
+    <solution><p>The constant factor <m>\frac{1}{s\sqrt{2\pi}}</m> is positive. Differentiating the exponential part gives</p>
+<p><me>\begin{aligned}
+                    g'(x)
+                    \amp = \frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}
+                    \left(-\frac{x-m}{s^2}\right).
+                    \end{aligned}</me></p>
+<p>The exponential factor is always positive, so the sign of <m>g'(x)</m> is determined by <m>-(x-m)\text{.}</m> Therefore, <m>g'(x)&gt;0</m> when <m>x\lt m\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_20-Find_the_Derivative_13.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserCheckboxList.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+loadMacros(
+"parserCheckboxList.pl",
+);
+
+$checks = CheckboxList(
+[
+    '\(x<m\)',
+    '\(x>m\)',
+    '\(x=m\)',
+    'all real \(x\)'
+],
+[
+    '\(x<m\)'
+],
+labels => "ABC",
+displayLabels => 1
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`g(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}\text{,}`] where [`s>0\text{.}`] Find the range of [`x`] values for which [`g'(x)`] is positive.
+
+[_]{$checks}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The constant factor [`\frac{1}{s\sqrt{2\pi}}`] is positive. Differentiating the exponential part gives
+
+[```
+                    \begin{aligned}
+                    g'(x)
+                    &= \frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}
+                    \left(-\frac{x-m}{s^2}\right).
+                    \end{aligned}
+                    ```]
+
+The exponential factor is always positive, so the sign of [`g'(x)`] is determined by [`-(x-m)\text{.}`] Therefore, [`g'(x)>0`] when [`x<m\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

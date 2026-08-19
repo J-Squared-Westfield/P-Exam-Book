@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-6" assembly-id="ex-derivative-6">
+  <static seed="16">
+    <statement><p>Find the derivative of <m>q^x\text{,}</m> where <m>q</m> is a constant with <m>0\lt q\lt 1\text{.}</m></p>
+<p><m>f'(x)=</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>q^{x}\ln\mathopen{}\left(q\right)</m>
+      </p>
+    </answer>
+    <solution><p>For a positive constant base <m>q\text{,}</m></p>
+<p><me>\begin{aligned}
+          \frac{d}{dx}q^x \amp = q^x\ln(q).
+          \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_13-Find_the_Derivative_6.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", q=>"Real");
+
+$ans = Formula("q^x*ln(q)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`q^x\text{,}`] where [`q`] is a constant with [`0<q<1\text{.}`]
+
+[`f'(x)=`] [_]{$ans}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+For a positive constant base [`q\text{,}`]
+
+[```
+          \begin{aligned}
+          \frac{d}{dx}q^x &= q^x\ln(q).
+          \end{aligned}
+        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

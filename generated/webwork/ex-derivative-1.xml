@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-1" assembly-id="ex-derivative-1">
+  <static seed="11">
+    <statement><p>Find the derivative of <m>4x^{2} e^{-x}\text{.}</m></p>
+<p><m>f'(x)=</m> <fillin characters="50" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\exp\mathopen{}\left(-x\right)\mathopen{}\left(8x^{1}-4x^{2}\right)</m>
+      </p>
+    </answer>
+    <solution><p>Using the product rule and noting from the mini-chain rule that <m>\frac{d}{dx} e^{-x} = -e^{-x}\text{,}</m></p>
+<p><me>\begin{aligned}
+                            \frac{d}{dx} \left(4x^{2} e^{-x}\right) \amp = \left(\frac{d}{dx} 4x^{2}\right)\cdot e^{-x} + 4x^{2}\cdot \left(\frac{d}{dx} e^{-x}\right)\\
+                            \amp = {8}x^{{1}} e^{-x} + 4x^{2}\left(-e^{-x}\right)\\
+                            \amp =e^{-x}\left({8}x^{{1}} - 4x^{2}\right).
+                        \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_8-Find_the_Derivative_1.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real");
+$a = list_random(3..9);
+$b = list_random(2..4);
+$b2 = Compute($b-1);
+$c = Compute($a*$b);
+$ans = Formula("exp(-x)*($c*x^$b2 - $a*x^$b)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`[$a]x^{[$b]} e^{-x}\text{.}`]
+
+[`f'(x)=`] [_]{$ans}{50}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the product rule and noting from the mini-chain rule that [`\frac{d}{dx} e^{-x} = -e^{-x}\text{,}`]
+
+[```
+                        \begin{aligned}
+                            \frac{d}{dx} \left([$a]x^{[$b]} e^{-x}\right) &= \left(\frac{d}{dx} [$a]x^{[$b]}\right)\cdot e^{-x} + [$a]x^{[$b]}\cdot \left(\frac{d}{dx} e^{-x}\right)\\
+                            &= [$c]x^{[$b2]} e^{-x} + [$a]x^{[$b]}\left(-e^{-x}\right)\\
+                            &=e^{-x}\left([$c]x^{[$b2]} - [$a]x^{[$b]}\right).
+                        \end{aligned}
+                    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Derivatives</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Probability for Future Actuaries">
+<meta property="og:title" content="Probability for Future Actuaries">
+<meta property="book:title" content="Probability for Future Actuaries">
+<meta name="twitter:description" content="Getting Ready for the P Exam">
+<meta property="og:description" content="Getting Ready for the P Exam">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="my-great-book.html"><span class="title">Probability for Future Actuaries</span> <span class="subtitle">Getting Ready for the P Exam</span></a></div>
+<p class="byline">Jesse Johnson, Ph.D.</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="section-1-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-1-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-Preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="sec-Introduction.html" class="internal"><span class="title">Introduction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Algebra and Calculus Review</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chapter-1">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter-1-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Solving Quadratic Equations the 20th Century Way</span></a></div>
+<ul id="ptx-toc-group-section-1-1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Graphs of Quadratic Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-2" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Finding the Roots of a Quadratic Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-3" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Solving "Hidden" Quadratic Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#subsection-1-1-4" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Inverse Functions</span></a></div>
+<ul id="ptx-toc-group-section-1-2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#subsection-1-2-1" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Fundamental Concepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#subsection-1-2-2" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Restricted Domains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#subsection-1-2-3" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limits</span></a></div>
+<ul id="ptx-toc-group-section-1-3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-1" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Definition of a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-2" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Limits at Infinity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-3" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Limits at Infinity and Dominance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#subsection-1-3-4" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-1-4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Derivatives</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-section-1-4">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#subsection-1-4-1" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#subsection-1-4-2" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Derivative Shortcuts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#subsection-1-4-3" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Optimization</span></a></div>
+<ul id="ptx-toc-group-section-1-5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-5.html#subsection-1-5-1" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Optimizing a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-5.html#subsection-1-5-2" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Integrals and Area</span></a></div>
+<ul id="ptx-toc-group-section-1-6" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-6.html#subsection-1-6-1" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Definitions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul id="ptx-toc-group-backmatter" class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-1-4">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives</span>
+</h1>
+<div class="para" id="section-1-4-2">This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsection-1-4-1">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Derivative</span>
+</h2>
+<div class="para" id="subsection-1-4-1-2">The average velocity of an object over a time interval <span class="process-math">\(\Delta t\)</span> is defined as its change in its position <span class="process-math">\(\Delta s\)</span> divided by <span class="process-math">\(\Delta t\text{.}\)</span> That is, <span class="process-math">\(\displaystyle v_{avg} = \frac{\Delta s}{\Delta t}\text{.}\)</span>  If a function <span class="process-math">\(f(x)\)</span> models movement of an object, then the average rate of change of that object over a time interval <span class="process-math">\(\Delta x\)</span> is given by <span class="process-math">\(\displaystyle ARC = \frac{\Delta f}{\Delta x}\text{,}\)</span> where <span class="process-math">\(\Delta f\)</span> is the total change in the function. So, if the time interval is from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{,}\)</span> then the average rate of change in <span class="process-math">\(f(x)\)</span> is given by <span class="process-math">\(\displaystyle ARC_{[a,b]} = \frac{f(b) - f(a)}{b-a}\text{.}\)</span> Graphically, if we draw a line through the points <span class="process-math">\((a,f(a))\)</span> and <span class="process-math">\((b,f(b))\text{,}\)</span> then its slope, <span class="process-math">\(\displaystyle \frac{f(b)-f(a)}{b-a}\)</span> is the average rate of change of the function from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span> We call such a line a <em class="emphasis">secant line</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ARC-graph"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/secant-line.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Average rate of change as slope of the secant line<div class="autopermalink" aria-hidden="true" data-description="Figure 1.4.1"><a tabindex="-1" href="#ARC-graph" title="Copy heading and permalink for Figure 1.4.1" aria-label="Copy heading and permalink for Figure 1.4.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsection-1-4-1-4">Average rates of change are fine, but a more interesting concept is the <em class="emphasis">{instantaneous velocity</em> of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let <span class="process-math">\(a\)</span>&gt; be the starting time and let $h$ be some time interval (so ending time is <span class="process-math">\(a+h\)</span>). Then we can change our average rate of change function to <span class="process-math">\({\displaystyle ARC_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}}\text{.}\)</span> When <span class="process-math">\(h\approx 0\text{,}\)</span> then the average rate of change is approximately the instantaneous rate of change. Of course, we can’t have <span class="process-math">\(h=0\text{,}\)</span> but we can make <span class="process-math">\(h\)</span> as small as we would like - the smaller the better. (You smell that? That’s the impending arrival of limits.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-1-4-1-5">We can find the instantaneous velocity of a object by taking the limit as <span class="process-math">\(h\)</span> approaches <span class="process-math">\(0\)</span> of our average rate of change function, assuming that limit exists. This limit is called the <dfn class="terminology">derivative</dfn> of <span class="process-math">\(&gt;f(x)\)</span> at <span class="process-math">\(x=a\text{.}\)</span> It is denoted by <em class="alert"><span class="process-math">\(f'(a)\)</span></em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-derivative"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="def-derivative-1-1">
+<div class="para">The <dfn class="terminology">derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span></dfn> is</div>
+<div class="displaymath process-math" id="def-derivative-1-1-2">
+\begin{equation*}
+f'(a) = \lim_{h\rightarrow 0} \frac{f(a+h)-f(a)}{h},
+\end{equation*}
+</div>
+<div class="para">provided that the limit exists.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-derivative-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 1.4.2"><a tabindex="-1" href="#def-derivative" title="Copy heading and permalink for Definition 1.4.2" aria-label="Copy heading and permalink for Definition 1.4.2">🔗</a></div>
+</article>
+<div class="para" id="subsection-1-4-1-7">Graphically, the derivative is the slope of the line that locally intersects the function $f(x)$ at only the point <span class="process-math">\((a,f(a))\text{.}\)</span> That is, it is the limit of the secant lines as $b$ approaches <span class="process-math">\(a\text{.}\)</span> We call this line the <em class="emphasis">tangent line</em>. This is visualized below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="derivative-function-graph"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/derivative-graph.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Average rate of change as slope of the secant line<div class="autopermalink" aria-hidden="true" data-description="Figure 1.4.3"><a tabindex="-1" href="#derivative-function-graph" title="Copy heading and permalink for Figure 1.4.3" aria-label="Copy heading and permalink for Figure 1.4.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsection-1-4-1-9">Suppose we would like to find the instantaneous rate of change of a function at multiple points. It would be handy to have a function that could give us these values rather than calculating the derivative at several points. Fortunately, such a function exists and is called the <dfn class="terminology">derivative function</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-derivative-function"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="def-derivative-function-1-1">
+<div class="para">The <dfn class="terminology">derivative function of <span class="process-math">\(f(x)\)</span></dfn> is</div>
+<div class="displaymath process-math" id="def-derivative-function-1-1-2">
+\begin{equation*}
+{f'(x) = \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h}},
+\end{equation*}
+</div>
+<div class="para">provided that the limit exits.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-derivative-function-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 1.4.4"><a tabindex="-1" href="#def-derivative-function" title="Copy heading and permalink for Definition 1.4.4" aria-label="Copy heading and permalink for Definition 1.4.4">🔗</a></div>
+</article>
+<div class="para" id="subsection-1-4-1-11">Just for the sake of completion, we will find the derivative function of <span class="process-math">\(f(x) = x^3 - 4x\)</span> using the limit definition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-derivative-function" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivative of <span class="process-math">\(f(x) = x^3 - 4x\)</span>.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-derivative-function-2-1">Find the derivative function of <span class="process-math">\({f(x) = x^3 - 4x}\text{,}\)</span> using the limit definition of a derivative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-function-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-derivative-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-derivative-function-3-1">
+<div class="displaymath process-math" id="ex-derivative-function-3-1-1">
+\begin{equation*}
+\begin{aligned}
+f'(x) &amp;= \lim_{h\rightarrow 0} \frac{(x+h)^3 - 4(x+h) - (x^3 - 4x)}{h}\\
+&amp;= \lim_{h\rightarrow 0} \frac{x^3 + 3x^2 h + 3xh^2 + h^3 - 4x - 4h - x^3 + 4x}{h}\\
+&amp;= \lim_{h\rightarrow 0} \frac{3x^2 h + 3xh^2 + h^3 - 4h}{h}\\
+&amp;= \lim_{h\rightarrow 0} \frac{h(3x^2 - 4 + 3xh + h^2)}{h}\\
+&amp;= \lim_{h\rightarrow 0} 3x^2 - 4 + 3xh + h^2\\
+&amp;= 3x^2 - 4 + 0 + 0\\
+&amp;= 3x^2 - 4\\
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-function-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.5.1"><a tabindex="-1" href="#ex-derivative-function-3" title="Copy heading and permalink for Solution 1.4.5.1" aria-label="Copy heading and permalink for Solution 1.4.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.4.5: Derivative of f(x) = x^3 - 4x"><a tabindex="-1" href="#ex-derivative-function" title="Copy heading and permalink for Example 1.4.5: Derivative of f(x) = x^3 - 4x" aria-label="Copy heading and permalink for Example 1.4.5: Derivative of f(x) = x^3 - 4x">🔗</a></div>
+</article></details>
+<div class="para" id="subsection-1-4-1-13">There. We did an example. Now let’s never use the limit definition to calculate a derivative again. The important thing to take away from this section is that the derivative represents the rate of change of a function at a specified point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-abs-x" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivative of <span class="process-math">\(|x|\)</span>.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-abs-x-2-1">Explain why the derivative of <span class="process-math">\(f(x) = |x|\)</span> does not exist at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-abs-x-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-abs-x-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-abs-x-3-1">Consider secant lines for <span class="process-math">\(|x|\)</span> to the left and right of <span class="process-math">\(x=0\text{.}\)</span> Take a secant line from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=0\)</span> for <span class="process-math">\(a&lt; 0\text{.}\)</span> The slope of this secant line is <span class="process-math">\({\frac{f(0)-f(a)}{0-a} = \frac{0 - |a|}{-a} = \frac{-(-a)}{-a} = -1}\text{.}\)</span> (Note that <span class="process-math">\(|a| = -a\)</span> since <span class="process-math">\(a&lt; 0\text{.}\)</span>) So, all secant lines to the left of <span class="process-math">\(x = 0\)</span> will have slope <span class="process-math">\(-1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-abs-x-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-abs-x-3-2">Take a secant line from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=b\)</span> with <span class="process-math">\(b&gt;0\text{.}\)</span> The slope of this secant line is <span class="process-math">\({\frac{f(b)-f(0)}{b-0} = \frac{|b| - 0}{b} = \frac{b}{b} = 1}\text{.}\)</span> So, all secant lines to the right of <span class="process-math">\(x = 0\)</span> will have slope <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-abs-x-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-abs-x-3-3">Now consider the full limit of the slope of secant lines at <span class="process-math">\(x=0\text{.}\)</span> To the left, the limit is simply <span class="process-math">\(-1\text{.}\)</span> To the right, the limit is <span class="process-math">\(1\text{.}\)</span> Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-abs-x-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.6.1"><a tabindex="-1" href="#ex-abs-x-3" title="Copy heading and permalink for Solution 1.4.6.1" aria-label="Copy heading and permalink for Solution 1.4.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.4.6: Derivative of |x|"><a tabindex="-1" href="#ex-abs-x" title="Copy heading and permalink for Example 1.4.6: Derivative of |x|" aria-label="Copy heading and permalink for Example 1.4.6: Derivative of |x|">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.4.1: The Derivative"><a tabindex="-1" href="#subsection-1-4-1" title="Copy heading and permalink for Subsection 1.4.1: The Derivative" aria-label="Copy heading and permalink for Subsection 1.4.1: The Derivative">🔗</a></div>
+</section>
+<section class="subsection" id="subsection-1-4-2">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivative Shortcuts</span>
+</h2>
+<div class="para" id="subsection-1-4-2-2">Fortunately, there are algebraic shortcuts for finding the derivative function of any elementary function. We give a list of those rules below. First, recall the notation <span class="process-math">\(\displaystyle \frac{d}{dx} f(x)\text{.}\)</span> This is an operator meaning "the derivative of <span class="process-math">\(f(x)\text{.}\)</span>""<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="assemblage-derivative-shortcuts"><h3 class="heading"><span class="title">Derivative Shortcut Rules.</span></h3>
+<div class="para logical" id="assemblage-derivative-shortcuts-2">
+<ul class="disc" id="assemblage-derivative-shortcuts-2-1">
+<li id="assemblage-derivative-shortcuts-2-1-1">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-1-1">For any constant <span class="process-math">\(c\text{,}\)</span> <span class="process-math">\(\displaystyle \frac{d}{dx} c = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-2">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-2-1">For any constant <span class="process-math">\(c\text{,}\)</span> <span class="process-math">\(\displaystyle \frac{d}{dx} cx = c\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-3">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-3-1">For any real number <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(\displaystyle \frac{d}{dx} x^n = nx^{n-1}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-4">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-4-1">For any <span class="process-math">\(a&gt;0\text{,}\)</span> <span class="process-math">\(\displaystyle \frac{d}{dx} a^x = a^x \ln(a)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-5">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-5-1">
+<span class="process-math">\(\displaystyle \frac{d}{dx} e^x = e^x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-6">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-6-1">
+<span class="process-math">\(\displaystyle \frac{d}{dx} \log_a(x) = \frac{1}{\ln(a) x}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-7">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-7-1">
+<span class="process-math">\(\displaystyle \frac{d}{dx} \ln(x) = \frac{1}{x}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-8">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-8-1">
+<span class="process-math">\(\displaystyle \frac{d}{dx} \sin(x) = \cos(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-9">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-9-1">
+<span class="process-math">\(\displaystyle \frac{d}{dx} \cos(x) = -\sin(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-10">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-10-1">
+<span class="process-math">\(\displaystyle \frac{d}{dx} \arctan(x) = \frac{1}{1+x^2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-11">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-11-1">Constant Rule: <span class="process-math">\(\displaystyle \frac{d}{dx} c\cdot f(x) = c\cdot f'(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-12">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-12-1">Sum Rule: <span class="process-math">\(\displaystyle \frac{d}{dx} [f(x) \pm g(x)] = f'(x) \pm g'(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-12" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-13">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-13-1">Chain Rule: <span class="process-math">\(\displaystyle \frac{d}{dx} f(g(x)) = f'(g(x))\cdot g'(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-13" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-14">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-14-1">Product Rule: <span class="process-math">\(\displaystyle {\frac{d}{dx} \left(f(x)\cdot g(x)\right) = f(x)\cdot g'(x) + f'(x) \cdot g(x)}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-14" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-15">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-15-1">Quotient Rule: <span class="process-math">\(\displaystyle {\frac{d}{dx} \left(\frac{f(x)}{g(x)}\right) = \frac{g(x)\cdot f'(x) - f(x)\cdot g'(x)}{[g(x)]^2}}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-15" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="assemblage-derivative-shortcuts-2-1-16">
+<div class="para" id="assemblage-derivative-shortcuts-2-1-16-1">"Mini Chain Rule": <span class="process-math">\(\displaystyle \frac{d}{dx} f(ax+b) = a\cdot f'(ax+b)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-16-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2-1-16" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#assemblage-derivative-shortcuts-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Assemblage: Derivative Shortcut Rules"><a tabindex="-1" href="#assemblage-derivative-shortcuts" title="Copy heading and permalink for Assemblage: Derivative Shortcut Rules" aria-label="Copy heading and permalink for Assemblage: Derivative Shortcut Rules">🔗</a></div>
+</article>
+<div class="para" id="subsection-1-4-2-4">Pay attention to the last rule, that I like to call the "mini chain rule." Many students pick this up after doing a number of derivative examples, but I find it helpful to see it explicitly. If you have a function that is a composition of functions, but the inside function is linear, then the derivative is simply the derivative of the outside function, with the inside function plugged in, times the slope of the linear function. For example, the derivative of <span class="process-math">\({\sin(-2x+7)}\)</span> is <span class="process-math">\(\cos(-2x+7) \cdot (-2) = -2\cos(-2x+7)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-derivative-shortcuts" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-derivative-shortcuts-1-1">Find the derivative functions of the following functions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="ex-derivative-shortcuts-1-2">
+<ol class="decimal" id="ex-derivative-shortcuts-1-2-1">
+<li id="ex-derivative-shortcuts-1-2-1-1">
+<div class="para" id="ex-derivative-shortcuts-1-2-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle 5x^{4.3} - e^{7x} + 3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-1-2-1-2">
+<div class="para" id="ex-derivative-shortcuts-1-2-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle (9-x^2)^8 + \frac{5}{x^3}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-1-2-1-3">
+<div class="para" id="ex-derivative-shortcuts-1-2-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle 9\arctan({5x^2})\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-1-2-1-4">
+<div class="para" id="ex-derivative-shortcuts-1-2-1-4-1">
+<span class="process-math">\(\displaystyle \displaystyle \ln(7x)\cos(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-1-2-1-5">
+<div class="para" id="ex-derivative-shortcuts-1-2-1-5-1">
+<span class="process-math">\(\displaystyle \displaystyle 5^{x}-\frac{8x^2-1}{\ln(5x-2)}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-derivative-shortcuts-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-derivative-shortcuts-2-1">
+<ol class="decimal" id="ex-derivative-shortcuts-2-1-1">
+<li id="ex-derivative-shortcuts-2-1-1-1">
+<div class="para" id="ex-derivative-shortcuts-2-1-1-1-1">Applying the chain rule to <span class="process-math">\(\displaystyle e^{7x}\text{,}\)</span> we get <span class="process-math">\(\displaystyle \frac{d}{dx} (5x^{4.3} - e^{7x} + 3) = 5\cdot 4.3 x^{3.3} - e^{7x}\cdot \left(\frac{d}{dx} 7x\right) + 0 = 21.5x^{3.3} - 7e^{7x}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-2-1-1-2">
+<div class="para" id="ex-derivative-shortcuts-2-1-1-2-1">Applying the chain rule to <span class="process-math">\((9-x^2)^8\)</span> and noticing that <span class="process-math">\(\frac{5}{x^3} = 5x^{-3}\text{,}\)</span> we get <span class="process-math">\({\displaystyle \frac{d}{dx} \left( (9-x^2)^8 + \frac{5}{x^3}\right) = 8(9-x^2)^7 \cdot \left(\frac{d}{dx} 9-x^2\right) + 5\cdot (-3)x^{-4} = -16x(9-x^2)^7 - \frac{15}{x^4}}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-2-1-1-3">
+<div class="para" id="ex-derivative-shortcuts-2-1-1-3-1">Applying the chain rule to <span class="process-math">\(\arctan(5x^2)\text{,}\)</span> we get <span class="process-math">\({\displaystyle \frac{d}{dx} \left(9\arctan(5x^2)\right) = 9\cdot \frac{1}{1+(5x^2)^2}\cdot \left(\frac{d}{dx} 5x^2\right) = \frac{9}{1+25x^4}\cdot 10x = \frac{90x}{1+25x^4}}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-2-1-1-4">
+<div class="para" id="ex-derivative-shortcuts-2-1-1-4-1">Applying the chain rule to <span class="process-math">\(\ln(7x)\)</span> yields its derivative as <span class="process-math">\({\displaystyle \frac{7}{7x} = \frac{1}{x}}\text{.}\)</span> Then, we use the product rule to get <span class="process-math">\({\displaystyle \frac{d}{dx} \left(\ln(7x)\cos(x)\right) = \ln(7x) \cdot \left(\frac{d}{dx} \cos(x)\right) + \left(\frac{d}{dx} \ln(7x)\right)\cdot \cos(x)} {= -\ln(7x)\sin(x) + \frac{\cos(x)}{x}}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="ex-derivative-shortcuts-2-1-1-5">
+<div class="para" id="ex-derivative-shortcuts-2-1-1-5-1">We will need to use the chain rule for <span class="process-math">\(\ln(5x-2)\)</span> to get its derivative of <span class="process-math">\(\displaystyle \frac{5}{5x-2}\text{.}\)</span> Then applying the quotient rule yields <span class="process-math">\({\displaystyle \frac{d}{dx} \left(5^x - \frac{8x^2 - 1}{\ln(5x-2)}\right) = \ln(5) \cdot 5^x - \frac{\ln(5x-2)\cdot \left(\frac{d}{dx} 8x^2 - 1\right) - (8x^2-1)\cdot \left(\frac{d}{dx} \ln(5x-2)\right)}{[\ln(5x-2)]^2}} {= \ln(5)\cdot 5^x - \frac{\ln(5x-2)\cdot (16x) - (8x^2 - 1)\cdot \frac{5}{5x-2}}{[\ln(5x-2)]^2}}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-derivative-shortcuts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.7.1"><a tabindex="-1" href="#ex-derivative-shortcuts-2" title="Copy heading and permalink for Solution 1.4.7.1" aria-label="Copy heading and permalink for Solution 1.4.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.4.7"><a tabindex="-1" href="#ex-derivative-shortcuts" title="Copy heading and permalink for Example 1.4.7" aria-label="Copy heading and permalink for Example 1.4.7">🔗</a></div>
+</article></details>
+<div class="para" id="subsection-1-4-2-6">Fortunately, you will not need to calculate derivatives that are as complicated as the preceding ones on the P exam.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-1-4-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.4.2: Derivative Shortcuts"><a tabindex="-1" href="#subsection-1-4-2" title="Copy heading and permalink for Subsection 1.4.2: Derivative Shortcuts" aria-label="Copy heading and permalink for Subsection 1.4.2: Derivative Shortcuts">🔗</a></div>
+</section>
+<section class="subsection" id="subsection-1-4-3">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h2>
+<details id="ex-derivative-1" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 1.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-1-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="11" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_8-Find_the_Derivative_1.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-1-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-1-1-1-1">Find the derivative of <span class="process-math">\(4x^{2} e^{-x}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-1-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="50-character blank" style="width: 22.7272727272727em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-1-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-1-1-2-1">
+<span class="process-math">\(\exp\mathopen{}\left(-x\right)\mathopen{}\left(8x^{1}-4x^{2}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.8.1"><a tabindex="-1" href="#extracted-ex-derivative-1-1-2" title="Copy heading and permalink for Answer 1.4.8.1" aria-label="Copy heading and permalink for Answer 1.4.8.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-1-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-1-1-3-1">Using the product rule and noting from the mini-chain rule that <span class="process-math">\(\frac{d}{dx} e^{-x} = -e^{-x}\text{,}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-1-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-1-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx} \left(4x^{2} e^{-x}\right) \amp = \left(\frac{d}{dx} 4x^{2}\right)\cdot e^{-x} + 4x^{2}\cdot \left(\frac{d}{dx} e^{-x}\right)\\
+\amp = {8}x^{{1}} e^{-x} + 4x^{2}\left(-e^{-x}\right)\\
+\amp =e^{-x}\left({8}x^{{1}} - 4x^{2}\right).
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-1-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.8.1"><a tabindex="-1" href="#extracted-ex-derivative-1-1-3" title="Copy heading and permalink for Solution 1.4.8.1" aria-label="Copy heading and permalink for Solution 1.4.8.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.8: Find the Derivative 1"><a tabindex="-1" href="#ex-derivative-1" title="Copy heading and permalink for Checkpoint 1.4.8: Find the Derivative 1" aria-label="Copy heading and permalink for Checkpoint 1.4.8: Find the Derivative 1">🔗</a></div>
+</article></details>
+<details id="ex-derivative-2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 2.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-2-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="12" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_9-Find_the_Derivative_2.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-2-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-2-1-1-1">Find the derivative of <span class="process-math">\(e^{x^2-3x+5}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-2-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-2-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-2-1-2-1">
+<span class="process-math">\(\exp\mathopen{}\left(x^{2}-3x+5\right)\mathopen{}\left(2x-3\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.9.1"><a tabindex="-1" href="#extracted-ex-derivative-2-1-2" title="Copy heading and permalink for Answer 1.4.9.1" aria-label="Copy heading and permalink for Answer 1.4.9.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-2-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-2-1-3-1">Using the chain rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-2-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-2-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}e^{x^2-3x+5}
+\amp = e^{x^2-3x+5}
+\left(2x-3\right).
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.9.1"><a tabindex="-1" href="#extracted-ex-derivative-2-1-3" title="Copy heading and permalink for Solution 1.4.9.1" aria-label="Copy heading and permalink for Solution 1.4.9.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.9: Find the Derivative 2"><a tabindex="-1" href="#ex-derivative-2" title="Copy heading and permalink for Checkpoint 1.4.9: Find the Derivative 2" aria-label="Copy heading and permalink for Checkpoint 1.4.9: Find the Derivative 2">🔗</a></div>
+</article></details>
+<details id="ex-derivative-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 3.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-3-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="13" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_10-Find_the_Derivative_3.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-3-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-3-1-1-1">Find the derivative of <span class="process-math">\(x\arctan(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-3-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-3-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-3-1-2-1">
+<span class="process-math">\(\tan^{-1}\mathopen{}\left(x\right)+\frac{x}{1+x^{2}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.10.1"><a tabindex="-1" href="#extracted-ex-derivative-3-1-2" title="Copy heading and permalink for Answer 1.4.10.1" aria-label="Copy heading and permalink for Answer 1.4.10.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-3-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-3-1-3-1">Using the product rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-3-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-3-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(x\arctan(x)\right)
+\amp = 1\cdot \arctan(x) + x\cdot \frac{1}{1+x^2}\\
+\amp = \arctan(x)+\frac{x}{1+x^2}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.10.1"><a tabindex="-1" href="#extracted-ex-derivative-3-1-3" title="Copy heading and permalink for Solution 1.4.10.1" aria-label="Copy heading and permalink for Solution 1.4.10.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.10: Find the Derivative 3"><a tabindex="-1" href="#ex-derivative-3" title="Copy heading and permalink for Checkpoint 1.4.10: Find the Derivative 3" aria-label="Copy heading and permalink for Checkpoint 1.4.10: Find the Derivative 3">🔗</a></div>
+</article></details>
+<details id="ex-derivative-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 4.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-4-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="14" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_11-Find_the_Derivative_4.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-4-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-4-1-1-1">Find the derivative of <span class="process-math">\(6\sin(3-x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-4-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-4-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-4-1-2-1">
+<span class="process-math">\(-6\cos\mathopen{}\left(3-x\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.11.1"><a tabindex="-1" href="#extracted-ex-derivative-4-1-2" title="Copy heading and permalink for Answer 1.4.11.1" aria-label="Copy heading and permalink for Answer 1.4.11.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-4-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-4-1-3-1">Using the chain rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-4-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-4-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(6\sin(3-x)\right)
+\amp = 6\cos(3-x)(-1)\\
+\amp = -6\cos(3-x).
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-4-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.11.1"><a tabindex="-1" href="#extracted-ex-derivative-4-1-3" title="Copy heading and permalink for Solution 1.4.11.1" aria-label="Copy heading and permalink for Solution 1.4.11.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.11: Find the Derivative 4"><a tabindex="-1" href="#ex-derivative-4" title="Copy heading and permalink for Checkpoint 1.4.11: Find the Derivative 4" aria-label="Copy heading and permalink for Checkpoint 1.4.11: Find the Derivative 4">🔗</a></div>
+</article></details>
+<details id="ex-derivative-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 5.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-5-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="15" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_12-Find_the_Derivative_5.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-5-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-5-1-1-1">Find the derivative of <span class="process-math">\(\frac{7}{x^{5}}-\ln(2x+1)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-5-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-5-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-5-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-5-1-2-1">
+<span class="process-math">\(-35x^{-6}-\frac{2}{2x+1}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.12.1"><a tabindex="-1" href="#extracted-ex-derivative-5-1-2" title="Copy heading and permalink for Answer 1.4.12.1" aria-label="Copy heading and permalink for Answer 1.4.12.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-5-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-5-1-3-1">Rewrite the first term using a negative exponent and use the chain rule on the logarithm:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-5-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-5-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(7x^{-5}-\ln(2x+1)\right)
+\amp = -35x^{-5-1}
+-\frac{2}{2x+1}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-5-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.12.1"><a tabindex="-1" href="#extracted-ex-derivative-5-1-3" title="Copy heading and permalink for Solution 1.4.12.1" aria-label="Copy heading and permalink for Solution 1.4.12.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.12: Find the Derivative 5"><a tabindex="-1" href="#ex-derivative-5" title="Copy heading and permalink for Checkpoint 1.4.12: Find the Derivative 5" aria-label="Copy heading and permalink for Checkpoint 1.4.12: Find the Derivative 5">🔗</a></div>
+</article></details>
+<details id="ex-derivative-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 6.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-6-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="16" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_13-Find_the_Derivative_6.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-6-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-6-1-1-1">Find the derivative of <span class="process-math">\(q^x\text{,}\)</span> where <span class="process-math">\(q\)</span> is a constant with <span class="process-math">\(0\lt q\lt 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-6-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-6-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-6-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-6-1-2-1">
+<span class="process-math">\(q^{x}\ln\mathopen{}\left(q\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-6-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.13.1"><a tabindex="-1" href="#extracted-ex-derivative-6-1-2" title="Copy heading and permalink for Answer 1.4.13.1" aria-label="Copy heading and permalink for Answer 1.4.13.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-6-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-6-1-3-1">For a positive constant base <span class="process-math">\(q\text{,}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-6-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-6-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-6-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}q^x \amp = q^x\ln(q).
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-6-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.13.1"><a tabindex="-1" href="#extracted-ex-derivative-6-1-3" title="Copy heading and permalink for Solution 1.4.13.1" aria-label="Copy heading and permalink for Solution 1.4.13.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.13: Find the Derivative 6"><a tabindex="-1" href="#ex-derivative-6" title="Copy heading and permalink for Checkpoint 1.4.13: Find the Derivative 6" aria-label="Copy heading and permalink for Checkpoint 1.4.13: Find the Derivative 6">🔗</a></div>
+</article></details>
+<details id="ex-derivative-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 7.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-7-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="17" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_14-Find_the_Derivative_7.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-7-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-7-1-1-1">Find the derivative of <span class="process-math">\(\frac{x-4}{x^2+2x-6}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-7-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="50-character blank" style="width: 22.7272727272727em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-7-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-7-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-7-1-2-1">
+<span class="process-math">\(\frac{x^{2}+2x-6-\left(x-4\right)\mathopen{}\left(2x+2\right)}{\left(x^{2}+2x-6\right)^{2}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.14.1"><a tabindex="-1" href="#extracted-ex-derivative-7-1-2" title="Copy heading and permalink for Answer 1.4.14.1" aria-label="Copy heading and permalink for Answer 1.4.14.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-7-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-7-1-3-1">Using the quotient rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-7-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-7-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-7-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(\frac{x-4}{x^2+2x-6}\right)
+\amp = \frac{(x^2+2x-6)
+-(x-4)(2x+2)}
+{(x^2+2x-6)^2}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-7-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.14.1"><a tabindex="-1" href="#extracted-ex-derivative-7-1-3" title="Copy heading and permalink for Solution 1.4.14.1" aria-label="Copy heading and permalink for Solution 1.4.14.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.14: Find the Derivative 7"><a tabindex="-1" href="#ex-derivative-7" title="Copy heading and permalink for Checkpoint 1.4.14: Find the Derivative 7" aria-label="Copy heading and permalink for Checkpoint 1.4.14: Find the Derivative 7">🔗</a></div>
+</article></details>
+<details id="ex-derivative-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 8.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-8-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="18" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_15-Find_the_Derivative_8.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-8-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-8-1-1-1">Find the derivative of <span class="process-math">\(x-9\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-8-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-8-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-8-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-8-1-2-1">
+<span class="process-math">\(1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.15.1"><a tabindex="-1" href="#extracted-ex-derivative-8-1-2" title="Copy heading and permalink for Answer 1.4.15.1" aria-label="Copy heading and permalink for Answer 1.4.15.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-8-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-8-1-3-1">The derivative of <span class="process-math">\(x\)</span> is <span class="process-math">\(1\text{,}\)</span> and the derivative of a constant is <span class="process-math">\(0\text{.}\)</span> Therefore, <span class="process-math">\(f'(x)=1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-8-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.15.1"><a tabindex="-1" href="#extracted-ex-derivative-8-1-3" title="Copy heading and permalink for Solution 1.4.15.1" aria-label="Copy heading and permalink for Solution 1.4.15.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.15: Find the Derivative 8"><a tabindex="-1" href="#ex-derivative-8" title="Copy heading and permalink for Checkpoint 1.4.15: Find the Derivative 8" aria-label="Copy heading and permalink for Checkpoint 1.4.15: Find the Derivative 8">🔗</a></div>
+</article></details>
+<details id="ex-derivative-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 9.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-9-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="19" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_16-Find_the_Derivative_9.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-9-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-9-1-1-1">Find the derivative of <span class="process-math">\(1-e^{-n(e^{ax}-1)}\text{,}\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(n\)</span> are positive constants.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-9-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-9-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="50-character blank" style="width: 22.7272727272727em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-9-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-9-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-9-1-2-1">
+<span class="process-math">\(na\exp\mathopen{}\left(ax\right)\exp\mathopen{}\left(-n\mathopen{}\left(\exp\mathopen{}\left(ax\right)-1\right)\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-9-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.16.1"><a tabindex="-1" href="#extracted-ex-derivative-9-1-2" title="Copy heading and permalink for Answer 1.4.16.1" aria-label="Copy heading and permalink for Answer 1.4.16.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-9-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-9-1-3-1">Using the chain rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-9-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-9-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-9-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(1-e^{-n(e^{ax}-1)}\right)
+\amp = -e^{-n(e^{ax}-1)}\left(-n ae^{ax}\right)\\
+\amp = nae^{ax}e^{-n(e^{ax}-1)}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-9-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.16.1"><a tabindex="-1" href="#extracted-ex-derivative-9-1-3" title="Copy heading and permalink for Solution 1.4.16.1" aria-label="Copy heading and permalink for Solution 1.4.16.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.16: Find the Derivative 9"><a tabindex="-1" href="#ex-derivative-9" title="Copy heading and permalink for Checkpoint 1.4.16: Find the Derivative 9" aria-label="Copy heading and permalink for Checkpoint 1.4.16: Find the Derivative 9">🔗</a></div>
+</article></details>
+<details id="ex-derivative-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 10.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-10-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="20" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_17-Find_the_Derivative_10.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-10-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-10-1-1-1">Find the derivative of <span class="process-math">\(1-e^{-x/t}\text{,}\)</span> where <span class="process-math">\(t\)</span> is a positive constant.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-10-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-10-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-10-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-10-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-10-1-2-1">
+<span class="process-math">\(\frac{\exp\mathopen{}\left(\frac{-x}{t}\right)}{t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-10-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.17.1"><a tabindex="-1" href="#extracted-ex-derivative-10-1-2" title="Copy heading and permalink for Answer 1.4.17.1" aria-label="Copy heading and permalink for Answer 1.4.17.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-10-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-10-1-3-1">Using the chain rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-10-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-10-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-10-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(1-e^{-x/t}\right)
+\amp = -e^{-x/t}\left(-\frac{1}{t}\right)\\
+\amp = \frac{1}{t}e^{-x/t}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-10-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.17.1"><a tabindex="-1" href="#extracted-ex-derivative-10-1-3" title="Copy heading and permalink for Solution 1.4.17.1" aria-label="Copy heading and permalink for Solution 1.4.17.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.17: Find the Derivative 10"><a tabindex="-1" href="#ex-derivative-10" title="Copy heading and permalink for Checkpoint 1.4.17: Find the Derivative 10" aria-label="Copy heading and permalink for Checkpoint 1.4.17: Find the Derivative 10">🔗</a></div>
+</article></details>
+<details id="ex-derivative-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 11.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-11-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="21" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_18-Find_the_Derivative_11.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-11-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-11-1-1-1">Find the derivative of <span class="process-math">\(1-e^{-(x/L)^k}\text{,}\)</span> where <span class="process-math">\(L\)</span> and <span class="process-math">\(k\)</span> are constants with <span class="process-math">\(L&gt;0\)</span> and <span class="process-math">\(k&gt;1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-11-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-11-1-1-2">
+<span class="process-math">\(f'(x)=\)</span> <span class="fillin underline" role="img" aria-label="50-character blank" style="width: 22.7272727272727em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-11-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-11-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-11-1-2-1">
+<span class="process-math">\(\frac{kx^{k-1}\exp\mathopen{}\left(-\left(\frac{x}{L}\right)^{k}\right)}{L^{k}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-11-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.18.1"><a tabindex="-1" href="#extracted-ex-derivative-11-1-2" title="Copy heading and permalink for Answer 1.4.18.1" aria-label="Copy heading and permalink for Answer 1.4.18.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-11-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-11-1-3-1">Using the chain rule,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-11-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-11-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-11-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+\frac{d}{dx}\left(1-e^{-(x/L)^k}\right)
+\amp = -e^{-(x/L)^k}\left(-k(x/L)^{k-1}\frac{1}{L}\right)\\
+\amp = \frac{k}{L}(x/L)^{k-1}e^{-(x/L)^k}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-11-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.18.1"><a tabindex="-1" href="#extracted-ex-derivative-11-1-3" title="Copy heading and permalink for Solution 1.4.18.1" aria-label="Copy heading and permalink for Solution 1.4.18.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.18: Find the Derivative 11"><a tabindex="-1" href="#ex-derivative-11" title="Copy heading and permalink for Checkpoint 1.4.18: Find the Derivative 11" aria-label="Copy heading and permalink for Checkpoint 1.4.18: Find the Derivative 11">🔗</a></div>
+</article></details>
+<details id="ex-derivative-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 12.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-12-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="22" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_19-Find_the_Derivative_12.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-12-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-12-1-1-1">Suppose <span class="process-math">\(f(x)=ax^2+bx+c\text{,}\)</span> where <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> are constants and <span class="process-math">\(a\neq 0\text{.}\)</span> Find the point where the tangent line is horizontal.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-12-1-1-2">
+<span class="process-math">\(x=\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="extracted-ex-derivative-12-1-1-3">
+<span class="process-math">\(y=\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-12-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-12-1-2-1">
+<span class="process-math">\(\frac{-b}{2a}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.19.1"><a tabindex="-1" href="#extracted-ex-derivative-12-1-2" title="Copy heading and permalink for Answer 1.4.19.1" aria-label="Copy heading and permalink for Answer 1.4.19.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-12-1-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-12-1-3-1">
+<span class="process-math">\(c-\frac{b^{2}}{4a}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.19.2"><a tabindex="-1" href="#extracted-ex-derivative-12-1-3" title="Copy heading and permalink for Answer 1.4.19.2" aria-label="Copy heading and permalink for Answer 1.4.19.2">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-12-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-12-1-4-1">A horizontal tangent line occurs where the derivative is <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-12-1-4-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-12-1-4-2-1">
+\begin{equation*}
+\begin{aligned}
+f'(x) \amp = 2ax+b\\
+0 \amp = 2ax+b\\
+x \amp = -\frac{b}{2a}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-derivative-12-1-4-3">Substituting this into <span class="process-math">\(f(x)\)</span> gives<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-12-1-4-4">
+<div class="displaymath process-math" id="extracted-ex-derivative-12-1-4-4-1">
+\begin{equation*}
+\begin{aligned}
+y \amp = a\left(-\frac{b}{2a}\right)^2+b\left(-\frac{b}{2a}\right)+c\\
+\amp = c-\frac{b^2}{4a}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-derivative-12-1-4-5">Therefore, the point is <span class="process-math">\(\left(-\frac{b}{2a}, c-\frac{b^2}{4a}\right)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-12-1-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.19.1"><a tabindex="-1" href="#extracted-ex-derivative-12-1-4" title="Copy heading and permalink for Solution 1.4.19.1" aria-label="Copy heading and permalink for Solution 1.4.19.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.19: Find the Derivative 12"><a tabindex="-1" href="#ex-derivative-12" title="Copy heading and permalink for Checkpoint 1.4.19: Find the Derivative 12" aria-label="Copy heading and permalink for Checkpoint 1.4.19: Find the Derivative 12">🔗</a></div>
+</article></details>
+<details id="ex-derivative-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Derivative 13.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content"><div id="ex-derivative-13-ww-inner" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="23" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-origin="generated" data-problemSource="Probability_for_Future_Actuaries/1_4_20-Find_the_Derivative_13.pg" data-documentID="" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('ex-derivative-13-ww-inner')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-ex-derivative-13-1-1-1">Let <span class="process-math">\(g(x)=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}\text{,}\)</span> where <span class="process-math">\(s&gt;0\text{.}\)</span> Find the range of <span class="process-math">\(x\)</span> values for which <span class="process-math">\(g'(x)\)</span> is positive.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="extracted-ex-derivative-13-1-1-2">
+<ol class="upper-alpha ol-marker-1" id="extracted-ex-derivative-13-1-1-2-1">
+<li id="extracted-ex-derivative-13-1-1-2-1-1">
+<div class="para" id="extracted-ex-derivative-13-1-1-2-1-1-1">
+<span class="process-math">\(\displaystyle x&lt;m\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.4.20.A"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-1" title="Copy heading and permalink for Item 1.4.20.A" aria-label="Copy heading and permalink for Item 1.4.20.A">🔗</a></div>
+</li>
+<li id="extracted-ex-derivative-13-1-1-2-1-2">
+<div class="para" id="extracted-ex-derivative-13-1-1-2-1-2-1">
+<span class="process-math">\(\displaystyle x&gt;m\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.4.20.B"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-2" title="Copy heading and permalink for Item 1.4.20.B" aria-label="Copy heading and permalink for Item 1.4.20.B">🔗</a></div>
+</li>
+<li id="extracted-ex-derivative-13-1-1-2-1-3">
+<div class="para" id="extracted-ex-derivative-13-1-1-2-1-3-1">
+<span class="process-math">\(\displaystyle x=m\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.4.20.C"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-3" title="Copy heading and permalink for Item 1.4.20.C" aria-label="Copy heading and permalink for Item 1.4.20.C">🔗</a></div>
+</li>
+<li id="extracted-ex-derivative-13-1-1-2-1-4">
+<div class="para" id="extracted-ex-derivative-13-1-1-2-1-4-1">all real <span class="process-math">\(x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.4.20.D"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2-1-4" title="Copy heading and permalink for Item 1.4.20.D" aria-label="Copy heading and permalink for Item 1.4.20.D">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="extracted-ex-derivative-13-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-13-1-2-1">
+<span class="process-math">\(\text{A}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.4.20.1"><a tabindex="-1" href="#extracted-ex-derivative-13-1-2" title="Copy heading and permalink for Answer 1.4.20.1" aria-label="Copy heading and permalink for Answer 1.4.20.1">🔗</a></div>
+</div></details>
+<details id="extracted-ex-derivative-13-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="extracted-ex-derivative-13-1-3-1">The constant factor <span class="process-math">\(\frac{1}{s\sqrt{2\pi}}\)</span> is positive. Differentiating the exponential part gives<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-ex-derivative-13-1-3-2">
+<div class="displaymath process-math" id="extracted-ex-derivative-13-1-3-2-1">
+\begin{equation*}
+\begin{aligned}
+g'(x)
+\amp = \frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}
+\left(-\frac{x-m}{s^2}\right).
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-ex-derivative-13-1-3-3">The exponential factor is always positive, so the sign of <span class="process-math">\(g'(x)\)</span> is determined by <span class="process-math">\(-(x-m)\text{.}\)</span> Therefore, <span class="process-math">\(g'(x)&gt;0\)</span> when <span class="process-math">\(x\lt m\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#extracted-ex-derivative-13-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.20.1"><a tabindex="-1" href="#extracted-ex-derivative-13-1-3" title="Copy heading and permalink for Solution 1.4.20.1" aria-label="Copy heading and permalink for Solution 1.4.20.1">🔗</a></div>
+</div></details>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.4.20: Find the Derivative 13"><a tabindex="-1" href="#ex-derivative-13" title="Copy heading and permalink for Checkpoint 1.4.20: Find the Derivative 13" aria-label="Copy heading and permalink for Checkpoint 1.4.20: Find the Derivative 13">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.4.3: Exercises"><a tabindex="-1" href="#subsection-1-4-3" title="Copy heading and permalink for Subsection 1.4.3: Exercises" aria-label="Copy heading and permalink for Subsection 1.4.3: Exercises">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.4: Derivatives"><a tabindex="-1" href="#section-1-4" title="Copy heading and permalink for Section 1.4: Derivatives" aria-label="Copy heading and permalink for Section 1.4: Derivatives">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-1-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-1-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Solving Quadratic Equations the 20th Century Way",
-  "body": " Solving Quadratic Equations the 20th Century Way   Do I really need to review quadratic equations? If you are confident with your algebra and calculus skills, you may not need a refresher in quadratic equations.  Here is a good litmus test. Can you solve the following by hand?   If so, then you many be in a good place to move to the next section. If not, I recommend reviewing this section.  In an age with myriad phone apps that can solve transcendental equations to high degrees of accuracy in nanoseconds, P Exam candidates need to solve some equations by hand (with a little help from your TI-30XS MultiView). We'll assume that a review of solving linear equations is not necessary and move right into solving a quadratic equation.    A quadratic equation quadratic equation in variable is an equation that can be written in the form where and are real numbers.     Graphs of Quadratic Equations  A quadratic equation, like any real-valued function, can be graphed on the Cartesian plane. It turns out that figures called parabolas, which are geometric curves defined by things called directrices and foci (don't worry about it), are modeled by quadratic equations. Recall from your algebra studies that a parabola is that U-shaped curve that can open upward or downward. Here are some perfectly good parabolas below.   Three parabolas. latex      Algebraically, whether a parabola opens upward or downward depends on the coefficient of the $x^2$ term in the parabola's equation. In the equation , the parabola will open upward if $a>0$ and downward if $a<0$. (If $a=0$, the we have a line rather than a parabola.)  For many parabolas, some points of interest include the points where the curve intersects the -axis. For a quadratic equation representing such a parabola, the -values of those points would be the solutions to . The solutions to such an equation are called the \\textit{roots} of the equation. As can be seen in the above figure, not all quadratic equations have roots as not all parabolas intersect the $x$-axis. Further, some quadratic equations only have one root.    Finding the Roots of a Quadratic Equation  As you may recall from your algebra studies, there are a few ways to find the roots of a quadratic equation by hand. We will only review the universal method of finding roots: the quadratic formula .Quadratic formula}    The solutions to a quadratic equation of the form (if any exist) can be found with the quadratic formula quadratic equation quadratic formula quadratic formula .     The value under the square root, , is called the discriminant . The discriminant determines whether there will be two, one, or zero roots. (Note that we are only considering real-valued solutions.)    If the discriminant is positive, there will be exactly two roots.  If the discriminant is zero, there will be exactly one root.  If the discriminant is negative, there will be no roots.     Using the Quadratic Formula   Solve the following for .                              and          No real solutions     and         1.     2.     3.  Since the discriminant is negative, there are no real solutions.   4. First, put the equation into the form . We get .         Solving \"Hidden\" Quadratic Equations  Consider the following super-transcendental equation: It's ugly, and no one likes it. But it is solvable ``by hand.'' This equation is actually a ``hidden'' quadratic. To see this, make the substitution: . The equation then becomes or equivalently . We can solve this using the quadratic formula:   Those values are not the solutions, however. Recall that . So, what we have found is that or . Since , we get or .   Solving a Hidden Quadratic   Solve the following equation for with :      .    We make the substitution and put the equation in the proper form. We get . Using the quadratic formula, we get Since , we solve . Thus, . So, .    Note that in the previous example, using a calculator to get will likely yield . To get the proper , value we use the fact that .    Exercises   Solving a quadratic equation 1    Solve the quadratic equation  Smaller root:  Larger root:             First, we write the equation in the form   We can use the quadratic formula:          Solving a radical equation    Solve the following equation. Enter your answer to at least three decimal places.   Solution:        First, isolate the square root term:   Now square both sides:   Solving the quadratic gives possible roots. and The smaller root turns out not to solve the original equation. So, we have one solution.         Solving a hidden quadratic equation    Solve the quadratic equation   Smaller solution:  Larger solution:             We can make a substitution Then, we have We can re-write this as  We can use the quadratic formula:   Recall that So, or Solving gives or         Solving a hidden quadratic equation again    Solve the quadratic equation   Give your answer to at least three decimal places.  Smaller solution:  Larger solution:             We can make a substitution Then, we have We can re-write this as  We can use the quadratic formula:   Recall that So, or This first gives non-real solutions. Solving gives or         Solving a hidden quadratic equation yet again    The moment generating function for a discrete random variable is given by For which value is equal to 3.9? Give your answer to at least three decimal places.  Solution:        We can make a substitution Then, we have We can re-write this as  We can use the quadratic formula:   Recall that So, or The first equation has no solution. Solving the second equation gives         "
+  "body": " Solving Quadratic Equations the 20th Century Way   Do I really need to review quadratic equations? If you are confident with your algebra and calculus skills, you may not need a refresher in quadratic equations.  Here is a good litmus test. Can you solve the following by hand?   If so, then you many be in a good place to move to the next section. If not, I recommend reviewing this section.  In an age with myriad phone apps that can solve transcendental equations to high degrees of accuracy in nanoseconds, P Exam candidates need to solve some equations by hand (with a little help from your TI-30XS MultiView). We'll assume that a review of solving linear equations is not necessary and move right into solving a quadratic equation.    A quadratic equation quadratic equation in variable is an equation that can be written in the form where and are real numbers.     Graphs of Quadratic Equations  A quadratic equation, like any real-valued function, can be graphed on the Cartesian plane. It turns out that figures called parabolas, which are geometric curves defined by things called directrices and foci (don't worry about it), are modeled by quadratic equations. Recall from your algebra studies that a parabola is that U-shaped curve that can open upward or downward. Here are some perfectly good parabolas below.   Three parabolas. latex      Algebraically, whether a parabola opens upward or downward depends on the coefficient of the term in the parabola's equation. In the equation , the parabola will open upward if and downward if . (If , the we have a line rather than a parabola.)  For many parabolas, some points of interest include the points where the curve intersects the -axis. For a quadratic equation representing such a parabola, the -values of those points would be the solutions to . The solutions to such an equation are called the roots of the equation. As can be seen in the above figure, not all quadratic equations have roots as not all parabolas intersect the -axis. Further, some quadratic equations only have one root.    Finding the Roots of a Quadratic Equation  As you may recall from your algebra studies, there are a few ways to find the roots of a quadratic equation by hand. We will only review the universal method of finding roots: the quadratic formula .Quadratic formula}    The solutions to a quadratic equation of the form (if any exist) can be found with the quadratic formula quadratic equation quadratic formula quadratic formula .     The value under the square root, , is called the discriminant . The discriminant determines whether there will be two, one, or zero roots. (Note that we are only considering real-valued solutions.)    If the discriminant is positive, there will be exactly two roots.  If the discriminant is zero, there will be exactly one root.  If the discriminant is negative, there will be no roots.     Using the Quadratic Formula   Solve the following for .                              and          No real solutions     and         1.     2.     3.  Since the discriminant is negative, there are no real solutions.   4. First, put the equation into the form . We get .         Solving \"Hidden\" Quadratic Equations  Consider the following super-transcendental equation: It's ugly, and no one likes it. But it is solvable ``by hand.'' This equation is actually a ``hidden'' quadratic. To see this, make the substitution: . The equation then becomes or equivalently . We can solve this using the quadratic formula:   Those values are not the solutions, however. Recall that . So, what we have found is that or . Since , we get or .   Solving a Hidden Quadratic   Solve the following equation for with :      .    We make the substitution and put the equation in the proper form. We get . Using the quadratic formula, we get Since , we solve . Thus, . So, .    Note that in the previous example, using a calculator to get will likely yield . To get the proper , value we use the fact that .    Exercises   Solving a quadratic equation 1    Solve the quadratic equation  Smaller root:  Larger root:             First, we write the equation in the form   We can use the quadratic formula:          Solving a radical equation    Solve the following equation. Enter your answer to at least three decimal places.   Solution:        First, isolate the square root term:   Now square both sides:   Solving the quadratic gives possible roots. and The smaller root turns out not to solve the original equation. So, we have one solution.         Solving a hidden quadratic equation    Solve the quadratic equation   Smaller solution:  Larger solution:             We can make a substitution Then, we have We can re-write this as  We can use the quadratic formula:   Recall that So, or Solving gives or         Solving a hidden quadratic equation again    Solve the quadratic equation   Give your answer to at least three decimal places.  Smaller solution:  Larger solution:             We can make a substitution Then, we have We can re-write this as  We can use the quadratic formula:   Recall that So, or This first gives non-real solutions. Solving gives or         Solving a hidden quadratic equation yet again    The moment generating function for a discrete random variable is given by For which value is equal to 3.9? Give your answer to at least three decimal places.  Solution:        We can make a substitution Then, we have We can re-write this as  We can use the quadratic formula:   Recall that So, or The first equation has no solution. Solving the second equation gives         "
 },
 {
   "id": "def-quad-eq",
@@ -151,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Inverse Functions",
-  "body": " Inverse Functions   Do I need to review inverse functions? In a later section, we will determine the densities of functions of random variables. In doing so, we will need to work with the inverses of real- valued functions. In this section, we will briefly review inverse functions.  If you know how to take a non-invertible function like and break it into invervals on which it is invertible and find inverses on each interval, you may not need to review this section.   Fundamental Concepts  Remember when you found out that most of the algebra you do in school was applying inverse functions to two sides of an equation and that solving wasn't as straightforward as you thought? This section serves as a refresher on that idea.  Recall that a function function is a set of ordered pairs where the first coordinate comes from a domain set and the second comes from a codomain set , and for each in the domain set, there is exactly one  in the range set so that is in the function. More simply put, we can think of a function as a machine that turns inputs from a domain set into outputs in the range set. However, to be a function, each input has exactly one output. For example, if some machine had and , then would not be a function. As another example, if we write the equation of a circle or radius 1 centered at the origin as , this also would not be a function (e.g.\\ would yield both and .  Graphically, we can tell if a curve on the Cartesian plane is a function using what is commonly called \"the vertical-line test.\" Essentially, if it is possible to draw any vertical line that intersects your curve in more than one spot, the curve is not a function; otherwise, it is.   Left: A function. Right: Not a function.      When considering inverse functions, it is helpful to recall injective or one-to-one functions. one-to-one A function is one-to-one (or injective) if for any inputs and in the domain implies . Simply put, two different inputs must have two different outputs. For example, the function is one-to-one, but the function is not. (e.g. .)  Graphically, we can tell if a function on the Cartesian plane is one-to-one by using what is called ``the horizontal-line test.'' Like the vertical-line test, if it is possible to draw any horizontal line that intersections the function at more than one spot, the function is not one-to-one; otherwise, it is.   Left: A one-to-one function. Right: Not a one-to-one function.       Is It a Function?   Determine if the following curves are functions. Consider the input variable and the output variable.                             Nope. But is a function of .    Not this one either.    Yep.    It is exuding function realness.       This is not a function. For example, if , then . (If were the output variable, then would be a function of .)  This is not a function. It forms an ellipse if graphed. As an example, if , then or   This is a function. If we solve for , we get , which is a line. This passes the vertical-line test.  This is a function. If we solve for , we get , which is a function. (Here we need the fact that is a function, which can easily be seen from its graph.)     Is It One-to-One?   Determine if the following functions are one-to-one on their domains.                             Not a one-to-one winner. Try again.    Super not one-to-one.    One-to-one.    Absolutely one-to-one.       This is not one-to-one. If we draw the graph, it fails the horizontal-line test. We could also note that .  This is super non one-to-one. As a sinusoidal wave, it gloriously fails the horizontal line test. We could also note that .  This is one-to-one. A basic logarithmic curve passes the horizontal line test.  This is one-to-one. It is a (non-horizontal) line, which passes the horizontal line test.    Finally, we move on to inverse functions. Let be a function with input set and output set . Let be a function with input set and output set . If for any and , precisely when , we call the inverse function of f Inverse function . We usually denote the inverse function of as .  Here is an important fact. Not all functions have inverses. If a function has an inverse, we call it invertible Function!invertible . Consider the function . We might think that is its inverse. However, it is not. At least, not exactly. Recall that an inverse would have the requirement of being a function and if and only if . Note that for , we have . This would mean that an inverse of would have and . This would make  not a function . So, such an inverse does not exist. Hence, is not invertible.  This brings up the question: when is a function invertible? It turns out, this is usually relatively easy. Recall that a one-to-one function is a function so that implies . This would mean that for any potential inverse function , would have a unique output. (Otherwise for those multiple outputs , we would have , which would make not one-to-one.) So, actually is a function. From this, we make the following observation:   A function is invertible if and only if it is one-to-one on its domain.   We proved one direction of the above observation in the preceding paragraph. The proof that invert-ability implies the function is one-to-one is similar.  Now onto finding inverse function. Suppose that is an invertible function. We can find the inverse function of via the following general procedure:     Begin with the equation .    Solve for .    Swap the variables and . The resulting equation is .      Finding an Inverse   Find the inverse function of .              Unfortunately, this process can become difficult to do by hand for more complex functions. For example, finding the inverse of by hand is not particularly easy. You certainly won't need to worry about this on the P exam.  There is a strong connection between a function and its inverse via function composition. We should recall composition of functions.  Let be a function from input set to output set and let be a function from input set to output set . We call or a >composition function composition of functions , which has input set and output set so that if and , then .   Composition-of-Functions   Let and on their respective domains. Determine each of the following and determine their implied domains and ranges.                                     This has domain and range .     . This has domain and range .     . This has domain and range .     . This has domain and range .   . This has domain and range .       Note that . In a sense, the inverse function \"undoes\" the function. For example, consider and . These functions are inverse of each other. (We will review how to find inverse functions shortly.) Note that .    Restricted Domains  Recall that is not invertible. However, the function behaves like an inverse of it. For non-negative values of , we have . This is not true for negative values of , however. But what if we only cared about the non-negative values of ? Then, in a sense, is invertible. That is, is invertible on a restricted domain restricted domain .  Consider the highly-non one-to-one function . Recall that it does, however, have a corresponding inverse function or . How is this possible? We assume that has a restricted domain over which it is one-to-one. Usually, we take that restricted domain as .   on a restricted domain.      Let's return to . Can we find an inverse for of on the restricted domain of non-positive numbers. works. (E.g.\\ and .)   On the P exam, when determining densities of functions of random variables, if your function is not one-to-one, you may need to break up your function onto domains in which each segment is one-to-one.     Exercises   Are they functions?    Determine which of the following equations represent functions on their implied domains. Assume is the input variable, and is the output variable.       for nonzero real numbers       for    None of the above          can be rearranged as Since this is simply a line, which is a function.  is already written in functional form. It can be seen that a single value for with will yield a single output value Graphically, this is the top half of a circle.  Solving for yields This is not a function. For example, would give or Graphically, this is a circle with radius  can be rearranged as This is a logarithmic function.         Are they One-to-One?    Determine which of the following functions are one-to-one.                on the restricted domain    None of the above          is one-to-one. Power functions of the form or will be one-to-one when is odd.  is not one-to-one on the domain For example,  is not one-to-one. For example,  is not one-to-one. For example,  is one-to-one. It is a logarithmic function shifted up 3 units.         Find the Inverses    Determine the inverses of the following functions.                                             The inverse functions are:                           Break the Domain    is not invertible. Break the domain of $f$ into two components on which each component is invertible. Find the inverse function for each invertible segment.  On the restricted domain  is equal to the function  , and has an inverse function of  .  On the restricted domain  is equal to the function  , and has an inverse function of  .                       In general, for a function  So, our two functions are and These are on the domains and respectively.  To find the inverses:   and          "
+  "body": " Inverse Functions   Do I need to review inverse functions? In a later section, we will determine the densities of functions of random variables. In doing so, we will need to work with the inverses of real- valued functions. In this section, we will briefly review inverse functions.  If you know how to take a non-invertible function like and break it into invervals on which it is invertible and find inverses on each interval, you may not need to review this section.   Fundamental Concepts  Remember when you found out that most of the algebra you do in school was applying inverse functions to two sides of an equation and that solving wasn't as straightforward as you thought? This section serves as a refresher on that idea.  Recall that a function function is a set of ordered pairs where the first coordinate comes from a domain set and the second comes from a codomain set , and for each in the domain set, there is exactly one  in the range set so that is in the function. More simply put, we can think of a function as a machine that turns inputs from a domain set into outputs in the range set. However, to be a function, each input has exactly one output. For example, if some machine had and , then would not be a function. As another example, if we write the equation of a circle or radius 1 centered at the origin as , this also would not be a function (e.g. would yield both and .  Graphically, we can tell if a curve on the Cartesian plane is a function using what is commonly called \"the vertical-line test.\" Essentially, if it is possible to draw any vertical line that intersects your curve in more than one spot, the curve is not a function; otherwise, it is.   Left: A function. Right: Not a function.      When considering inverse functions, it is helpful to recall injective or one-to-one functions. one-to-one A function is one-to-one (or injective) if for any inputs and in the domain implies . Simply put, two different inputs must have two different outputs. For example, the function is one-to-one, but the function is not. (e.g. .)  Graphically, we can tell if a function on the Cartesian plane is one-to-one by using what is called ``the horizontal-line test.'' Like the vertical-line test, if it is possible to draw any horizontal line that intersections the function at more than one spot, the function is not one-to-one; otherwise, it is.   Left: A one-to-one function. Right: Not a one-to-one function.       Is It a Function?   Determine if the following curves are functions. Consider the input variable and the output variable.                             Nope. But is a function of .    Not this one either.    Yep.    It is exuding function realness.       This is not a function. For example, if , then . (If were the output variable, then would be a function of .)  This is not a function. It forms an ellipse if graphed. As an example, if , then or   This is a function. If we solve for , we get , which is a line. This passes the vertical-line test.  This is a function. If we solve for , we get , which is a function. (Here we need the fact that is a function, which can easily be seen from its graph.)     Is It One-to-One?   Determine if the following functions are one-to-one on their domains.                             Not a one-to-one winner. Try again.    Super not one-to-one.    One-to-one.    Absolutely one-to-one.       This is not one-to-one. If we draw the graph, it fails the horizontal-line test. We could also note that .  This is super non one-to-one. As a sinusoidal wave, it gloriously fails the horizontal line test. We could also note that .  This is one-to-one. A basic logarithmic curve passes the horizontal line test.  This is one-to-one. It is a (non-horizontal) line, which passes the horizontal line test.    Finally, we move on to inverse functions. Let be a function with input set and output set . Let be a function with input set and output set . If for any and , precisely when , we call the inverse function of f Inverse function . We usually denote the inverse function of as .  Here is an important fact. Not all functions have inverses. If a function has an inverse, we call it invertible Function!invertible . Consider the function . We might think that is its inverse. However, it is not. At least, not exactly. Recall that an inverse would have the requirement of being a function and if and only if . Note that for , we have . This would mean that an inverse of would have and . This would make  not a function . So, such an inverse does not exist. Hence, is not invertible.  This brings up the question: when is a function invertible? It turns out, this is usually relatively easy. Recall that a one-to-one function is a function so that implies . This would mean that for any potential inverse function , would have a unique output. (Otherwise for those multiple outputs , we would have , which would make not one-to-one.) So, actually is a function. From this, we make the following observation:   A function is invertible if and only if it is one-to-one on its domain.   We proved one direction of the above observation in the preceding paragraph. The proof that invert-ability implies the function is one-to-one is similar.  Now onto finding inverse function. Suppose that is an invertible function. We can find the inverse function of via the following general procedure:     Begin with the equation .    Solve for .    Swap the variables and . The resulting equation is .      Finding an Inverse   Find the inverse function of .              Unfortunately, this process can become difficult to do by hand for more complex functions. For example, finding the inverse of by hand is not particularly easy. You certainly won't need to worry about this on the P exam.  There is a strong connection between a function and its inverse via function composition. We should recall composition of functions.  Let be a function from input set to output set and let be a function from input set to output set . We call or a >composition function composition of functions , which has input set and output set so that if and , then .   Composition-of-Functions   Let and on their respective domains. Determine each of the following and determine their implied domains and ranges.                                     This has domain and range .     . This has domain and range .     . This has domain and range .     . This has domain and range .   . This has domain and range .       Note that . In a sense, the inverse function \"undoes\" the function. For example, consider and . These functions are inverse of each other. (We will review how to find inverse functions shortly.) Note that .    Restricted Domains  Recall that is not invertible. However, the function behaves like an inverse of it. For non-negative values of , we have . This is not true for negative values of , however. But what if we only cared about the non-negative values of ? Then, in a sense, is invertible. That is, is invertible on a restricted domain restricted domain .  Consider the highly-non one-to-one function . Recall that it does, however, have a corresponding inverse function or . How is this possible? We assume that has a restricted domain over which it is one-to-one. Usually, we take that restricted domain as .   on a restricted domain.      Let's return to . Can we find an inverse for of on the restricted domain of non-positive numbers. works. (E.g. and .)   On the P exam, when determining densities of functions of random variables, if your function is not one-to-one, you may need to break up your function onto domains in which each segment is one-to-one.     Exercises   Are they functions?    Determine which of the following equations represent functions on their implied domains. Assume is the input variable, and is the output variable.       for nonzero real numbers       for    None of the above          can be rearranged as Since this is simply a line, which is a function.  is already written in functional form. It can be seen that a single value for with will yield a single output value Graphically, this is the top half of a circle.  Solving for yields This is not a function. For example, would give or Graphically, this is a circle with radius  can be rearranged as This is a logarithmic function.         Are they One-to-One?    Determine which of the following functions are one-to-one.                on the restricted domain    None of the above          is one-to-one. Power functions of the form or will be one-to-one when is odd.  is not one-to-one on the domain For example,  is not one-to-one. For example,  is not one-to-one. For example,  is one-to-one. It is a logarithmic function shifted up 3 units.         Find the Inverses    Determine the inverses of the following functions.                                             The inverse functions are:                           Break the Domain    is not invertible. Break the domain of $f$ into two components on which each component is invertible. Find the inverse function for each invertible segment.  On the restricted domain  is equal to the function  , and has an inverse function of  .  On the restricted domain  is equal to the function  , and has an inverse function of  .                       In general, for a function  So, our two functions are and These are on the domains and respectively.  To find the inverses:   and          "
 },
 {
   "id": "subsection-1-2-1-3",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Limits",
-  "body": " Limits  For the P exam, you will need to recall the basic algebraic workings of limits, particularly at infinity. Limits are also helpful in reviewing the definition of derivatives. The more advanced topics regarding limits usually seen in calculus will not be covered here such has various convergence tests as they are not needed for the P exam. We will cover a few dominance rules to provide some useful shortcuts.   Definition of a Limit  Let's consider the function Graphically, this is a line with a hole at the point , as seen below. That is, does not exist. However, the limit as approaches does. We see that as values tend toward , the function values tend toward . In fact, the function gets as arbitrarily-close to as we would ever like. In symbols, we would write    with hole at 1 displayed.      We give the formal definition of below.    Let be a real-valued function and let be a real number. We say if for every there is some so that for each , and implies that . limit     The definition of a limit can be hard to parse. Consider the more intuitive version below.    means that no matter how close we want the function to be to the value (within ), we can find a sufficiently small range of values close to > (within ) that guarantees is desirably close to .   An important note in a calculus course is that the interpretation of \" closer to implies closer to \"\" is not quite right and has some counter examples. This is why the definition of the limit is a bit more technical than many believe it should be.  In the following table, we provide a list of common limit rules\/shortcuts. This are quite intuitive and shouldn't be expressly memorized.   Common Limits  Suppose and . Then:     For any constant , .    For any constant , .     .     .     .    Suppose . Then .    Suppose Then .       Limits   Calculate the following limits.                                                                 Note that all of these functions are continuous around the desired values, so we could just simply plug in the values into the functions to get the desired limits. While there are certainly more complex and interesting limit examples, the P exam is not a calculus exam; limits are relatively straightforward.  Sometimes limits do not approach a finite value but instead tend to or .       We say if for every there is some so that for each with we have .    We say if for every there is some so that for each with we have .       These definitions essentially mean that for $x$ values sufficiently close to we have the function tending toward .                      Limits at Infinity  Most of the limits you will need to calculate on the P exam will be limits at infinity.    limit at infinity     if for every , there is some so that for any , implies      if for every , there is some so that for any , implies        If and exist and are finite, then the basic rules for limits carry over for limits at infinity. Here are some useful basic rules for limits at infinity.   Common Rules for Limits at Infinity     For positive , and .    For positive , if is odd and if is even.    For , and     For , and        Limits at Infinity   Find the following limits.                                               Since tends toward infinity as approaches , we have tending toward .         Since tends toward , we have          Limits at Infinity and Dominance  Let's consider . How might we go about finding this limit? We cannot use the basic rules given above. For these kinds of limits (often called \"indeterminate\"), it is handy to have some rules established in calculus. They can easily be proved using L'Hopital's rule.   Dominance Rules     Exponential functions \"dominate\" polynomial functions. This means we have the following, where is an -degree polynomial and $:     Polynomial functions \"dominate\" logarithmic functions. This means we have the following, where is an -degree polynomial and is a generic logarithmic function: and     Exponential functions ``dominate'' logarithmic functions. We get similar results as above.    Higher-degree polynomials \"dominate\" lower-degree polynomials. Let and be (non-constant) polynomial functions with with higher degree. We have the following:     If and are polynomials with equal degree, with leading-term coefficients and >, respectively, then      Note that in the above, the whether the limits are positive or negative depend on whether the polynomial limits tend to or .    "
+  "body": " Limits  For the P exam, you will need to recall the basic algebraic workings of limits, particularly at infinity. Limits are also helpful in reviewing the definition of derivatives. The more advanced topics regarding limits usually seen in calculus will not be covered here such has various convergence tests as they are not needed for the P exam. We will cover a few dominance rules to provide some useful shortcuts.   Definition of a Limit  Let's consider the function Graphically, this is a line with a hole at the point , as seen below. That is, does not exist. However, the limit as approaches does. We see that as values tend toward , the function values tend toward . In fact, the function gets as arbitrarily-close to as we would ever like. In symbols, we would write    with hole at 1 displayed.      We give the formal definition of below.    Let be a real-valued function and let be a real number. We say if for every there is some so that for each , and implies that . limit     The definition of a limit can be hard to parse. Consider the more intuitive version below.    means that no matter how close we want the function to be to the value (within ), we can find a sufficiently small range of values close to > (within ) that guarantees is desirably close to .   An important note in a calculus course is that the interpretation of \" closer to implies closer to \"\" is not quite right and has some counter examples. This is why the definition of the limit is a bit more technical than many believe it should be.  In the following table, we provide a list of common limit rules\/shortcuts. This are quite intuitive and shouldn't be expressly memorized.   Common Limits  Suppose and . Then:     For any constant , .    For any constant , .     .     .     .    Suppose . Then .    Suppose Then .       Limits   Calculate the following limits.                                                                 Note that all of these functions are continuous around the desired values, so we could just simply plug in the values into the functions to get the desired limits. While there are certainly more complex and interesting limit examples, the P exam is not a calculus exam; limits are relatively straightforward.  Sometimes limits do not approach a finite value but instead tend to or .       We say if for every there is some so that for each with we have .    We say if for every there is some so that for each with we have .       These definitions essentially mean that for values sufficiently close to we have the function tending toward .                      Limits at Infinity  Most of the limits you will need to calculate on the P exam will be limits at infinity.    limit at infinity     if for every , there is some so that for any , implies      if for every , there is some so that for any , implies        If and exist and are finite, then the basic rules for limits carry over for limits at infinity. Here are some useful basic rules for limits at infinity.   Common Rules for Limits at Infinity     For positive , and .    For positive , if is odd and if is even.    For , and     For , and        Limits at Infinity   Find the following limits.                                               Since tends toward infinity as approaches , we have tending toward .         Since tends toward , we have          Limits at Infinity and Dominance  Let's consider . How might we go about finding this limit? We cannot use the basic rules given above. For these kinds of limits (often called \"indeterminate\"), it is handy to have some rules established in calculus. They can easily be proved using L'Hopital's rule.   Dominance Rules     Exponential functions \"dominate\" polynomial functions. This means we have the following, where is an -degree polynomial and $:     Polynomial functions \"dominate\" logarithmic functions. This means we have the following, where is an -degree polynomial and is a generic logarithmic function: and     Exponential functions \"dominate\" logarithmic functions. We get similar results as above.    Higher-degree polynomials \"dominate\" lower-degree polynomials. Let and be (non-constant) polynomial functions with with higher degree. We have the following:     If and are polynomials with equal degree, with leading-term coefficients and , respectively, then      Note that in the above, the whether the limits are positive or negative depend on whether the polynomial limits tend to or .    Dominance Rules   Find the following limits:                                                                      Since the degree of the denominator is larger, the limit is .    Polynomials always dominate logarithms. So, this goes to (because tends to ).    Exponentials always dominate logarithms. So this tends to .    The degrees of the polynomials are the same. So,          Exercises   Find the Limits    Find the following limits. Enter INF or -INF for or Round answers to at least three decimal places.      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:                                                         The function is continuous at So, we can plug in to get    Exponentials dominator polynomials. So, the whole limit is    On both sides of the function grows to positive infinity as approaches So, the limit is    We have two polynomials of equal degres (6). So, the limit is the ratio of the leading coefficients:    Exponentials dominate polynomials. So, we look at which goes to So, the limit is    We can simplify the function as As approaches negative infinity, this approaches    The numerator has both logaritmic and polynomial elements. Since polynomials dominiate logarithms, we can think of the numerator as behaving like a polynomial of degree at The denominator is a higher-degree polynomial. So, it dominates. Thus, the limit is    The exponent goes to  approaches 0 as goes to So, the limit is    The exponent goes to So, the limit is    The numerator dominates since it has higher degree. So, the limit will be positive or negative infinity. We need to determine which. The denominator is led by which goes to positive infinity as approaches negative infinity. The numerator is led by which goes to positive infinity as approaches negative infinity. So, we have So, the limit is           "
 },
 {
   "id": "limit-exam",
@@ -404,6 +404,330 @@ var ptx_lunr_docs = [
   "number": "1.3.8",
   "title": "Limits at Infinity.",
   "body": " Limits at Infinity   Find the following limits.                                               Since tends toward infinity as approaches , we have tending toward .         Since tends toward , we have       "
+},
+{
+  "id": "ex-dominance",
+  "level": "2",
+  "url": "section-1-3.html#ex-dominance",
+  "type": "Example",
+  "number": "1.3.9",
+  "title": "Dominance Rules.",
+  "body": " Dominance Rules   Find the following limits:                                                                      Since the degree of the denominator is larger, the limit is .    Polynomials always dominate logarithms. So, this goes to (because tends to ).    Exponentials always dominate logarithms. So this tends to .    The degrees of the polynomials are the same. So,       "
+},
+{
+  "id": "ex-1-3-1",
+  "level": "2",
+  "url": "section-1-3.html#ex-1-3-1",
+  "type": "Checkpoint",
+  "number": "1.3.10",
+  "title": "Find the Limits.",
+  "body": " Find the Limits    Find the following limits. Enter INF or -INF for or Round answers to at least three decimal places.      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:      Answer:                                                         The function is continuous at So, we can plug in to get    Exponentials dominator polynomials. So, the whole limit is    On both sides of the function grows to positive infinity as approaches So, the limit is    We have two polynomials of equal degres (6). So, the limit is the ratio of the leading coefficients:    Exponentials dominate polynomials. So, we look at which goes to So, the limit is    We can simplify the function as As approaches negative infinity, this approaches    The numerator has both logaritmic and polynomial elements. Since polynomials dominiate logarithms, we can think of the numerator as behaving like a polynomial of degree at The denominator is a higher-degree polynomial. So, it dominates. Thus, the limit is    The exponent goes to  approaches 0 as goes to So, the limit is    The exponent goes to So, the limit is    The numerator dominates since it has higher degree. So, the limit will be positive or negative infinity. We need to determine which. The denominator is led by which goes to positive infinity as approaches negative infinity. The numerator is led by which goes to positive infinity as approaches negative infinity. So, we have So, the limit is         "
+},
+{
+  "id": "section-1-4",
+  "level": "1",
+  "url": "section-1-4.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Derivatives",
+  "body": " Derivatives  This section will be a condensed version of about 150 pages of a calculus textbook. That is, this will be an extremely-brief review of derivatives.   The Derivative  The average velocity of an object over a time interval is defined as its change in its position divided by . That is, . If a function models movement of an object, then the average rate of change of that object over a time interval is given by , where is the total change in the function. So, if the time interval is from to , then the average rate of change in is given by . Graphically, if we draw a line through the points and , then its slope, is the average rate of change of the function from to . We call such a line a secant line .   Average rate of change as slope of the secant line      Average rates of change are fine, but a more interesting concept is the {instantaneous velocity of an object - the velocity of an object at a singular point in time. We can approximate instantaneous velocity by taking very small time intervals. Let > be the starting time and let $h$ be some time interval (so ending time is ). Then we can change our average rate of change function to . When , then the average rate of change is approximately the instantaneous rate of change. Of course, we can't have , but we can make as small as we would like - the smaller the better. (You smell that? That's the impending arrival of limits.)  We can find the instantaneous velocity of a object by taking the limit as approaches of our average rate of change function, assuming that limit exists. This limit is called the derivative Derivative of at . It is denoted by .    The derivative of at is provided that the limit exists.    Graphically, the derivative is the slope of the line that locally intersects the function $f(x)$ at only the point . That is, it is the limit of the secant lines as $b$ approaches . We call this line the tangent line . This is visualized below.   Average rate of change as slope of the secant line      Suppose we would like to find the instantaneous rate of change of a function at multiple points. It would be handy to have a function that could give us these values rather than calculating the derivative at several points. Fortunately, such a function exists and is called the derivative function . derivative function     The derivative function of is provided that the limit exits.    Just for the sake of completion, we will find the derivative function of using the limit definition.   Derivative of   Find the derivative function of , using the limit definition of a derivative.         There. We did an example. Now let's never use the limit definition to calculate a derivative again. The important thing to take away from this section is that the derivative represents the rate of change of a function at a specified point.   Derivative of   Explain why the derivative of does not exist at .    Consider secant lines for to the left and right of . Take a secant line from to for . The slope of this secant line is . (Note that since .) So, all secant lines to the left of will have slope .  Take a secant line from to with . The slope of this secant line is . So, all secant lines to the right of will have slope .  Now consider the full limit of the slope of secant lines at . To the left, the limit is simply . To the right, the limit is . Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at .      Derivative Shortcuts  Fortunately, there are algebraic shortcuts for finding the derivative function of any elementary function. We give a list of those rules below. First, recall the notation . This is an operator meaning \"the derivative of .\"\"   Derivative Shortcut Rules     For any constant , .    For any constant , .    For any real number , .    For any , .     .     .     .     .     .     .    Constant Rule: .    Sum Rule: .    Chain Rule: .    Product Rule: .    Quotient Rule: .    \"Mini Chain Rule\": .      Pay attention to the last rule, that I like to call the \"mini chain rule.\" Many students pick this up after doing a number of derivative examples, but I find it helpful to see it explicitly. If you have a function that is a composition of functions, but the inside function is linear, then the derivative is simply the derivative of the outside function, with the inside function plugged in, times the slope of the linear function. For example, the derivative of is .    Find the derivative functions of the following functions.                                    Applying the chain rule to , we get     Applying the chain rule to and noticing that , we get .    Applying the chain rule to , we get .    Applying the chain rule to yields its derivative as . Then, we use the product rule to get .    We will need to use the chain rule for to get its derivative of . Then applying the quotient rule yields .       Fortunately, you will not need to calculate derivatives that are as complicated as the preceding ones on the P exam.    Exercises   Find the Derivative 1    Find the derivative of          Using the product rule and noting from the mini-chain rule that          Find the Derivative 2    Find the derivative of          Using the chain rule,          Find the Derivative 3    Find the derivative of          Using the product rule,          Find the Derivative 4    Find the derivative of          Using the chain rule,          Find the Derivative 5    Find the derivative of          Rewrite the first term using a negative exponent and use the chain rule on the logarithm:          Find the Derivative 6    Find the derivative of where is a constant with          For a positive constant base          Find the Derivative 7    Find the derivative of          Using the quotient rule,          Find the Derivative 8    Find the derivative of          The derivative of is and the derivative of a constant is Therefore,         Find the Derivative 9    Find the derivative of where and are positive constants.          Using the chain rule,          Find the Derivative 10    Find the derivative of where is a positive constant.          Using the chain rule,          Find the Derivative 11    Find the derivative of where and are constants with and          Using the chain rule,          Find the Derivative 12    Suppose where  and are constants and Find the point where the tangent line is horizontal.                 A horizontal tangent line occurs where the derivative is   Substituting this into gives   Therefore, the point is         Find the Derivative 13    Let where Find the range of values for which is positive.             all real          The constant factor is positive. Differentiating the exponential part gives   The exponential factor is always positive, so the sign of is determined by Therefore, when         "
+},
+{
+  "id": "ARC-graph",
+  "level": "2",
+  "url": "section-1-4.html#ARC-graph",
+  "type": "Figure",
+  "number": "1.4.1",
+  "title": "",
+  "body": " Average rate of change as slope of the secant line     "
+},
+{
+  "id": "subsection-1-4-1-5",
+  "level": "2",
+  "url": "section-1-4.html#subsection-1-4-1-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "derivative "
+},
+{
+  "id": "def-derivative",
+  "level": "2",
+  "url": "section-1-4.html#def-derivative",
+  "type": "Definition",
+  "number": "1.4.2",
+  "title": "",
+  "body": "  The derivative of at is provided that the limit exists.   "
+},
+{
+  "id": "derivative-function-graph",
+  "level": "2",
+  "url": "section-1-4.html#derivative-function-graph",
+  "type": "Figure",
+  "number": "1.4.3",
+  "title": "",
+  "body": " Average rate of change as slope of the secant line     "
+},
+{
+  "id": "subsection-1-4-1-9",
+  "level": "2",
+  "url": "section-1-4.html#subsection-1-4-1-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "derivative function "
+},
+{
+  "id": "def-derivative-function",
+  "level": "2",
+  "url": "section-1-4.html#def-derivative-function",
+  "type": "Definition",
+  "number": "1.4.4",
+  "title": "",
+  "body": "  The derivative function of is provided that the limit exits.   "
+},
+{
+  "id": "ex-derivative-function",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-function",
+  "type": "Example",
+  "number": "1.4.5",
+  "title": "Derivative of <span class=\"process-math\">\\(f(x) = x^3 - 4x\\)<\/span>.",
+  "body": " Derivative of   Find the derivative function of , using the limit definition of a derivative.        "
+},
+{
+  "id": "ex-abs-x",
+  "level": "2",
+  "url": "section-1-4.html#ex-abs-x",
+  "type": "Example",
+  "number": "1.4.6",
+  "title": "Derivative of <span class=\"process-math\">\\(|x|\\)<\/span>.",
+  "body": " Derivative of   Explain why the derivative of does not exist at .    Consider secant lines for to the left and right of . Take a secant line from to for . The slope of this secant line is . (Note that since .) So, all secant lines to the left of will have slope .  Take a secant line from to with . The slope of this secant line is . So, all secant lines to the right of will have slope .  Now consider the full limit of the slope of secant lines at . To the left, the limit is simply . To the right, the limit is . Since the left and right limits are not equal, the limit does not exist. So, the derivative cannot exist at .   "
+},
+{
+  "id": "ex-derivative-shortcuts",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-shortcuts",
+  "type": "Example",
+  "number": "1.4.7",
+  "title": "",
+  "body": "  Find the derivative functions of the following functions.                                    Applying the chain rule to , we get     Applying the chain rule to and noticing that , we get .    Applying the chain rule to , we get .    Applying the chain rule to yields its derivative as . Then, we use the product rule to get .    We will need to use the chain rule for to get its derivative of . Then applying the quotient rule yields .      "
+},
+{
+  "id": "ex-derivative-1",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-1",
+  "type": "Checkpoint",
+  "number": "1.4.8",
+  "title": "Find the Derivative 1.",
+  "body": " Find the Derivative 1    Find the derivative of          Using the product rule and noting from the mini-chain rule that        "
+},
+{
+  "id": "ex-derivative-2",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-2",
+  "type": "Checkpoint",
+  "number": "1.4.9",
+  "title": "Find the Derivative 2.",
+  "body": " Find the Derivative 2    Find the derivative of          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-3",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-3",
+  "type": "Checkpoint",
+  "number": "1.4.10",
+  "title": "Find the Derivative 3.",
+  "body": " Find the Derivative 3    Find the derivative of          Using the product rule,        "
+},
+{
+  "id": "ex-derivative-4",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-4",
+  "type": "Checkpoint",
+  "number": "1.4.11",
+  "title": "Find the Derivative 4.",
+  "body": " Find the Derivative 4    Find the derivative of          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-5",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-5",
+  "type": "Checkpoint",
+  "number": "1.4.12",
+  "title": "Find the Derivative 5.",
+  "body": " Find the Derivative 5    Find the derivative of          Rewrite the first term using a negative exponent and use the chain rule on the logarithm:        "
+},
+{
+  "id": "ex-derivative-6",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-6",
+  "type": "Checkpoint",
+  "number": "1.4.13",
+  "title": "Find the Derivative 6.",
+  "body": " Find the Derivative 6    Find the derivative of where is a constant with          For a positive constant base        "
+},
+{
+  "id": "ex-derivative-7",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-7",
+  "type": "Checkpoint",
+  "number": "1.4.14",
+  "title": "Find the Derivative 7.",
+  "body": " Find the Derivative 7    Find the derivative of          Using the quotient rule,        "
+},
+{
+  "id": "ex-derivative-8",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-8",
+  "type": "Checkpoint",
+  "number": "1.4.15",
+  "title": "Find the Derivative 8.",
+  "body": " Find the Derivative 8    Find the derivative of          The derivative of is and the derivative of a constant is Therefore,       "
+},
+{
+  "id": "ex-derivative-9",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-9",
+  "type": "Checkpoint",
+  "number": "1.4.16",
+  "title": "Find the Derivative 9.",
+  "body": " Find the Derivative 9    Find the derivative of where and are positive constants.          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-10",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-10",
+  "type": "Checkpoint",
+  "number": "1.4.17",
+  "title": "Find the Derivative 10.",
+  "body": " Find the Derivative 10    Find the derivative of where is a positive constant.          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-11",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-11",
+  "type": "Checkpoint",
+  "number": "1.4.18",
+  "title": "Find the Derivative 11.",
+  "body": " Find the Derivative 11    Find the derivative of where and are constants with and          Using the chain rule,        "
+},
+{
+  "id": "ex-derivative-12",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-12",
+  "type": "Checkpoint",
+  "number": "1.4.19",
+  "title": "Find the Derivative 12.",
+  "body": " Find the Derivative 12    Suppose where  and are constants and Find the point where the tangent line is horizontal.                 A horizontal tangent line occurs where the derivative is   Substituting this into gives   Therefore, the point is       "
+},
+{
+  "id": "ex-derivative-13",
+  "level": "2",
+  "url": "section-1-4.html#ex-derivative-13",
+  "type": "Checkpoint",
+  "number": "1.4.20",
+  "title": "Find the Derivative 13.",
+  "body": " Find the Derivative 13    Let where Find the range of values for which is positive.             all real          The constant factor is positive. Differentiating the exponential part gives   The exponential factor is always positive, so the sign of is determined by Therefore, when       "
+},
+{
+  "id": "section-1-5",
+  "level": "1",
+  "url": "section-1-5.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Optimization",
+  "body": " Optimization  Optimization optimization is application of derivatives in a Calculus 1 course. Fortunately, complex optimization problems are not part of the P exam. You will however, need to recall the basics of optimizing a function. Our review of optimization will be far less formal than in a calculus course.   Optimizing a Function  Consider the graph below:   Local extrema of a function      The graph represents a function on a closed interval . We would like to determine the numerical values of \"local extrema\" - the points that are larger or smaller than all other points around them. Graphically, we see that there are local minimum at and and local maximums at and . We will also be interested in the \"global extrema\" - the points that are larger or smaller than all other points on the function. We see that a global maximum occurs at $x=e$ and a global minimum occurs at .  The process of finding such extrema analytically (and by hand) requires the use of derivatives. Consider the point at . If we drew a tangent line to at that point, the line would have slope . This means that . Local minimums and maximums can occur at \"bottoms of valleys\" and \"tops of hills,\"\" which are points at which . Thus, finding where a function's derivative is equal to zero gives some candidates for local extrema.  Consider the point at . Here, the derivative does not exist. These \"sharp points\" can also yield local extrema. Hence, finding where a function's derivative does not exist gives more candidates for the local extrema. Be warned that points at which the derivative is zero or does not exist do not always yield local extrema.  Take the point at in the graph above. The derivative does not exist at that point (slopes change suddenly), but it is not a local minimum or maximum.  Finally, if the function is on a closed interval, we can have local extrema at the endpoints (but not always).  Once we identify the points where local extrema could occur, we need to determine if we in fact do have local minimums or maximums. We could employ one of the tests (first-derivative or second-derivative) or check numerically. If one of these points is the largest or smallest values on the entire function, then we have that those points are the global extrema.   Optimization Steps  To find the local extrema of a continuous function :     Find the derivative function .    Find the values for which is zero or does not exist.    Determine if these values represent local minimums or maximums (or neither).    If on a closed interval, check if the endpoints are local extrema.       Finding Local Extrema   Find the local extrema and global extrema on the function on the closed interval .    First, we find where is zero or does not exist. . This is a quadratic function, which always exists. So, we just solve . Using the quadratic formula gives and .  So, we have four points that could be minimums or maximums: (we must include the endpoints).  While not formal, any easy way to check if the points at and are extrema are to compare their function values with nearby values. For example, , , and . So, we have a local maximum at . In a similar fashion, we can find that we have a local minimum at .  At , we can see that smaller values yield smaller function values. For example . So, we will have a local maximum at . Similarly, we can get that we have a local minimum at .  Lastly, we just compare the four function values at are points. We see that we have a global maximum at and a global minimum at .     Finding Global Extrema   Find the maximum and minimum values of the function for , if any exist.    First, we find . Using the product rule, we have    . First, note that this always exists. So, we just solve . Notice that . So, solving for yields our only solution.  We have and values around yield smaller function values (e.g. ). So, we can conclude that we have a maximum at .  We can also get that the endpoint yields a minimum at .  However, we need to determine the behavior of as goes to infinity. (It may rise above our proposed maximum at or proposed minimum at .) For , we see that . Hence, our point at is a global minimum. Further, , which means the function tends towards . So, our point at is a global minimum. (We could have also noted that for , which means decreases after our maximum at .)      Exercises   Minimum and Maximum Values 1    Find the minimum and maximum values of the function on  Minimum value:  Maximum value:             Since   the only critical point is The maximum occurs at giving The minimum occurs at the endpoint farthest from so the minimum value is         Mode of a Density Function 1    A density function is given by for The mode is defined as the value that maximizes Find the mode of  Mode:        Since   the derivative is always negative for Therefore, the density is decreasing on its domain, so its maximum occurs at the left endpoint. The mode is         Mode of a Density Function 2    A density function is given by for where is a positive constant. Find the mode of  Mode:        Since   This is negative for every Therefore, is decreasing on its domain, so the maximum occurs at the left endpoint. The mode is         Minimum and Maximum Values 2    Let on where and are constants. Find the minimum and maximum values of if they exist.  Which statement about the minimum value is correct?   A minimum value exists and is .    No minimum value exists.    A minimum value exists at .    Maximum value:             is a constant. The derivative of is   Setting this equal to zero, we find the critical point  Plugging in give This is the maximum value.  As or the function approaches but it never equals Therefore, no minimum value exists.         Minimum and Maximum Values 3    Find the minimum and maximum values of on  Minimum value:  Maximum value:             The function is written in vertex form. Since the coefficient of the squared term is positive, the minimum occurs at the vertex:   To find the maximum on the closed interval, compare the endpoint values:   Therefore, the maximum value is         Mode of a Density Function 3    A density function is given by where and are constants. Find the mode of  Mode:        The constant factor is positive, so it does not affect where the maximum occurs. Differentiate the part depending on   Since is positive for the critical point occurs when   The function increases before this point and decreases after it, so the mode is         "
+},
+{
+  "id": "extrema-graph",
+  "level": "2",
+  "url": "section-1-5.html#extrema-graph",
+  "type": "Figure",
+  "number": "1.5.1",
+  "title": "",
+  "body": " Local extrema of a function     "
+},
+{
+  "id": "ex-optimize",
+  "level": "2",
+  "url": "section-1-5.html#ex-optimize",
+  "type": "Example",
+  "number": "1.5.2",
+  "title": "Finding Local Extrema.",
+  "body": " Finding Local Extrema   Find the local extrema and global extrema on the function on the closed interval .    First, we find where is zero or does not exist. . This is a quadratic function, which always exists. So, we just solve . Using the quadratic formula gives and .  So, we have four points that could be minimums or maximums: (we must include the endpoints).  While not formal, any easy way to check if the points at and are extrema are to compare their function values with nearby values. For example, , , and . So, we have a local maximum at . In a similar fashion, we can find that we have a local minimum at .  At , we can see that smaller values yield smaller function values. For example . So, we will have a local maximum at . Similarly, we can get that we have a local minimum at .  Lastly, we just compare the four function values at are points. We see that we have a global maximum at and a global minimum at .   "
+},
+{
+  "id": "ex-optimize-2",
+  "level": "2",
+  "url": "section-1-5.html#ex-optimize-2",
+  "type": "Example",
+  "number": "1.5.3",
+  "title": "Finding Global Extrema.",
+  "body": " Finding Global Extrema   Find the maximum and minimum values of the function for , if any exist.    First, we find . Using the product rule, we have    . First, note that this always exists. So, we just solve . Notice that . So, solving for yields our only solution.  We have and values around yield smaller function values (e.g. ). So, we can conclude that we have a maximum at .  We can also get that the endpoint yields a minimum at .  However, we need to determine the behavior of as goes to infinity. (It may rise above our proposed maximum at or proposed minimum at .) For , we see that . Hence, our point at is a global minimum. Further, , which means the function tends towards . So, our point at is a global minimum. (We could have also noted that for , which means decreases after our maximum at .)   "
+},
+{
+  "id": "ex-extreme-values-1",
+  "level": "2",
+  "url": "section-1-5.html#ex-extreme-values-1",
+  "type": "Checkpoint",
+  "number": "1.5.4",
+  "title": "Minimum and Maximum Values 1.",
+  "body": " Minimum and Maximum Values 1    Find the minimum and maximum values of the function on  Minimum value:  Maximum value:             Since   the only critical point is The maximum occurs at giving The minimum occurs at the endpoint farthest from so the minimum value is       "
+},
+{
+  "id": "ex-extreme-values-2",
+  "level": "2",
+  "url": "section-1-5.html#ex-extreme-values-2",
+  "type": "Checkpoint",
+  "number": "1.5.5",
+  "title": "Mode of a Density Function 1.",
+  "body": " Mode of a Density Function 1    A density function is given by for The mode is defined as the value that maximizes Find the mode of  Mode:        Since   the derivative is always negative for Therefore, the density is decreasing on its domain, so its maximum occurs at the left endpoint. The mode is       "
+},
+{
+  "id": "ex-extreme-values-3",
+  "level": "2",
+  "url": "section-1-5.html#ex-extreme-values-3",
+  "type": "Checkpoint",
+  "number": "1.5.6",
+  "title": "Mode of a Density Function 2.",
+  "body": " Mode of a Density Function 2    A density function is given by for where is a positive constant. Find the mode of  Mode:        Since   This is negative for every Therefore, is decreasing on its domain, so the maximum occurs at the left endpoint. The mode is       "
+},
+{
+  "id": "ex-extreme-values-4",
+  "level": "2",
+  "url": "section-1-5.html#ex-extreme-values-4",
+  "type": "Checkpoint",
+  "number": "1.5.7",
+  "title": "Minimum and Maximum Values 2.",
+  "body": " Minimum and Maximum Values 2    Let on where and are constants. Find the minimum and maximum values of if they exist.  Which statement about the minimum value is correct?   A minimum value exists and is .    No minimum value exists.    A minimum value exists at .    Maximum value:             is a constant. The derivative of is   Setting this equal to zero, we find the critical point  Plugging in give This is the maximum value.  As or the function approaches but it never equals Therefore, no minimum value exists.       "
+},
+{
+  "id": "ex-extreme-values-5",
+  "level": "2",
+  "url": "section-1-5.html#ex-extreme-values-5",
+  "type": "Checkpoint",
+  "number": "1.5.8",
+  "title": "Minimum and Maximum Values 3.",
+  "body": " Minimum and Maximum Values 3    Find the minimum and maximum values of on  Minimum value:  Maximum value:             The function is written in vertex form. Since the coefficient of the squared term is positive, the minimum occurs at the vertex:   To find the maximum on the closed interval, compare the endpoint values:   Therefore, the maximum value is       "
+},
+{
+  "id": "ex-extreme-values-6",
+  "level": "2",
+  "url": "section-1-5.html#ex-extreme-values-6",
+  "type": "Checkpoint",
+  "number": "1.5.9",
+  "title": "Mode of a Density Function 3.",
+  "body": " Mode of a Density Function 3    A density function is given by where and are constants. Find the mode of  Mode:        The constant factor is positive, so it does not affect where the maximum occurs. Differentiate the part depending on   Since is positive for the critical point occurs when   The function increases before this point and decreases after it, so the mode is       "
+},
+{
+  "id": "section-1-6",
+  "level": "1",
+  "url": "section-1-6.html",
+  "type": "Section",
+  "number": "1.6",
+  "title": "Integrals and Area",
+  "body": " Integrals and Area  We now move onto a complementary topic to derivatives - integrals. For the P exam, integrals are much more common. It is important to have a good foundation for the concept of integration along with strong computation skills. We will briefly review integration and the Fundamental Theorem of Calculus. We will review integration rules in the next section.   Definitions  Hi. K   "
 },
 {
   "id": "backmatter-2",

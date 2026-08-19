@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ex-derivative-9" assembly-id="ex-derivative-9">
+  <static seed="19">
+    <statement><p>Find the derivative of <m>1-e^{-n(e^{ax}-1)}\text{,}</m> where <m>a</m> and <m>n</m> are positive constants.</p>
+<p><m>f'(x)=</m> <fillin characters="50" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>na\exp\mathopen{}\left(ax\right)\exp\mathopen{}\left(-n\mathopen{}\left(\exp\mathopen{}\left(ax\right)-1\right)\right)</m>
+      </p>
+    </answer>
+    <solution><p>Using the chain rule,</p>
+<p><me>\begin{aligned}
+          \frac{d}{dx}\left(1-e^{-n(e^{ax}-1)}\right)
+          \amp = -e^{-n(e^{ax}-1)}\left(-n ae^{ax}\right)\\
+          \amp = nae^{ax}e^{-n(e^{ax}-1)}.
+          \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Probability_for_Future_Actuaries/1_4_16-Find_the_Derivative_9.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(x=>"Real", a=>"Real", n=>"Real");
+
+$ans = Formula("n*a*exp(a*x)*exp(-n*(exp(a*x)-1))");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the derivative of [`1-e^{-n(e^{ax}-1)}\text{,}`] where [`a`] and [`n`] are positive constants.
+
+[`f'(x)=`] [_]{$ans}{50}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the chain rule,
+
+[```
+          \begin{aligned}
+          \frac{d}{dx}\left(1-e^{-n(e^{ax}-1)}\right)
+          &= -e^{-n(e^{ax}-1)}\left(-n ae^{ax}\right)\\
+          &= nae^{ax}e^{-n(e^{ax}-1)}.
+          \end{aligned}
+        ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>
